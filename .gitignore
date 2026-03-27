@@ -1,0 +1,23 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Pipeline intermediate data
+pipeline/data/
+
+# OS
+.DS_Store
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Brainstorming artifacts
+.superpowers/
+.claude/

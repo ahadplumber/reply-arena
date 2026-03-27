@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How This Was Built — Reply Arena</title>
+  <meta name="description" content="Architecture deep-dive: the AI pipeline behind Reply Arena's builder scorecard">
+  <meta property="og:title" content="How This Was Built — Reply Arena">
+  <meta property="og:description" content="Architecture deep-dive: the AI pipeline behind Reply Arena's builder scorecard">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How This Was Built — Reply Arena">
+  <meta name="twitter:description" content="Architecture deep-dive: the AI pipeline behind Reply Arena's builder scorecard">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"Courier New"', 'Courier', 'monospace'],
+          },
+          colors: {
+            phosphor: '#00ff41',
+            score: '#ffcc00',
+            danger: '#ff0055',
+            link: '#00c8ff',
+            term: {
+              bg: '#0a0a0a',
+              panel: '#0d0d0d',
+              border: '#1a1a1a',
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    /* === BASE === */
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #00ff41;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-x: hidden;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: unset;
+    }
+
+    /* === MATRIX RAIN CANVAS === */
+    #matrix-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.07;
+      pointer-events: none;
+    }
+
+    /* === CRT SCANLINES === */
+    .crt-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15) 0px,
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+    }
+
+    /* === CONTENT LAYER === */
+    .content-layer {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* === PANEL === */
+    .panel {
+      background: #0d0d0d;
+      border: 1px solid #1a3a1a;
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .panel::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 2px;
+      box-shadow: inset 0 0 30px rgba(0, 255, 65, 0.03);
+      pointer-events: none;
+    }
+
+    /* === GLOW TEXT === */
+    .glow {
+      text-shadow: 0 0 8px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.2);
+    }
+
+    .glow-score {
+      text-shadow: 0 0 8px rgba(255, 204, 0, 0.6), 0 0 20px rgba(255, 204, 0, 0.25);
+    }
+
+    .glow-danger {
+      text-shadow: 0 0 8px rgba(255, 0, 85, 0.5), 0 0 20px rgba(255, 0, 85, 0.2);
+    }
+
+    .glow-link {
+      text-shadow: 0 0 8px rgba(0, 200, 255, 0.4), 0 0 16px rgba(0, 200, 255, 0.15);
+    }
+
+    /* === CURSOR BLINK === */
+    .cursor-blink::after {
+      content: '_';
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* === LINK STYLE === */
+    a.arena-link {
+      color: #00c8ff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 200, 255, 0.3);
+      transition: border-color 0.2s;
+    }
+    a.arena-link:hover {
+      border-color: #00c8ff;
+    }
+
+    /* === PIPELINE FUNNEL === */
+    .pipeline-stage {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-left: 2px solid #1a3a1a;
+      position: relative;
+      transition: background 0.15s;
+    }
+
+    .pipeline-stage:hover {
+      background: rgba(0, 255, 65, 0.03);
+    }
+
+    .pipeline-stage::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #0a0a0a;
+      border: 2px solid #00ff41;
+    }
+
+    .pipeline-stage.active::before {
+      background: #00ff41;
+      box-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+    }
+
+    .pipeline-connector {
+      margin-left: 18px;
+      padding-left: 14px;
+      border-left: 2px solid #1a3a1a;
+      height: 8px;
+    }
+
+    /* === STAGE DETAIL PANEL === */
+    .stage-panel {
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .stage-panel:last-child {
+      border-bottom: none;
+    }
+
+    /* === SCORE BAR === */
+    .weight-bar-bg {
+      background: #1a1a1a;
+      height: 8px;
+      border-radius: 1px;
+      overflow: hidden;
+    }
+
+    .weight-bar-fill {
+      height: 100%;
+      border-radius: 1px;
+      transition: width 0.8s ease;
+    }
+
+    /* === TECH BADGE === */
+    .tech-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid #1a3a1a;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      color: rgba(0, 255, 65, 0.75);
+      background: rgba(0, 255, 65, 0.03);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .tech-badge:hover {
+      border-color: #00ff41;
+      color: #00ff41;
+    }
+
+    /* === SCROLLBAR === */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #1a3a1a; border-radius: 2px; }
+    ::-webkit-scrollbar-thumb:hover { background: #2a4a2a; }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 600px) {
+      .rubric-grid { grid-template-columns: 1fr !important; }
+      .tech-grid { grid-template-columns: 1fr 1fr !important; }
+      .timeline-hero { font-size: 3rem !important; }
+      .stage-stats { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- CRT Scanlines -->
+  <div class="crt-overlay"></div>
+
+  <!-- Content -->
+  <div class="content-layer max-w-2xl mx-auto px-4 py-6 pb-16">
+
+    <!-- BACK LINK -->
+    <div class="mb-4">
+      <a href="index.html" class="arena-link text-xs tracking-wider">&larr; BACK TO LEADERBOARD</a>
+    </div>
+
+    <!-- 1. HEADER -->
+    <div class="panel p-4 mb-4">
+      <div class="flex items-start justify-between flex-wrap gap-3">
+        <div>
+          <h1 class="text-2xl font-bold glow tracking-wider" style="letter-spacing: 0.15em;">HOW THIS WAS BUILT</h1>
+          <p class="text-xs mt-1" style="color: rgba(0,255,65,0.6);">
+            architecture deep-dive &middot; reply arena pipeline
+          </p>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <button onclick="copyArchitectureMD()" id="copy-md-btn" style="padding: 5px 12px; border: 1px solid rgba(0,255,65,0.4); color: rgba(0,255,65,0.6); background: transparent; font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 1px; cursor: pointer; border-radius: 2px; transition: all 0.15s;" onmouseover="this.style.borderColor='#00ff41'; this.style.color='#00ff41'" onmouseout="this.style.borderColor='rgba(0,255,65,0.4)'; this.style.color='rgba(0,255,65,0.6)'">
+            COPY MD
+          </button>
+          <a href="#" onclick="openInClaude(); return false;" style="display: inline-block; padding: 5px 12px; border: 1px solid rgba(0,200,255,0.4); color: rgba(0,200,255,0.6); font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 1px; text-decoration: none; border-radius: 2px; transition: all 0.15s;" onmouseover="this.style.borderColor='#00c8ff'; this.style.color='#00c8ff'" onmouseout="this.style.borderColor='rgba(0,200,255,0.4)'; this.style.color='rgba(0,200,255,0.6)'">
+            OPEN IN CLAUDE &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. PIPELINE DIAGRAM -->
+    <div class="panel p-4 mb-4">
+      <div class="text-xs tracking-widest mb-3" style="color: rgba(0,255,65,0.5);">PIPELINE OVERVIEW</div>
+      <div id="pipeline-diagram">
+        <!-- Rendered by JS -->
+        <div class="text-center text-xs py-4" style="color: rgba(0,255,65,0.35);">
+          <span class="cursor-blink">loading pipeline data</span>
+        </div>
+      </div>
+      <div class="mt-3 pt-3" style="border-top: 1px solid #1a1a1a;">
+        <div class="flex justify-between items-center text-xs">
+          <span style="color: rgba(0,255,65,0.4);">TOTAL PIPELINE DURATION</span>
+          <span class="glow-score font-bold" style="color: #ffcc00;" id="total-duration">--</span>
+        </div>
+        <div class="flex justify-between items-center text-xs mt-1">
+          <span style="color: rgba(0,255,65,0.4);">RUN ID</span>
+          <span style="color: rgba(0,255,65,0.6);" id="run-id">--</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. STAGE BREAKDOWN -->
+    <div class="panel mb-4" id="stage-breakdown">
+      <div class="p-3 border-b" style="border-color: #1a1a1a;">
+        <span class="text-xs tracking-widest" style="color: rgba(0,255,65,0.5);">STAGE BREAKDOWN</span>
+      </div>
+      <div id="stages-container">
+        <!-- Rendered by JS -->
+        <div class="p-6 text-center text-xs" style="color: rgba(0,255,65,0.35);">
+          <span class="cursor-blink">loading stages</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SCORING RUBRIC -->
+    <div class="panel p-4 mb-4">
+      <div class="text-xs tracking-widest mb-3" style="color: rgba(0,255,65,0.5);">SCORING RUBRIC</div>
+      <p class="text-xs mb-4" style="color: rgba(0,255,65,0.6); line-height: 1.5;">
+        Each reply is scored by Claude Opus across three dimensions. The composite score is a weighted average.
+      </p>
+      <div class="rubric-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+        <!-- Builder -->
+        <div>
+          <div class="text-sm font-bold mb-1" style="color: #ffcc00;">BUILDER</div>
+          <div class="text-xs mb-2" style="color: rgba(0,255,65,0.5);">40% weight</div>
+          <div class="weight-bar-bg mb-2">
+            <div class="weight-bar-fill" style="width: 40%; background: #ffcc00;"></div>
+          </div>
+          <p class="text-xs" style="color: rgba(0,255,65,0.55); line-height: 1.4;">
+            Evidence of real building. Shipped projects, GitHub repos, live demos, technical depth. Did they make something or just talk about it?
+          </p>
+        </div>
+        <!-- Creativity -->
+        <div>
+          <div class="text-sm font-bold mb-1" style="color: #00ff41;">CREATIVITY</div>
+          <div class="text-xs mb-2" style="color: rgba(0,255,65,0.5);">35% weight</div>
+          <div class="weight-bar-bg mb-2">
+            <div class="weight-bar-fill" style="width: 35%; background: #00ff41;"></div>
+          </div>
+          <p class="text-xs" style="color: rgba(0,255,65,0.55); line-height: 1.4;">
+            Originality of approach. Novel pitches, unexpected angles, creative formats. Standing out from "I'm passionate about AI" noise.
+          </p>
+        </div>
+        <!-- Quirkiness -->
+        <div>
+          <div class="text-sm font-bold mb-1" style="color: #00c8ff;">QUIRKINESS</div>
+          <div class="text-xs mb-2" style="color: rgba(0,255,65,0.5);">25% weight</div>
+          <div class="weight-bar-bg mb-2">
+            <div class="weight-bar-fill" style="width: 25%; background: #00c8ff;"></div>
+          </div>
+          <p class="text-xs" style="color: rgba(0,255,65,0.55); line-height: 1.4;">
+            Personality and memorable factor. Humor, bold takes, weird flex. The replies that make you stop scrolling.
+          </p>
+        </div>
+      </div>
+      <div class="mt-4 pt-3" style="border-top: 1px solid #1a1a1a;">
+        <p class="text-xs" style="color: rgba(0,255,65,0.4); line-height: 1.4;">
+          <span style="color: rgba(0,255,65,0.55);">COMPOSITE</span> = (Builder &times; 0.40) + (Creativity &times; 0.35) + (Quirkiness &times; 0.25)
+        </p>
+      </div>
+    </div>
+
+    <!-- 5. TECH STACK -->
+    <div class="panel p-4 mb-4">
+      <div class="text-xs tracking-widest mb-3" style="color: rgba(0,255,65,0.5);">TECH STACK</div>
+      <div class="tech-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+        <div class="tech-badge">Claude Code</div>
+        <div class="tech-badge">Claude Opus</div>
+        <div class="tech-badge">Skills</div>
+        <div class="tech-badge">Plugins</div>
+        <div class="tech-badge">Subagents</div>
+        <div class="tech-badge">X API</div>
+        <div class="tech-badge">Jina Reader</div>
+        <div class="tech-badge">GitHub API</div>
+        <div class="tech-badge">Vercel</div>
+      </div>
+      <div class="mt-3 pt-3" style="border-top: 1px solid #1a1a1a;">
+        <p class="text-xs" style="color: rgba(0,255,65,0.5); line-height: 1.5;">
+          The entire pipeline &mdash; from fetching replies to scoring to deployment &mdash; is orchestrated through Claude Code with custom skills and plugins. No traditional backend. No database. Just structured JSON files and static HTML.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6. BUILD TIMELINE -->
+    <div class="panel p-6 mb-4 text-center">
+      <div class="text-xs tracking-widest mb-2" style="color: rgba(0,255,65,0.5);">BUILD TIMELINE</div>
+      <div class="flex items-center justify-center gap-3 flex-wrap">
+        <span class="text-xs" style="color: rgba(0,255,65,0.5);">IDEA</span>
+        <span style="color: rgba(0,255,65,0.3);">&rarr;</span>
+        <span class="text-xs" style="color: rgba(0,255,65,0.5);">PIPELINE</span>
+        <span style="color: rgba(0,255,65,0.3);">&rarr;</span>
+        <span class="text-xs" style="color: rgba(0,255,65,0.5);">SCORED</span>
+        <span style="color: rgba(0,255,65,0.3);">&rarr;</span>
+        <span class="text-xs" style="color: rgba(0,255,65,0.5);">DEPLOYED</span>
+      </div>
+      <div class="mt-3">
+        <span class="timeline-hero glow-score font-bold" style="font-size: 4rem; color: #ffcc00; line-height: 1;">3</span>
+        <span class="text-lg" style="color: rgba(0,255,65,0.6);"> HOURS</span>
+      </div>
+      <p class="text-xs mt-2" style="color: rgba(0,255,65,0.4);">
+        from first prompt to live leaderboard
+      </p>
+    </div>
+
+    <!-- 7. FOOTER -->
+    <div class="text-center py-4">
+      <a href="index.html" class="arena-link text-sm tracking-wider" style="color: #00c8ff;">
+        [ &larr; BACK TO LEADERBOARD ]
+      </a>
+    </div>
+
+    <div class="text-center mt-2 mb-2">
+      <span class="text-xs" style="color: rgba(0,255,65,0.4);">
+        Built by <a href="https://x.com/plumberahad" target="_blank" rel="noopener" class="arena-link">@plumberahad</a>
+      </span>
+    </div>
+
+    <!-- ASCII accent -->
+    <div class="text-center mt-2 mb-4" style="color: rgba(0,255,65,0.12); font-size: 10px; line-height: 1.2; white-space: pre;">
+  .  *  .    *    .  *
+    .    *  .   .    *
+  *   .    *   .  *   .
+    </div>
+
+  </div>
+
+  <script>
+    // ==========================================
+    // MATRIX RAIN
+    // ==========================================
+    (function initMatrix() {
+      const canvas = document.getElementById('matrix-canvas');
+      const ctx = canvas.getContext('2d');
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const fontSize = 14;
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+-=[]{}|;:,.<>?/~`';
+      let columns = Math.floor(canvas.width / fontSize);
+      let drops = new Array(columns).fill(1);
+
+      function draw() {
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#00ff41';
+        ctx.font = fontSize + 'px monospace';
+
+        for (let i = 0; i < drops.length; i++) {
+          const char = chars[Math.floor(Math.random() * chars.length)];
+          ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+      }
+
+      setInterval(draw, 60);
+
+      window.addEventListener('resize', () => {
+        columns = Math.floor(canvas.width / fontSize);
+        drops = new Array(columns).fill(1);
+      });
+    })();
+
+    // ==========================================
+    // PIPELINE DATA LOADING
+    // ==========================================
+    const STAGE_META = {
+      fetch: {
+        label: 'FETCH',
+        desc: 'Pull all replies to the target tweet via X API, collecting author metadata and reply text.',
+        color: '#00c8ff',
+      },
+      filter: {
+        label: 'FILTER',
+        desc: 'Remove spam, low-effort replies, bots, and duplicates using heuristic and AI classification.',
+        color: '#00ff41',
+      },
+      extract: {
+        label: 'EXTRACT',
+        desc: 'Parse each qualifying reply to extract claims, linked projects, GitHub repos, and key signals.',
+        color: '#00ff41',
+      },
+      synthesize: {
+        label: 'SYNTHESIZE',
+        desc: 'Enrich extracted data with external context via Jina Reader and GitHub API, build candidate profiles.',
+        color: '#ffcc00',
+      },
+      score: {
+        label: 'SCORE',
+        desc: 'Claude Opus scores each candidate across Builder, Creativity, and Quirkiness dimensions (0-100).',
+        color: '#ffcc00',
+      },
+      enrich: {
+        label: 'ENRICH',
+        desc: 'Generate write-ups, pull profile images, and compile the final ranked leaderboard JSON.',
+        color: '#ff0055',
+      },
+    };
+
+    (async function init() {
+      let data = null;
+
+      try {
+        const resp = await fetch('pipeline-log.json');
+        if (resp.ok) {
+          data = await resp.json();
+        }
+      } catch (e) {
+        console.warn('pipeline-log.json not available, using fallback');
+      }
+
+      if (data) {
+        renderPipeline(data);
+        renderStages(data.stages);
+        renderMeta(data);
+      } else {
+        renderFallback();
+      }
+    })();
+
+    function renderMeta(data) {
+      // Total duration
+      if (data.duration_seconds) {
+        const mins = Math.floor(data.duration_seconds / 60);
+        const secs = data.duration_seconds % 60;
+        document.getElementById('total-duration').textContent =
+          mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+      }
+
+      // Run ID
+      if (data.run_id) {
+        document.getElementById('run-id').textContent = data.run_id;
+      }
+    }
+
+    function renderPipeline(data) {
+      const container = document.getElementById('pipeline-diagram');
+      const stages = data.stages || [];
+
+      let html = '';
+
+      stages.forEach((stage, idx) => {
+        const meta = STAGE_META[stage.name] || { label: stage.name.toUpperCase(), color: '#00ff41' };
+        const dropCount = stage.dropped || 0;
+        const errorCount = stage.errors || 0;
+
+        html += `
+          <div class="pipeline-stage active">
+            <div style="width: 72px; flex-shrink: 0;">
+              <span class="text-xs font-bold" style="color: ${meta.color};">${meta.label}</span>
+            </div>
+            <div style="flex: 1; display: flex; align-items: center; gap: 8px;">
+              <span class="text-xs" style="color: rgba(0,255,65,0.5);">${stage.input || 0} in</span>
+              <span style="color: rgba(0,255,65,0.25);">&rarr;</span>
+              <span class="text-xs font-bold" style="color: rgba(0,255,65,0.85);">${stage.output || 0} out</span>
+              ${dropCount > 0 ? `<span class="text-xs" style="color: #ff0055;">-${dropCount}</span>` : ''}
+              ${errorCount > 0 ? `<span class="text-xs" style="color: #ff0055;">${errorCount} err</span>` : ''}
+            </div>
+            <div style="flex-shrink: 0;">
+              <span class="text-xs" style="color: rgba(0,255,65,0.4);">${stage.duration_seconds}s</span>
+            </div>
+          </div>
+        `;
+
+        if (idx < stages.length - 1) {
+          html += '<div class="pipeline-connector"></div>';
+        }
+      });
+
+      container.innerHTML = html;
+    }
+
+    function renderStages(stages) {
+      const container = document.getElementById('stages-container');
+      if (!stages || !stages.length) {
+        container.innerHTML = '<div class="p-6 text-center text-xs" style="color: rgba(0,255,65,0.35);">[NO STAGE DATA]</div>';
+        return;
+      }
+
+      let html = '';
+
+      stages.forEach(stage => {
+        const meta = STAGE_META[stage.name] || { label: stage.name.toUpperCase(), desc: '', color: '#00ff41' };
+        const dropCount = stage.dropped || 0;
+        const errorCount = stage.errors || 0;
+
+        html += `
+          <div class="stage-panel p-4">
+            <div class="flex items-start justify-between mb-2">
+              <div>
+                <span class="text-sm font-bold" style="color: ${meta.color};">${meta.label}</span>
+              </div>
+              <span class="text-xs" style="color: rgba(0,255,65,0.4);">${stage.duration_seconds}s</span>
+            </div>
+            <p class="text-xs mb-3" style="color: rgba(0,255,65,0.55); line-height: 1.4;">${meta.desc}</p>
+            <div class="stage-stats" style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <div>
+                <div class="text-xs" style="color: rgba(0,255,65,0.35);">INPUT</div>
+                <div class="text-sm font-bold" style="color: rgba(0,255,65,0.8);">${stage.input || 0}</div>
+              </div>
+              <div>
+                <div class="text-xs" style="color: rgba(0,255,65,0.35);">OUTPUT</div>
+                <div class="text-sm font-bold" style="color: rgba(0,255,65,0.8);">${stage.output || 0}</div>
+              </div>
+              ${dropCount > 0 ? `
+                <div>
+                  <div class="text-xs" style="color: rgba(0,255,65,0.35);">DROPPED</div>
+                  <div class="text-sm font-bold glow-danger" style="color: #ff0055;">${dropCount}</div>
+                </div>
+              ` : ''}
+              ${errorCount > 0 ? `
+                <div>
+                  <div class="text-xs" style="color: rgba(0,255,65,0.35);">ERRORS</div>
+                  <div class="text-sm font-bold glow-danger" style="color: #ff0055;">${errorCount}</div>
+                </div>
+              ` : ''}
+            </div>
+            ${renderDropReasons(stage.drop_reasons)}
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function renderDropReasons(reasons) {
+      if (!reasons || typeof reasons !== 'object') return '';
+      const keys = Object.keys(reasons);
+      if (!keys.length) return '';
+
+      let html = '<div class="mt-3 pt-2" style="border-top: 1px solid #1a1a1a;">';
+      html += '<div class="text-xs mb-2" style="color: rgba(0,255,65,0.35);">DROP REASONS</div>';
+      keys.forEach(key => {
+        html += `
+          <div class="flex justify-between text-xs mb-1">
+            <span style="color: rgba(0,255,65,0.5);">${escapeHTML(key)}</span>
+            <span style="color: #ff0055;">${reasons[key]}</span>
+          </div>
+        `;
+      });
+      html += '</div>';
+      return html;
+    }
+
+    function renderFallback() {
+      // Show a static fallback when pipeline-log.json is not available
+      const diagramContainer = document.getElementById('pipeline-diagram');
+      const stagesContainer = document.getElementById('stages-container');
+
+      const fallbackStages = [
+        { name: 'fetch', label: 'FETCH', desc: 'Pull replies via X API' },
+        { name: 'filter', label: 'FILTER', desc: 'Remove spam and low-effort' },
+        { name: 'extract', label: 'EXTRACT', desc: 'Parse claims and signals' },
+        { name: 'synthesize', label: 'SYNTHESIZE', desc: 'Enrich with external data' },
+        { name: 'score', label: 'SCORE', desc: 'AI scoring across 3 dimensions' },
+        { name: 'enrich', label: 'ENRICH', desc: 'Generate final leaderboard' },
+      ];
+
+      let diagramHTML = '';
+      fallbackStages.forEach((s, idx) => {
+        const meta = STAGE_META[s.name];
+        diagramHTML += `
+          <div class="pipeline-stage">
+            <div style="width: 72px; flex-shrink: 0;">
+              <span class="text-xs font-bold" style="color: ${meta.color};">${meta.label}</span>
+            </div>
+            <div style="flex: 1;">
+              <span class="text-xs" style="color: rgba(0,255,65,0.45);">${meta.desc}</span>
+            </div>
+          </div>
+        `;
+        if (idx < fallbackStages.length - 1) {
+          diagramHTML += '<div class="pipeline-connector"></div>';
+        }
+      });
+      diagramContainer.innerHTML = diagramHTML;
+
+      document.getElementById('total-duration').textContent = '--';
+      document.getElementById('run-id').textContent = 'awaiting first run';
+
+      let stagesHTML = '';
+      fallbackStages.forEach(s => {
+        const meta = STAGE_META[s.name];
+        stagesHTML += `
+          <div class="stage-panel p-4">
+            <div class="mb-2">
+              <span class="text-sm font-bold" style="color: ${meta.color};">${meta.label}</span>
+            </div>
+            <p class="text-xs" style="color: rgba(0,255,65,0.55); line-height: 1.4;">${meta.desc}</p>
+            <div class="mt-2 text-xs" style="color: rgba(0,255,65,0.3);">[stats available after pipeline run]</div>
+          </div>
+        `;
+      });
+      stagesContainer.innerHTML = stagesHTML;
+    }
+
+    function escapeHTML(str) {
+      if (!str) return '';
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    // ==========================================
+    // COPY / OPEN IN CLAUDE
+    // ==========================================
+    function generateArchitectureMD() {
+      const md = `# Reply Arena — Architecture Review
+
+> Evaluate this AI pipeline. Was it well-designed? What would you improve?
+
+## What This Is
+
+Reply Arena is a live scorecard that fetches all replies to Eric Glyman's (CEO of Ramp) hiring tweet, runs them through a 5-stage AI pipeline, and presents a ranked leaderboard of the top builders. Built and deployed in ~3 hours using Claude Code.
+
+## Pipeline Architecture
+
+\`\`\`
+Tweet (311 replies)
+  → FETCH: X API v2, paginated, with media/entity expansion
+  → FILTER: LLM classifies junk vs real project submissions (311 → 163)
+  → EXTRACT: Recursive content resolution — GitHub API, X API for self-links, Firecrawl/Jina for web pages, multimodal for images (163 → 163, 0 errors)
+  → SYNTHESIZE: LLM reads all extracted artifacts, produces structured project summaries, drops vaporware (163 → 79)
+  → SCORE: LLM scores on 3 dimensions — Builder (.40), Creativity (.35), Quirkiness (.25) — weighted composite (79 ranked)
+  → ENRICH: LLM generates dossier write-ups for top 20
+\`\`\`
+
+## Key Design Decisions
+
+- **Layer isolation**: Each stage writes output to disk. \`--from-stage N\` resumes from any stage. Retuning prompts doesn't require re-fetching.
+- **Extract ≠ Synthesize**: Extract is pure I/O (deterministic). Synthesize is LLM reasoning over extracted artifacts. Different failure modes, different retry strategies.
+- **Escape hatch**: When deterministic extractors fail (login walls, SPAs, CAPTCHAs), the implementing agent uses Claude Code tools (WebSearch, Playwright, Firecrawl) to fill gaps.
+- **Tiered extraction**: GitHub → API. x.com self-links → X API (then resolve their links recursively). Other URLs → Firecrawl (renders JS). Images → multimodal. Videos → thumbnail + text.
+- **No backend**: Pipeline runs locally, outputs JSON. Static HTML site reads JSON. Deployed to Vercel.
+
+## Scoring Rubric
+
+Based on Eric Glyman's original tweet criteria:
+- **Builder (.40)**: Shipped something real. Works without permission. Evidence of velocity.
+- **Creativity (.35)**: Novel or unexpected. Not another todo app. Original thinking.
+- **Quirkiness (.25)**: Personality shines through. "Weird teenage hobbies" energy. Memorable.
+
+## Tech Stack
+
+Claude Code, Claude Opus 4.6, Anthropic SDK, X API v2, GitHub API, Firecrawl, Jina Reader, HTML + Tailwind CSS, Vercel
+
+## Built With
+
+Skills, Plugins, Subagents, Loops — the Claude Code primitives stack.
+
+---
+
+*What would you improve about this architecture? What failure modes do you see? How would you scale it?*
+`;
+      return md;
+    }
+
+    function copyArchitectureMD() {
+      const md = generateArchitectureMD();
+      navigator.clipboard.writeText(md).then(() => {
+        const btn = document.getElementById('copy-md-btn');
+        btn.textContent = 'COPIED ✓';
+        btn.style.borderColor = '#00ff41';
+        btn.style.background = 'rgba(0,255,65,0.1)';
+        setTimeout(() => {
+          btn.textContent = 'COPY AS MARKDOWN';
+          btn.style.background = 'transparent';
+        }, 2000);
+      });
+    }
+
+    function openInClaude() {
+      const md = generateArchitectureMD();
+      const prompt = encodeURIComponent(md);
+      // Claude.ai supports ?q= for pre-filled prompts
+      window.open('https://claude.ai/new?q=' + prompt, '_blank');
+    }
+  </script>
+</body>
+</html>
