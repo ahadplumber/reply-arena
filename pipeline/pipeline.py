@@ -225,8 +225,8 @@ def run_pipeline(from_stage: int = 0, full: bool = False):
         already_scored_ids = set()
         already_scored_entries = []
         if existing_scored:
-            already_scored_ids = {t["id"] for t in existing_scored.get("scored", [])}
-            already_scored_entries = existing_scored["scored"]
+            already_scored_ids = {t["id"] for t in existing_scored.get("scored", []) if t.get("scores", {}).get("composite", 0) > 0}
+            already_scored_entries = [t for t in existing_scored["scored"] if t.get("scores", {}).get("composite", 0) > 0]
 
         tweets_to_score = [t for t in synthesized["synthesized"] if t["id"] not in already_scored_ids]  # Scores are immutable — never re-score
 

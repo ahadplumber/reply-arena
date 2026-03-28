@@ -2,7 +2,7 @@
   "meta": {
     "tweet_id": "2037554997982871650",
     "author": "eglyman",
-    "scanned_at": "2026-03-28T15:09:44.888038+00:00",
+    "scanned_at": "2026-03-28T15:50:44.461760+00:00",
     "total_replies": 512,
     "after_filter": 289,
     "after_synthesize": 199,
@@ -36,13 +36,44 @@
         "composite": 91
       },
       "enrichment": {
-        "write_up": "Bran is a NYC-based physicist-turned-founder who built Loyalty-Test.com solo \u2014 a two-sided marketplace where people hire 'testers' to flirt with their partners \u2014 and drove it to $200k+ in revenue with enough cultural noise to land NYT, Business Insider, and Barstool coverage. The concept is polarizing by design, but the execution is undeniably scrappy: real profiles, live product, zero team. Someone who can monetize human jealousy from scratch can probably figure out expense management.",
+        "write_up": "NYC-based physicist-turned-founder who built Loyalty-Test.com solo \u2014 a two-sided marketplace for partner fidelity testing that hit $200k+ in revenue and landed coverage in NYT, Business Insider, and Barstool Sports. The concept is polarizing by design, but the execution is undeniably scrappy: real tester profiles, a live product, and press that money can't buy. Someone who can turn a morally spicy idea into a functioning marketplace with that kind of traction knows how to find demand and ship fast.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
       "rank": 2,
+      "reply_id": "2037755510469050640",
+      "reply_url": "https://x.com/send_eze/status/2037755510469050640",
+      "previous_rank": null,
+      "author": {
+        "handle": "send_eze",
+        "name": "Ezekiel \ud83c\udfc4",
+        "bio": "permissionless leverage. compiling a stack of robots & high-agency-ness.",
+        "followers": 2,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2032303087684370433/Dh9XB8br_normal.jpg"
+      },
+      "project": {
+        "name": "MonkCard \u2014 Physical NFC Card App Blocker",
+        "summary": "MonkCard is a live product at monkcard.com consisting of a physical NFC card paired with a mobile app that locks distracting apps (TikTok, Instagram, etc.) until the card is tapped. The website shows pricing (S$25\u2013S$39), product photos, user testimonials, and a purchasing flow. The tweet also references two larger prior projects (NFT loans marketplace with $450K/day revenue peak, and a Telegram mini-app with $10M revenue) though those lack direct links.",
+        "links": [
+          "http://monkcard.com"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 85,
+        "quirkiness": 88,
+        "composite": 85
+      },
+      "enrichment": {
+        "write_up": "Ezekiel ships real products \u2014 MonkCard is a live, purchasable NFC-based app blocker with actual pricing and customer testimonials, not a side project deck. His prior track record includes an NFT loans marketplace peaking at $450K/day revenue and a Telegram mini-app that hit $10M revenue, which is a serious builder resume for someone with 2 Twitter followers. The 'permissionless leverage' bio isn't posturing \u2014 he's repeatedly found distribution and monetization without a big platform behind him.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 3,
       "reply_id": "2037568029375037896",
       "reply_url": "https://x.com/sriramkiron/status/2037568029375037896",
       "previous_rank": 2,
@@ -67,13 +98,13 @@
         "composite": 83
       },
       "enrichment": {
-        "write_up": "Sriram is a Purdue CS student who built Moltopia \u2014 a live, pixel-art virtual world where autonomous AI agents chat, trade, craft, and negotiate loans with each other in real time. This isn't a demo or a concept; it's a deployed product with named agents actively running an economy. He's also a Codex Ambassador and ships side projects on video tooling, signaling someone who builds across the stack and doesn't stop at one idea.",
+        "write_up": "Purdue CS student who built Moltopia \u2014 a live pixel-art virtual world where autonomous AI agents chat, trade, craft, and negotiate loans with each other in real time. This isn't a demo or a mockup; it's a deployed multi-agent economy with named characters and a live activity feed, which is a wild thing to ship as an undergrad. Also a Codex Ambassador building a video speed-up tool on the side \u2014 this person just keeps building.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
       "reply_id": "2037566387833426137",
       "reply_url": "https://x.com/boiopollo/status/2037566387833426137",
       "previous_rank": 3,
@@ -105,13 +136,13 @@
         "composite": 83
       },
       "enrichment": {
-        "write_up": "Serial builder who's shipped 11+ real products across fintech, AI, and enterprise \u2014 not side projects, actual live software. Was employee #2 at a Series A company that hit $100M valuation, and has the range to go from pitching a tax-aware iOS app to Logan Paul to deploying RAG pipelines for enterprise customer success teams. The breadth here is rare: mobile, computer vision, Stable Diffusion, B2B SaaS \u2014 all shipped, all documented.",
+        "write_up": "Series A employee #2 who helped scale a company to $100M valuation, now running a prolific indie portfolio of 11+ shipped products spanning fintech, AI, real estate, and enterprise tooling. Built a tax-aware iOS app in 3 weeks and pitched it to Logan Paul, deployed a RAG-powered Slack knowledge base for a live enterprise team, and keeps stacking proof of work across mobile and AI domains. The kind of builder who doesn't wait for permission \u2014 he just ships.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "reply_id": "2037656827454693771",
       "reply_url": "https://x.com/vincentaamato/status/2037656827454693771",
       "previous_rank": 4,
@@ -138,13 +169,13 @@
         "composite": 83
       },
       "enrichment": {
-        "write_up": "Brown CS student who built and shipped a full iOS app that classifies wild mushrooms using a custom-trained DINOv3 vision model \u2014 running 100% on-device via MLX Swift. It's live on the App Store and paired with a web app backed by a local GPU. This isn't a tutorial project; it's end-to-end applied ML with real deployment chops.",
+        "write_up": "Brown CS student who built and shipped a live iOS app that classifies wild mushroom species using a custom DINOv3-trained vision model ported to MLX Swift \u2014 all inference runs on-device, no server calls. This isn't a tutorial project: he trained the model, handled the MLX port, deployed to the App Store, and spun up a companion web app running on a local GPU. The kind of person who ships end-to-end ML products solo before graduating.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 5,
+      "rank": 6,
       "reply_id": "2037660509986566478",
       "reply_url": "https://x.com/plumberahad/status/2037660509986566478",
       "previous_rank": 5,
@@ -172,13 +203,13 @@
         "composite": 82
       },
       "enrichment": {
-        "write_up": "Ahad built a live AI-scored leaderboard to rank replies to the exact tweet he's applying through \u2014 meta as it gets. Shipped Reply Arena in under 3 hours using Claude Code, Firecrawl, and custom subagent pipelines, pulling 311 replies and ranking 79 with custom scoring criteria for builder instinct, creativity, and quirkiness. The kind of person who responds to a hiring challenge by automating the hiring process itself.",
+        "write_up": "Ahad saw Eric's hiring tweet and built a live AI-powered leaderboard to rank everyone else applying \u2014 including himself. Spun up Reply Arena in under 3 hours using Claude Code, Firecrawl, and custom subagent pipelines, with 311 replies fetched and 79 ranked at reply-arena.ahad.nyc. That's not just builder energy, that's meta-builder energy.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 6,
+      "rank": 7,
       "reply_id": "2037610866200179020",
       "reply_url": "https://x.com/0xultravioleta/status/2037610866200179020",
       "previous_rank": 6,
@@ -206,13 +237,13 @@
         "composite": 81
       },
       "enrichment": {
-        "write_up": "Ultravioleta is quietly building real agentic infrastructure while most people are still writing blog posts about it \u2014 Execution Market is live with 252 completed tasks, real stablecoin payouts, and 10-chain support, not a demo. MeshRelay layers on top with IRC-based agent comms, on-chain identity via ERC-8004, and x402 payments, showing they think in systems, not features. The 'learning in public' framing undersells it: this is someone shipping fast and iterating in the open with actual usage metrics to back it up.",
+        "write_up": "Ultravioleta is shipping real AI agent infrastructure, not whitepapers \u2014 Execution Market is live with 57 users and 252 completed tasks where agents post and pay for real-world verification work instantly in stablecoins across 10 chains. MeshRelay layers on top as an IRC-based agent comms network with x402 payments and on-chain identity, and both are deployed and functional today. This is a builder deep in the agentic economy before it's a trend, with the receipts to prove it.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
       "reply_id": "2037593054249443562",
       "reply_url": "https://x.com/bigboardlab/status/2037593054249443562",
       "previous_rank": 7,
@@ -237,13 +268,13 @@
         "composite": 81
       },
       "enrichment": {
-        "write_up": "Veteran NFL Draft analyst with hands-on coverage experience across ESPN, Fox Sports, CBS, and NBC who turned deep domain expertise into a full-stack product \u2014 bigboardlab.com has already logged 17,868 community mock drafts with 32 AI GMs, live trades, combine data, and scheme fit analysis baked in. This isn't a side project built on vibes; it's a domain expert who identified a gap, shipped something real, and got users. The intersection of sports media credibility and product execution makes this a genuinely rare profile.",
+        "write_up": "Spent years covering the NFL Draft at ESPN, Fox Sports, CBS, and NBC \u2014 then built BigBoardLab, a live mock draft simulator where users run drafts against 32 AI GMs with distinct team personalities, live trades, combine data, and scheme fit analysis (17,868 community mocks and counting). This is someone who knows the domain cold and actually shipped a real product around it. Rare combo of deep sports media expertise and the technical chops to build a polished, data-rich web app from scratch.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "reply_id": "2037617112450277401",
       "reply_url": "https://x.com/chef_zlatko/status/2037617112450277401",
       "previous_rank": 8,
@@ -270,16 +301,16 @@
         "composite": 80
       },
       "enrichment": {
-        "write_up": "Zlatko is a self-starter who's quietly shipped three distinct, live products spanning healthcare, sports, and productivity \u2014 all with real pricing and working features. The range shows he can identify friction across unrelated domains and build fast without a team or fanfare. Low follower count, high output ratio \u2014 exactly the kind of builder who lets the work speak.",
+        "write_up": "Zlatko is a self-taught product builder who ships \u2014 three live, functional web products (SimpleMedDocs, SportsCal, Uno Link) across healthcare, sports, and utility, each with real pricing and working features. He finds unsexy but real pain points (confusing discharge paperwork, scattered sports schedules) and wraps them in clean, deployable tools. Low follower count, high output \u2014 the kind of builder who lets the products speak.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "reply_id": "2037775702272127227",
       "reply_url": "https://x.com/RobertoYamanaka/status/2037775702272127227",
-      "previous_rank": null,
+      "previous_rank": 9,
       "author": {
         "handle": "RobertoYamanaka",
         "name": "Roberto Yamanaka",
@@ -301,16 +332,16 @@
         "composite": 80
       },
       "enrichment": {
-        "write_up": "Roberto is building privacy-focused payments infrastructure on Starknet at ChipiPay while shipping real products on the side \u2014 Langwaifu is a live iOS app using real-time AI voice to teach Japanese through immersive anime-style conversations, actively updated and fully his own build. He's operating at the intersection of ZK/crypto infrastructure and applied AI agents, which is a rare combo. The kind of builder who doesn't wait for permission \u2014 he just ships.",
+        "write_up": "Roberto is building privacy and payments infrastructure on Starknet at ChipiPay while shipping real products on the side \u2014 Langwaifu is a fully published iOS app that uses real-time AI voice conversations and anime-style UX to teach Japanese, actively updated as of this week. He's operating at the intersection of ZK/crypto infrastructure and consumer AI agents, which is a rare combo. The kind of builder who doesn't wait for permission to ship.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "reply_id": "2037607805863985161",
       "reply_url": "https://x.com/Ozair_Khan_zae/status/2037607805863985161",
-      "previous_rank": 9,
+      "previous_rank": 10,
       "author": {
         "handle": "Ozair_Khan_zae",
         "name": "Ozair Khan",
@@ -334,16 +365,16 @@
         "composite": 79
       },
       "enrichment": {
-        "write_up": "Ozair built smash.watch, a live esports analytics platform that ingests competitive Smash Bros. bracket data and surfaces player rankings using weighted win rates and opponent strength metrics \u2014 basically a mini sports analytics engine for a notoriously hard-to-quantify competitive scene. The interactive scatter plot dashboard and state-level filtering show he thinks in products, not just scripts. Quiet online presence, but the work speaks louder.",
+        "write_up": "Ozair built smash.watch, a live esports analytics platform that crunches competitive Super Smash Bros. bracket data to surface player rankings using weighted win rates and opponent strength \u2014 not just raw scores. He shipped the whole thing end-to-end: interactive scatter plot dashboard, filter controls, docs, and a clean deployment at a custom domain. Small follower count, but the work speaks louder \u2014 this is someone who picks a hard data problem and actually finishes it.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "reply_id": "2037588257769230484",
       "reply_url": "https://x.com/janndriessen/status/2037588257769230484",
-      "previous_rank": 10,
+      "previous_rank": 11,
       "author": {
         "handle": "janndriessen",
         "name": "JD\ud83d\udd76\u26a1\ufe0f",
@@ -365,16 +396,16 @@
         "composite": 79
       },
       "enrichment": {
-        "write_up": "Jan is a full-stack crypto engineer who shipped a production TypeScript SDK for Index Coop that's live on npm and still getting commits in 2026 \u2014 not a side project, actual infrastructure people depend on. He solo-built a DeFi iOS app from scratch in Swift with Passkeys and Morpho integration, and has multiple ETHGlobal hackathon wins stacked on top. The kind of guy who quietly owns entire product surfaces end-to-end without needing a team around him.",
+        "write_up": "JD is a full-stack crypto engineer who shipped the FlashMint SDK solo at Index Coop \u2014 a production TypeScript library on npm that handles flash minting of DeFi tokens on Ethereum, with real commits and active maintenance into 2026. He also built a DeFi Earn iOS app from scratch using Swift, Passkeys, and Morpho, which signals he can own the full stack from protocol layer to consumer product. Multiple ETHGlobal hackathon wins round out the picture \u2014 this is a builder who ships in pressure situations, not just side projects that die in a repo.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "reply_id": "2037581431543652713",
       "reply_url": "https://x.com/anuukriti/status/2037581431543652713",
-      "previous_rank": 11,
+      "previous_rank": 12,
       "author": {
         "handle": "anuukriti",
         "name": "Anukriti",
@@ -401,16 +432,16 @@
         "composite": 79
       },
       "enrichment": {
-        "write_up": "Anukriti is a builder with a sharp eye for real-world utility \u2014 her standout project 'straitwatch' is a live geopolitical intelligence tool that cross-references AIS vessel tracking with OFAC sanctions data to surface shadow fleet activity, built in Next.js/TypeScript. She's also shipping AI-native tools like 'mamas-kb,' which turns WhatsApp group chaos into a searchable knowledge base using Claude \u2014 practical, scrappy, and actually deployed. As projects lead at Cape Cellular, she's not just a side-project hobbyist; she operates at the intersection of infrastructure, data, and product.",
+        "write_up": "Anukriti is a projects lead at Cape Cellular who clearly can't stop shipping \u2014 her GitHub shows live tools ranging from a real-time sanctions/shadow fleet vessel tracker (AIS + OFAC data, Next.js/TypeScript) to an AI-powered knowledge extractor that turns WhatsApp group chaos into a searchable resource using Claude. The sanctions tracking project alone signals she's comfortable operating at the intersection of geopolitics, real-time data pipelines, and clean front-end execution \u2014 not a common combo. Someone who builds a shadow fleet dashboard for fun is exactly the kind of person who'll find the most interesting problems at Ramp.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "reply_id": "2037619206624039208",
       "reply_url": "https://x.com/Pnlpal/status/2037619206624039208",
-      "previous_rank": 12,
+      "previous_rank": 13,
       "author": {
         "handle": "Pnlpal",
         "name": "Penpal",
@@ -435,16 +466,16 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "Shipped four working products in a single week \u2014 an iOS fitness tracker, a Telegram bot pulling live blockchain data via Nansen, a 3D browser game built in React + Three.js, and a Solana vanity address generator with Privy key management. That's not a portfolio, that's a one-person sprint team. Crypto-native product brain with the full-stack execution to back it up \u2014 rare combo.",
+        "write_up": "Shipped four working products in a single week \u2014 an iOS fitness tracker, a Telegram bot pulling live Nansen blockchain data, a 3D browser game built in React + Three.js, and a Solana vanity address generator with Privy key management. That's not a portfolio, that's a velocity flex. Comes with crypto product architecture chops and Web3 context (building @uniqmint & @codewithvibes), so they can move fast across both Web2 and Web3 stacks without hand-holding.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "reply_id": "2037589086018383961",
       "reply_url": "https://x.com/MacKub94/status/2037589086018383961",
-      "previous_rank": 13,
+      "previous_rank": 14,
       "author": {
         "handle": "MacKub94",
         "name": "maciek kubinski",
@@ -466,16 +497,16 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "Maciek is a self-taught builder who went from 4 years of professional poker to 5 years of software development \u2014 and that combination shows. He solo-shipped a mobile app (Skanujemy.app) that hit 4K users, 350 paid subs, and $3,500 MRR in under 4 months, with enough traffic to throw 429s. The poker background isn't a quirk \u2014 it signals sharp probabilistic thinking and a high tolerance for risk/reward tradeoffs, exactly the mindset you want at an early-stage fintech.",
+        "write_up": "Maciek is a solo founder who built and shipped a mobile app to $3,500 MRR and 350 paying users in under 4 months \u2014 no team, no noise. His background is unusual: 4 years as a professional poker player before pivoting to 5 years of software development, which means he's wired for risk calibration, pattern recognition, and execution under pressure. The 429 errors on his live app aren't a bug \u2014 they're a signal that real people are actually using it.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 15,
+      "rank": 16,
       "reply_id": "2037601871062335772",
       "reply_url": "https://x.com/im_hash_im/status/2037601871062335772",
-      "previous_rank": 14,
+      "previous_rank": 15,
       "author": {
         "handle": "im_hash_im",
         "name": "Hash",
@@ -499,16 +530,16 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "Hash is a London-based physicist-turned-engineer who bridges ops and SWE while shipping real products on the side \u2014 Hachi, his Iraqi Arabic learning iOS app, has a 5.0 App Store rating and 200+ active learners across 15+ countries, built entirely without institutional backing. He's also mid-build on Manzil, a halal food discovery app, while running a software agency \u2014 the kind of person who doesn't wait for permission to build. Rare combo of technical depth, product taste, and operator mindset.",
+        "write_up": "Hash is a London-based physicist-turned-engineer who runs a software agency and ships real products on the side \u2014 Hachi, his Iraqi Arabic learning iOS app, has a 5.0 App Store rating and 200+ active learners across 15 countries, which is not a hobby project, that's a real product with real retention. He straddles ops and engineering, and the combo of technical depth, product sense, and ability to serve niche underserved markets (Iraqi dialect learners, halal food discovery) signals someone who finds gaps and fills them without asking for permission. Low follower count, high output \u2014 exactly the kind of person who's been too busy building to tweet about it.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "reply_id": "2037684297985892717",
       "reply_url": "https://x.com/TeslaFSDHunter/status/2037684297985892717",
-      "previous_rank": null,
+      "previous_rank": 16,
       "author": {
         "handle": "TeslaFSDHunter",
         "name": "FSD Hunter",
@@ -530,16 +561,16 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "FSD Hunter built and shipped a niche iOS app that hit #1 in the App Store Shopping category \u2014 no hype, just a focused product that clearly found its market. They identified a specific pain point in the used EV space (finding FSD-included Teslas without overpaying), built a tool to solve it, and let the rankings do the talking. Small follower count, outsized execution \u2014 exactly the kind of scrappy builder who gets things done without needing a team around them.",
+        "write_up": "Built and shipped FSD Hunter solo \u2014 a niche iOS app that indexes used Teslas with premium software packages, and hit #1 in the App Store Shopping category (free charts). This is exactly the kind of scrappy, data-driven product that requires understanding both consumer behavior and marketplace mechanics. Small following, real traction \u2014 the kind of builder who lets the product speak.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "reply_id": "2037565661384229130",
       "reply_url": "https://x.com/subrhozuh/status/2037565661384229130",
-      "previous_rank": 15,
+      "previous_rank": 17,
       "author": {
         "handle": "subrhozuh",
         "name": "jimmy valentine",
@@ -561,16 +592,16 @@
         "composite": 77
       },
       "enrichment": {
-        "write_up": "Jimmy built AnthroVision, a web app that pulls 24 body measurements accurate to 1cm from a 30-second spinning video \u2014 that's a non-trivial computer vision pipeline shipped and live. He also wired up a Telegram bot integration, showing he thinks about real distribution channels, not just demos. The 'pseudo-intellectual creature of leisure' bio undersells someone who clearly gets things out the door.",
+        "write_up": "Jimmy built AnthroVision, a web app that extracts 24 body measurements accurate to 1cm in under 30 seconds from a single spin video \u2014 that's genuinely hard computer vision work shipped to a live product. He also wired in a Telegram bot integration, showing he thinks about real distribution channels, not just demos. The 'creature of leisure' bio undersells someone who clearly builds fast and finishes things.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "reply_id": "2037590294217290232",
       "reply_url": "https://x.com/10xdevdotio/status/2037590294217290232",
-      "previous_rank": 16,
+      "previous_rank": 18,
       "author": {
         "handle": "10xdevdotio",
         "name": "BetBot NBA Picks",
@@ -592,16 +623,16 @@
         "composite": 77
       },
       "enrichment": {
-        "write_up": "Built and monetized BetBot \u2014 a live AI-powered NBA betting platform with autonomous agents, multi-pass research pipelines, and a publicly auditable pick record (56.9% win rate) \u2014 all at $19.99/month with real paying users. This isn't a side project demo; it's a full-stack product with subscriptions, SMS delivery, and odds scraping running in production. The kind of builder who ships end-to-end systems fast and puts their work on the line with real accountability.",
+        "write_up": "Built and monetized BetBot \u2014 a live AI-powered NBA betting platform with autonomous agents that scrape odds, run dual pre-game research passes, and deliver picks with edge ratings via dashboard and SMS, all for $19.99/month. The pick record is publicly auditable (33W-25L, 56.9%), which means they're confident enough in the system to let the data speak for itself. This is someone who ships end-to-end products fast \u2014 AI pipelines, subscriptions, real-time data, and a clean user-facing product \u2014 not just demos.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "reply_id": "2037741248069656824",
       "reply_url": "https://x.com/itskarenred/status/2037741248069656824",
-      "previous_rank": null,
+      "previous_rank": 19,
       "author": {
         "handle": "itskarenred",
         "name": "KarenR",
@@ -629,16 +660,16 @@
         "composite": 77
       },
       "enrichment": {
-        "write_up": "Karen is a solo product designer who's shipped 8+ live SaaS products since May 2024 \u2014 think SEC insider trading trackers, GitHub discovery tools, and Cloudflare D1 GUIs \u2014 all built and launched independently on a modern stack (Next.js, Cloudflare Workers, Supabase, Stripe). That's not a portfolio, that's a one-person product studio. The breadth of domains she's tackled (fintech data, dev tooling, client collaboration) signals strong product instincts, not just design chops.",
+        "write_up": "Karen is a Lead Product Designer who's quietly shipped 8+ live SaaS products solo since May 2024 \u2014 everything from an SEC insider trading tracker to a Cloudflare D1 GUI \u2014 which means she's not just designing, she's building and launching end-to-end. Her stack (Next.js, Cloudflare Workers, Supabase, Stripe) and the breadth of domains she's tackled in under a year signals someone who moves fast and doesn't wait for engineers to execute her vision. Rare find: a designer who can own the full product lifecycle.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "reply_id": "2037598949633052953",
       "reply_url": "https://x.com/flamygg/status/2037598949633052953",
-      "previous_rank": 17,
+      "previous_rank": 20,
       "author": {
         "handle": "flamygg",
         "name": "flamy.gg",
@@ -660,16 +691,16 @@
         "composite": 76
       },
       "enrichment": {
-        "write_up": "Flamy built the first analytics terminal for predict.fun from scratch \u2014 real-time whale tracking, live trade charts, UMA oracle monitoring, and market intelligence across $10M+ daily volume with sub-1s latency. It's live, free, and requires no account, which means they shipped something genuinely usable, not just a demo. Small follower count but building infrastructure for a fast-moving prediction markets ecosystem signals they're deep in the weeds before the crowd shows up.",
+        "write_up": "Flamy built the first third-party terminal for predict.fun from scratch \u2014 real-time whale tracking, oracle monitoring, live trade charts, sub-1 second latency across $10M+ daily volume. No login, no paywall, just shipped. Small following but the product speaks louder \u2014 this is someone who identifies a gap in a fast-moving market and fills it before anyone else does.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "reply_id": "2037602122364076198",
       "reply_url": "https://x.com/streamclout_io/status/2037602122364076198",
-      "previous_rank": 18,
+      "previous_rank": 21,
       "author": {
         "handle": "streamclout_io",
         "name": "streamclout",
@@ -693,10 +724,10 @@
       "enrichment": null
     },
     {
-      "rank": 22,
+      "rank": 23,
       "reply_id": "2037591035862192321",
       "reply_url": "https://x.com/kylem_dev/status/2037591035862192321",
-      "previous_rank": 19,
+      "previous_rank": 22,
       "author": {
         "handle": "kylem_dev",
         "name": "Kyle Moore",
@@ -724,10 +755,10 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "reply_id": "2037584520849785335",
       "reply_url": "https://x.com/victr22/status/2037584520849785335",
-      "previous_rank": 20,
+      "previous_rank": 23,
       "author": {
         "handle": "victr22",
         "name": "vik",
@@ -755,10 +786,10 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 25,
       "reply_id": "2037582660810211825",
       "reply_url": "https://x.com/CJKMerriman/status/2037582660810211825",
-      "previous_rank": 21,
+      "previous_rank": 24,
       "author": {
         "handle": "CJKMerriman",
         "name": "\ud83e\udd26\ud83c\udffb\u200d\u2640\ufe0f Callum",
@@ -786,10 +817,10 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 26,
       "reply_id": "2037578910720831642",
       "reply_url": "https://x.com/itsandrewrivers/status/2037578910720831642",
-      "previous_rank": 22,
+      "previous_rank": 25,
       "author": {
         "handle": "itsandrewrivers",
         "name": "Andrew Rivers",
@@ -817,10 +848,10 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 27,
       "reply_id": "2037574674700189753",
       "reply_url": "https://x.com/vec0zy/status/2037574674700189753",
-      "previous_rank": 23,
+      "previous_rank": 26,
       "author": {
         "handle": "vec0zy",
         "name": "cozy",
@@ -854,10 +885,10 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 28,
       "reply_id": "2037659103913193680",
       "reply_url": "https://x.com/vincentaamato/status/2037659103913193680",
-      "previous_rank": 24,
+      "previous_rank": 27,
       "author": {
         "handle": "vincentaamato",
         "name": "Vincent Amato",
@@ -881,10 +912,10 @@
       "enrichment": null
     },
     {
-      "rank": 28,
+      "rank": 29,
       "reply_id": "2037710009576919428",
       "reply_url": "https://x.com/mex_nokws/status/2037710009576919428",
-      "previous_rank": null,
+      "previous_rank": 28,
       "author": {
         "handle": "mex_nokws",
         "name": "Mex Nokws",
@@ -912,10 +943,10 @@
       "enrichment": null
     },
     {
-      "rank": 29,
+      "rank": 30,
       "reply_id": "2037707555820982498",
       "reply_url": "https://x.com/rhythmpanch_/status/2037707555820982498",
-      "previous_rank": null,
+      "previous_rank": 29,
       "author": {
         "handle": "rhythmpanch_",
         "name": "Rhythm Panchal",
@@ -941,10 +972,10 @@
       "enrichment": null
     },
     {
-      "rank": 30,
+      "rank": 31,
       "reply_id": "2037591447948431743",
       "reply_url": "https://x.com/MaddaliManu/status/2037591447948431743",
-      "previous_rank": 25,
+      "previous_rank": 30,
       "author": {
         "handle": "MaddaliManu",
         "name": "Manu",
@@ -970,10 +1001,10 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "reply_id": "2037582939882664383",
       "reply_url": "https://x.com/RawJobbed/status/2037582939882664383",
-      "previous_rank": 26,
+      "previous_rank": 31,
       "author": {
         "handle": "RawJobbed",
         "name": "Raw Jobs",
@@ -997,10 +1028,10 @@
       "enrichment": null
     },
     {
-      "rank": 32,
+      "rank": 33,
       "reply_id": "2037585241649365215",
       "reply_url": "https://x.com/CharityBetDave/status/2037585241649365215",
-      "previous_rank": 27,
+      "previous_rank": 32,
       "author": {
         "handle": "CharityBetDave",
         "name": "Dave Maloney",
@@ -1024,10 +1055,10 @@
       "enrichment": null
     },
     {
-      "rank": 33,
+      "rank": 34,
       "reply_id": "2037670668683059432",
       "reply_url": "https://x.com/montesdeocajijo/status/2037670668683059432",
-      "previous_rank": 28,
+      "previous_rank": 33,
       "author": {
         "handle": "montesdeocajijo",
         "name": "Leo Ackerman",
@@ -1053,10 +1084,10 @@
       "enrichment": null
     },
     {
-      "rank": 34,
+      "rank": 35,
       "reply_id": "2037614948696658252",
       "reply_url": "https://x.com/SVarrera25357/status/2037614948696658252",
-      "previous_rank": 29,
+      "previous_rank": 34,
       "author": {
         "handle": "SVarrera25357",
         "name": "Saul Varrera",
@@ -1082,10 +1113,10 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 36,
       "reply_id": "2037609615999828364",
       "reply_url": "https://x.com/firatcand/status/2037609615999828364",
-      "previous_rank": 30,
+      "previous_rank": 35,
       "author": {
         "handle": "firatcand",
         "name": "Fred Dogan",
@@ -1113,10 +1144,10 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 37,
       "reply_id": "2037574220637777986",
       "reply_url": "https://x.com/SiddhuDai/status/2037574220637777986",
-      "previous_rank": 31,
+      "previous_rank": 36,
       "author": {
         "handle": "SiddhuDai",
         "name": "Sid Dai",
@@ -1147,10 +1178,10 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 38,
       "reply_id": "2037572621806580053",
       "reply_url": "https://x.com/thetronchguy/status/2037572621806580053",
-      "previous_rank": 32,
+      "previous_rank": 37,
       "author": {
         "handle": "thetronchguy",
         "name": "saint",
@@ -1179,10 +1210,10 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 39,
       "reply_id": "2037588373100019780",
       "reply_url": "https://x.com/hariharprasadd/status/2037588373100019780",
-      "previous_rank": 33,
+      "previous_rank": 38,
       "author": {
         "handle": "hariharprasadd",
         "name": "Harihar Prasad",
@@ -1209,10 +1240,10 @@
       "enrichment": null
     },
     {
-      "rank": 39,
+      "rank": 40,
       "reply_id": "2037587872610721901",
       "reply_url": "https://x.com/charles07_s/status/2037587872610721901",
-      "previous_rank": 34,
+      "previous_rank": 39,
       "author": {
         "handle": "charles07_s",
         "name": "charles s.",
@@ -1237,10 +1268,10 @@
       "enrichment": null
     },
     {
-      "rank": 40,
+      "rank": 41,
       "reply_id": "2037577138849906907",
       "reply_url": "https://x.com/oncelcebeci/status/2037577138849906907",
-      "previous_rank": 35,
+      "previous_rank": 40,
       "author": {
         "handle": "oncelcebeci",
         "name": "Oncel Cebeci",
@@ -1266,10 +1297,10 @@
       "enrichment": null
     },
     {
-      "rank": 41,
+      "rank": 42,
       "reply_id": "2037843394689667210",
       "reply_url": "https://x.com/aaliyan_mu/status/2037843394689667210",
-      "previous_rank": null,
+      "previous_rank": 41,
       "author": {
         "handle": "aaliyan_mu",
         "name": "Aaliyan Mushtaq",
@@ -1293,10 +1324,10 @@
       "enrichment": null
     },
     {
-      "rank": 42,
+      "rank": 43,
       "reply_id": "2037590587210403923",
       "reply_url": "https://x.com/c0ncepT314/status/2037590587210403923",
-      "previous_rank": 36,
+      "previous_rank": 42,
       "author": {
         "handle": "c0ncepT314",
         "name": "Vamsi Vinta",
@@ -1322,10 +1353,10 @@
       "enrichment": null
     },
     {
-      "rank": 43,
+      "rank": 44,
       "reply_id": "2037590570458079539",
       "reply_url": "https://x.com/godsent_izinyon/status/2037590570458079539",
-      "previous_rank": 37,
+      "previous_rank": 43,
       "author": {
         "handle": "godsent_izinyon",
         "name": "Godsent Izinyon",
@@ -1349,10 +1380,10 @@
       "enrichment": null
     },
     {
-      "rank": 44,
+      "rank": 45,
       "reply_id": "2037584284618535132",
       "reply_url": "https://x.com/iamanupdhakal/status/2037584284618535132",
-      "previous_rank": 38,
+      "previous_rank": 44,
       "author": {
         "handle": "iamanupdhakal",
         "name": "Anup Dhakal",
@@ -1379,10 +1410,10 @@
       "enrichment": null
     },
     {
-      "rank": 45,
+      "rank": 46,
       "reply_id": "2037570529755095215",
       "reply_url": "https://x.com/buildwithfede/status/2037570529755095215",
-      "previous_rank": 39,
+      "previous_rank": 45,
       "author": {
         "handle": "buildwithfede",
         "name": "Fede",
@@ -1407,10 +1438,10 @@
       "enrichment": null
     },
     {
-      "rank": 46,
+      "rank": 47,
       "reply_id": "2037625855447626178",
       "reply_url": "https://x.com/Eflo1978/status/2037625855447626178",
-      "previous_rank": 40,
+      "previous_rank": 46,
       "author": {
         "handle": "Eflo1978",
         "name": "Eflo",
@@ -1434,10 +1465,10 @@
       "enrichment": null
     },
     {
-      "rank": 47,
+      "rank": 48,
       "reply_id": "2037593955454669297",
       "reply_url": "https://x.com/popo_banana/status/2037593955454669297",
-      "previous_rank": 41,
+      "previous_rank": 47,
       "author": {
         "handle": "popo_banana",
         "name": "Banana POPO",
@@ -1461,10 +1492,10 @@
       "enrichment": null
     },
     {
-      "rank": 48,
+      "rank": 49,
       "reply_id": "2037573012749172899",
       "reply_url": "https://x.com/odincode/status/2037573012749172899",
-      "previous_rank": 42,
+      "previous_rank": 48,
       "author": {
         "handle": "odincode",
         "name": "Mikey",
@@ -1490,10 +1521,10 @@
       "enrichment": null
     },
     {
-      "rank": 49,
+      "rank": 50,
       "reply_id": "2037614356171477312",
       "reply_url": "https://x.com/edisonjoao6871/status/2037614356171477312",
-      "previous_rank": 43,
+      "previous_rank": 49,
       "author": {
         "handle": "edisonjoao6871",
         "name": "Edison Jo\u00e3o",
@@ -1519,10 +1550,10 @@
       "enrichment": null
     },
     {
-      "rank": 50,
+      "rank": 51,
       "reply_id": "2037575789772996653",
       "reply_url": "https://x.com/kunalbhusare/status/2037575789772996653",
-      "previous_rank": 44,
+      "previous_rank": 50,
       "author": {
         "handle": "kunalbhusare",
         "name": "Kunal Bhusare",
@@ -1547,10 +1578,10 @@
       "enrichment": null
     },
     {
-      "rank": 51,
+      "rank": 52,
       "reply_id": "2037575685988864452",
       "reply_url": "https://x.com/gsmmtt/status/2037575685988864452",
-      "previous_rank": 45,
+      "previous_rank": 51,
       "author": {
         "handle": "gsmmtt",
         "name": "Gilbert",
@@ -1574,10 +1605,10 @@
       "enrichment": null
     },
     {
-      "rank": 52,
+      "rank": 53,
       "reply_id": "2037599877480280078",
       "reply_url": "https://x.com/lucia_noah/status/2037599877480280078",
-      "previous_rank": 46,
+      "previous_rank": 52,
       "author": {
         "handle": "lucia_noah",
         "name": "Noah Lucia",
@@ -1599,10 +1630,10 @@
       "enrichment": null
     },
     {
-      "rank": 53,
+      "rank": 54,
       "reply_id": "2037707901997814214",
       "reply_url": "https://x.com/triggerlab_io/status/2037707901997814214",
-      "previous_rank": null,
+      "previous_rank": 53,
       "author": {
         "handle": "triggerlab_io",
         "name": "Abdul Basit",
@@ -1627,10 +1658,10 @@
       "enrichment": null
     },
     {
-      "rank": 54,
+      "rank": 55,
       "reply_id": "2037614848297574493",
       "reply_url": "https://x.com/edisonjoao6871/status/2037614848297574493",
-      "previous_rank": 47,
+      "previous_rank": 54,
       "author": {
         "handle": "edisonjoao6871",
         "name": "Edison Jo\u00e3o",
@@ -1656,10 +1687,10 @@
       "enrichment": null
     },
     {
-      "rank": 55,
+      "rank": 56,
       "reply_id": "2037569409301033344",
       "reply_url": "https://x.com/kuberdenis/status/2037569409301033344",
-      "previous_rank": 48,
+      "previous_rank": 55,
       "author": {
         "handle": "kuberdenis",
         "name": "Denislav Gavrilov",
@@ -1687,10 +1718,10 @@
       "enrichment": null
     },
     {
-      "rank": 56,
+      "rank": 57,
       "reply_id": "2037561037063635081",
       "reply_url": "https://x.com/_nwyin/status/2037561037063635081",
-      "previous_rank": 49,
+      "previous_rank": 56,
       "author": {
         "handle": "_nwyin",
         "name": "nwyin",
@@ -1715,10 +1746,10 @@
       "enrichment": null
     },
     {
-      "rank": 57,
+      "rank": 58,
       "reply_id": "2037635087475384442",
       "reply_url": "https://x.com/_faizm/status/2037635087475384442",
-      "previous_rank": 50,
+      "previous_rank": 57,
       "author": {
         "handle": "_faizm",
         "name": "faiz",
@@ -1743,10 +1774,10 @@
       "enrichment": null
     },
     {
-      "rank": 58,
+      "rank": 59,
       "reply_id": "2037600737434435870",
       "reply_url": "https://x.com/therexycodes/status/2037600737434435870",
-      "previous_rank": 51,
+      "previous_rank": 58,
       "author": {
         "handle": "therexycodes",
         "name": "TheRexyCodes",
@@ -1772,10 +1803,10 @@
       "enrichment": null
     },
     {
-      "rank": 59,
+      "rank": 60,
       "reply_id": "2037560405547970654",
       "reply_url": "https://x.com/tadasgedgaudas/status/2037560405547970654",
-      "previous_rank": 52,
+      "previous_rank": 59,
       "author": {
         "handle": "tadasgedgaudas",
         "name": "TadasG \ud83d\udcbb",
@@ -1799,10 +1830,10 @@
       "enrichment": null
     },
     {
-      "rank": 60,
+      "rank": 61,
       "reply_id": "2037621282787725537",
       "reply_url": "https://x.com/n_matamoros/status/2037621282787725537",
-      "previous_rank": 53,
+      "previous_rank": 60,
       "author": {
         "handle": "n_matamoros",
         "name": "Nick M",
@@ -1827,10 +1858,10 @@
       "enrichment": null
     },
     {
-      "rank": 61,
+      "rank": 62,
       "reply_id": "2037614416431055015",
       "reply_url": "https://x.com/TrevorLongino/status/2037614416431055015",
-      "previous_rank": 54,
+      "previous_rank": 61,
       "author": {
         "handle": "TrevorLongino",
         "name": "Trevor Longino",
@@ -1858,10 +1889,10 @@
       "enrichment": null
     },
     {
-      "rank": 62,
+      "rank": 63,
       "reply_id": "2037602537743040818",
       "reply_url": "https://x.com/SaviPabla/status/2037602537743040818",
-      "previous_rank": 55,
+      "previous_rank": 62,
       "author": {
         "handle": "SaviPabla",
         "name": "Savi",
@@ -1886,10 +1917,10 @@
       "enrichment": null
     },
     {
-      "rank": 63,
+      "rank": 64,
       "reply_id": "2037641535139836380",
       "reply_url": "https://x.com/will_lam/status/2037641535139836380",
-      "previous_rank": 56,
+      "previous_rank": 63,
       "author": {
         "handle": "will_lam",
         "name": "Will Lam",
@@ -1913,10 +1944,10 @@
       "enrichment": null
     },
     {
-      "rank": 64,
+      "rank": 65,
       "reply_id": "2037597209974235139",
       "reply_url": "https://x.com/e_kopen/status/2037597209974235139",
-      "previous_rank": 57,
+      "previous_rank": 64,
       "author": {
         "handle": "e_kopen",
         "name": "Eric Kopen",
@@ -1940,10 +1971,10 @@
       "enrichment": null
     },
     {
-      "rank": 65,
+      "rank": 66,
       "reply_id": "2037860680787972515",
       "reply_url": "https://x.com/sankalpdomore/status/2037860680787972515",
-      "previous_rank": null,
+      "previous_rank": 65,
       "author": {
         "handle": "sankalpdomore",
         "name": "Sankalp Sinha (Left $15K+ MRR job to indiehack)",
@@ -1968,10 +1999,10 @@
       "enrichment": null
     },
     {
-      "rank": 66,
+      "rank": 67,
       "reply_id": "2037779643453804694",
       "reply_url": "https://x.com/inoise/status/2037779643453804694",
-      "previous_rank": null,
+      "previous_rank": 66,
       "author": {
         "handle": "inoise",
         "name": "Ivan Shumov",
@@ -1996,10 +2027,10 @@
       "enrichment": null
     },
     {
-      "rank": 67,
+      "rank": 68,
       "reply_id": "2037761805280260351",
       "reply_url": "https://x.com/SSacrament94313/status/2037761805280260351",
-      "previous_rank": null,
+      "previous_rank": 67,
       "author": {
         "handle": "SSacrament94313",
         "name": "Sacramento King",
@@ -2026,10 +2057,10 @@
       "enrichment": null
     },
     {
-      "rank": 68,
+      "rank": 69,
       "reply_id": "2037598815163715809",
       "reply_url": "https://x.com/siddhantparadox/status/2037598815163715809",
-      "previous_rank": 58,
+      "previous_rank": 68,
       "author": {
         "handle": "siddhantparadox",
         "name": "Siddhant Gupta",
@@ -2053,10 +2084,10 @@
       "enrichment": null
     },
     {
-      "rank": 69,
+      "rank": 70,
       "reply_id": "2037575320715366498",
       "reply_url": "https://x.com/Moore/status/2037575320715366498",
-      "previous_rank": 59,
+      "previous_rank": 69,
       "author": {
         "handle": "Moore",
         "name": "Jonathan Moore",
@@ -2081,10 +2112,10 @@
       "enrichment": null
     },
     {
-      "rank": 70,
+      "rank": 71,
       "reply_id": "2037569981693530171",
       "reply_url": "https://x.com/o_fabriciosouza/status/2037569981693530171",
-      "previous_rank": 60,
+      "previous_rank": 70,
       "author": {
         "handle": "o_fabriciosouza",
         "name": "Fabricio \u2794 gitquest.dev",
@@ -2108,10 +2139,10 @@
       "enrichment": null
     },
     {
-      "rank": 71,
+      "rank": 72,
       "reply_id": "2037566639428808952",
       "reply_url": "https://x.com/projectanas/status/2037566639428808952",
-      "previous_rank": 61,
+      "previous_rank": 71,
       "author": {
         "handle": "projectanas",
         "name": "Anas",
@@ -2135,10 +2166,10 @@
       "enrichment": null
     },
     {
-      "rank": 72,
+      "rank": 73,
       "reply_id": "2037645294389821553",
       "reply_url": "https://x.com/croculator/status/2037645294389821553",
-      "previous_rank": 62,
+      "previous_rank": 72,
       "author": {
         "handle": "croculator",
         "name": "Croculator",
@@ -2162,10 +2193,10 @@
       "enrichment": null
     },
     {
-      "rank": 73,
+      "rank": 74,
       "reply_id": "2037722465506648255",
       "reply_url": "https://x.com/feifei_qiu/status/2037722465506648255",
-      "previous_rank": null,
+      "previous_rank": 73,
       "author": {
         "handle": "feifei_qiu",
         "name": "Feifei Qiu",
@@ -2190,10 +2221,10 @@
       "enrichment": null
     },
     {
-      "rank": 74,
+      "rank": 75,
       "reply_id": "2037623879410332130",
       "reply_url": "https://x.com/racerpersonguy/status/2037623879410332130",
-      "previous_rank": 63,
+      "previous_rank": 74,
       "author": {
         "handle": "racerpersonguy",
         "name": "Brett Benassi",
@@ -2217,10 +2248,10 @@
       "enrichment": null
     },
     {
-      "rank": 75,
+      "rank": 76,
       "reply_id": "2037581924789858398",
       "reply_url": "https://x.com/Danmontgomery/status/2037581924789858398",
-      "previous_rank": 64,
+      "previous_rank": 75,
       "author": {
         "handle": "Danmontgomery",
         "name": "Daniel Montgomery",
@@ -2244,10 +2275,10 @@
       "enrichment": null
     },
     {
-      "rank": 76,
+      "rank": 77,
       "reply_id": "2037643864492671018",
       "reply_url": "https://x.com/wahm0017/status/2037643864492671018",
-      "previous_rank": 65,
+      "previous_rank": 76,
       "author": {
         "handle": "wahm0017",
         "name": "Saladin",
@@ -2271,10 +2302,10 @@
       "enrichment": null
     },
     {
-      "rank": 77,
+      "rank": 78,
       "reply_id": "2037580026611433914",
       "reply_url": "https://x.com/asagarwal10/status/2037580026611433914",
-      "previous_rank": 66,
+      "previous_rank": 77,
       "author": {
         "handle": "asagarwal10",
         "name": "Ashish Agarwal",
@@ -2299,10 +2330,10 @@
       "enrichment": null
     },
     {
-      "rank": 78,
+      "rank": 79,
       "reply_id": "2037574232566018512",
       "reply_url": "https://x.com/mojeebeth/status/2037574232566018512",
-      "previous_rank": 67,
+      "previous_rank": 78,
       "author": {
         "handle": "mojeebeth",
         "name": "Mojeeb | Arcapush.com",
@@ -2334,10 +2365,10 @@
       "enrichment": null
     },
     {
-      "rank": 79,
+      "rank": 80,
       "reply_id": "2037567523395420458",
       "reply_url": "https://x.com/pranav6226/status/2037567523395420458",
-      "previous_rank": 68,
+      "previous_rank": 79,
       "author": {
         "handle": "pranav6226",
         "name": "Pranav Mahesh",
@@ -2362,10 +2393,10 @@
       "enrichment": null
     },
     {
-      "rank": 80,
+      "rank": 81,
       "reply_id": "2037600623630135421",
       "reply_url": "https://x.com/_BurntUniverse/status/2037600623630135421",
-      "previous_rank": 69,
+      "previous_rank": 80,
       "author": {
         "handle": "_BurntUniverse",
         "name": "Orlando",
@@ -2389,10 +2420,10 @@
       "enrichment": null
     },
     {
-      "rank": 81,
+      "rank": 82,
       "reply_id": "2037580828125872389",
       "reply_url": "https://x.com/14hous/status/2037580828125872389",
-      "previous_rank": 70,
+      "previous_rank": 81,
       "author": {
         "handle": "14hous",
         "name": "Drew Redloh",
@@ -2417,10 +2448,10 @@
       "enrichment": null
     },
     {
-      "rank": 82,
+      "rank": 83,
       "reply_id": "2037666244422250815",
       "reply_url": "https://x.com/Mik3yPttr/status/2037666244422250815",
-      "previous_rank": 71,
+      "previous_rank": 82,
       "author": {
         "handle": "Mik3yPttr",
         "name": "Mik3y",
@@ -2445,10 +2476,10 @@
       "enrichment": null
     },
     {
-      "rank": 83,
+      "rank": 84,
       "reply_id": "2037584726727258559",
       "reply_url": "https://x.com/bennyconnn/status/2037584726727258559",
-      "previous_rank": null,
+      "previous_rank": 83,
       "author": {
         "handle": "bennyconnn",
         "name": "Benny Conn",
@@ -2470,10 +2501,10 @@
       "enrichment": null
     },
     {
-      "rank": 84,
+      "rank": 85,
       "reply_id": "2037894451599655043",
       "reply_url": "https://x.com/NelsonColonJr/status/2037894451599655043",
-      "previous_rank": null,
+      "previous_rank": 84,
       "author": {
         "handle": "NelsonColonJr",
         "name": "NColonJr",
@@ -2498,10 +2529,10 @@
       "enrichment": null
     },
     {
-      "rank": 85,
+      "rank": 86,
       "reply_id": "2037714487101317597",
       "reply_url": "https://x.com/manan_suneja/status/2037714487101317597",
-      "previous_rank": null,
+      "previous_rank": 85,
       "author": {
         "handle": "manan_suneja",
         "name": "Manan",
@@ -2525,10 +2556,10 @@
       "enrichment": null
     },
     {
-      "rank": 86,
+      "rank": 87,
       "reply_id": "2037626094287749579",
       "reply_url": "https://x.com/tchadwhitaker/status/2037626094287749579",
-      "previous_rank": 72,
+      "previous_rank": 86,
       "author": {
         "handle": "tchadwhitaker",
         "name": "Chad Whitaker",
@@ -2552,10 +2583,10 @@
       "enrichment": null
     },
     {
-      "rank": 87,
+      "rank": 88,
       "reply_id": "2037594165257580648",
       "reply_url": "https://x.com/Two_dollarBill/status/2037594165257580648",
-      "previous_rank": 73,
+      "previous_rank": 87,
       "author": {
         "handle": "Two_dollarBill",
         "name": "Bruno Quagliata",
@@ -2579,10 +2610,10 @@
       "enrichment": null
     },
     {
-      "rank": 88,
+      "rank": 89,
       "reply_id": "2037632878821994685",
       "reply_url": "https://x.com/AmbarSNY/status/2037632878821994685",
-      "previous_rank": 74,
+      "previous_rank": 88,
       "author": {
         "handle": "AmbarSNY",
         "name": "Ambar Shrivastava",
@@ -2608,10 +2639,10 @@
       "enrichment": null
     },
     {
-      "rank": 89,
+      "rank": 90,
       "reply_id": "2037596885297295468",
       "reply_url": "https://x.com/zganieany/status/2037596885297295468",
-      "previous_rank": 75,
+      "previous_rank": 89,
       "author": {
         "handle": "zganieany",
         "name": "Zack Ganieany",
@@ -2635,10 +2666,10 @@
       "enrichment": null
     },
     {
-      "rank": 90,
+      "rank": 91,
       "reply_id": "2037577585563926579",
       "reply_url": "https://x.com/PlanVersion/status/2037577585563926579",
-      "previous_rank": 76,
+      "previous_rank": 90,
       "author": {
         "handle": "PlanVersion",
         "name": "PlanVersion",
@@ -2663,10 +2694,10 @@
       "enrichment": null
     },
     {
-      "rank": 91,
+      "rank": 92,
       "reply_id": "2037576890362347815",
       "reply_url": "https://x.com/brandon_galang/status/2037576890362347815",
-      "previous_rank": 77,
+      "previous_rank": 91,
       "author": {
         "handle": "brandon_galang",
         "name": "Brandon Galang",
@@ -2690,10 +2721,10 @@
       "enrichment": null
     },
     {
-      "rank": 92,
+      "rank": 93,
       "reply_id": "2037828193877454994",
       "reply_url": "https://x.com/eskayML/status/2037828193877454994",
-      "previous_rank": null,
+      "previous_rank": 92,
       "author": {
         "handle": "eskayML",
         "name": "Mechanic \ud835\udd4f",
@@ -2718,10 +2749,10 @@
       "enrichment": null
     },
     {
-      "rank": 93,
+      "rank": 94,
       "reply_id": "2037574647768617092",
       "reply_url": "https://x.com/stephdiedrich/status/2037574647768617092",
-      "previous_rank": 78,
+      "previous_rank": 93,
       "author": {
         "handle": "stephdiedrich",
         "name": "Stephen Diedrich",
@@ -2746,10 +2777,10 @@
       "enrichment": null
     },
     {
-      "rank": 94,
+      "rank": 95,
       "reply_id": "2037571367671857622",
       "reply_url": "https://x.com/0xKilroy/status/2037571367671857622",
-      "previous_rank": 79,
+      "previous_rank": 94,
       "author": {
         "handle": "0xKilroy",
         "name": "0xKilroy",
@@ -2775,10 +2806,10 @@
       "enrichment": null
     },
     {
-      "rank": 95,
+      "rank": 96,
       "reply_id": "2037892219127181477",
       "reply_url": "https://x.com/MeechYourGoals/status/2037892219127181477",
-      "previous_rank": null,
+      "previous_rank": 95,
       "author": {
         "handle": "MeechYourGoals",
         "name": "Christian",
@@ -2803,10 +2834,10 @@
       "enrichment": null
     },
     {
-      "rank": 96,
+      "rank": 97,
       "reply_id": "2037861674242502853",
       "reply_url": "https://x.com/yscal/status/2037861674242502853",
-      "previous_rank": null,
+      "previous_rank": 96,
       "author": {
         "handle": "yscal",
         "name": "Yashar",
@@ -2832,10 +2863,10 @@
       "enrichment": null
     },
     {
-      "rank": 97,
+      "rank": 98,
       "reply_id": "2037615459894456389",
       "reply_url": "https://x.com/faizanwr/status/2037615459894456389",
-      "previous_rank": 80,
+      "previous_rank": 97,
       "author": {
         "handle": "faizanwr",
         "name": "faiz \ud83c\udf49",
@@ -2859,10 +2890,10 @@
       "enrichment": null
     },
     {
-      "rank": 98,
+      "rank": 99,
       "reply_id": "2037569678307184797",
       "reply_url": "https://x.com/WanderSamsara/status/2037569678307184797",
-      "previous_rank": 81,
+      "previous_rank": 98,
       "author": {
         "handle": "WanderSamsara",
         "name": "Konner",
@@ -2888,10 +2919,10 @@
       "enrichment": null
     },
     {
-      "rank": 99,
+      "rank": 100,
       "reply_id": "2037567521860231397",
       "reply_url": "https://x.com/rushikkkk/status/2037567521860231397",
-      "previous_rank": 82,
+      "previous_rank": 99,
       "author": {
         "handle": "rushikkkk",
         "name": "Rushik",
@@ -2916,10 +2947,10 @@
       "enrichment": null
     },
     {
-      "rank": 100,
+      "rank": 101,
       "reply_id": "2037821028680769694",
       "reply_url": "https://x.com/HenryGBerry/status/2037821028680769694",
-      "previous_rank": null,
+      "previous_rank": 100,
       "author": {
         "handle": "HenryGBerry",
         "name": "Henry Berry",
@@ -2944,10 +2975,10 @@
       "enrichment": null
     },
     {
-      "rank": 101,
+      "rank": 102,
       "reply_id": "2037622188673503647",
       "reply_url": "https://x.com/AdrianPatziF/status/2037622188673503647",
-      "previous_rank": 83,
+      "previous_rank": 101,
       "author": {
         "handle": "AdrianPatziF",
         "name": "Adrian Patzi",
@@ -2972,10 +3003,10 @@
       "enrichment": null
     },
     {
-      "rank": 102,
+      "rank": 103,
       "reply_id": "2037620778942840999",
       "reply_url": "https://x.com/marlouiise/status/2037620778942840999",
-      "previous_rank": 84,
+      "previous_rank": 102,
       "author": {
         "handle": "marlouiise",
         "name": "ML Howell",
@@ -3001,10 +3032,10 @@
       "enrichment": null
     },
     {
-      "rank": 103,
+      "rank": 104,
       "reply_id": "2037575877219774748",
       "reply_url": "https://x.com/hugoibanez_/status/2037575877219774748",
-      "previous_rank": 85,
+      "previous_rank": 103,
       "author": {
         "handle": "hugoibanez_",
         "name": "Hugo Ibanez",
@@ -3030,10 +3061,10 @@
       "enrichment": null
     },
     {
-      "rank": 104,
+      "rank": 105,
       "reply_id": "2037569015241973955",
       "reply_url": "https://x.com/WeirdoWizard/status/2037569015241973955",
-      "previous_rank": 86,
+      "previous_rank": 104,
       "author": {
         "handle": "WeirdoWizard",
         "name": "Darshan Gajara",
@@ -3057,10 +3088,10 @@
       "enrichment": null
     },
     {
-      "rank": 105,
+      "rank": 106,
       "reply_id": "2037629335935635490",
       "reply_url": "https://x.com/LookWhatIbuild/status/2037629335935635490",
-      "previous_rank": 87,
+      "previous_rank": 105,
       "author": {
         "handle": "LookWhatIbuild",
         "name": "Shubh",
@@ -3084,10 +3115,10 @@
       "enrichment": null
     },
     {
-      "rank": 106,
+      "rank": 107,
       "reply_id": "2037567539639714305",
       "reply_url": "https://x.com/jaykch/status/2037567539639714305",
-      "previous_rank": 88,
+      "previous_rank": 106,
       "author": {
         "handle": "jaykch",
         "name": "Jay",
@@ -3112,10 +3143,10 @@
       "enrichment": null
     },
     {
-      "rank": 107,
+      "rank": 108,
       "reply_id": "2037674198676701487",
       "reply_url": "https://x.com/SinghMaharshi/status/2037674198676701487",
-      "previous_rank": 89,
+      "previous_rank": 107,
       "author": {
         "handle": "SinghMaharshi",
         "name": "Maharshi Singh",
@@ -3140,10 +3171,10 @@
       "enrichment": null
     },
     {
-      "rank": 108,
+      "rank": 109,
       "reply_id": "2037656205406142585",
       "reply_url": "https://x.com/therealtongchen/status/2037656205406142585",
-      "previous_rank": 90,
+      "previous_rank": 108,
       "author": {
         "handle": "therealtongchen",
         "name": "Tong Chen",
@@ -3167,10 +3198,10 @@
       "enrichment": null
     },
     {
-      "rank": 109,
+      "rank": 110,
       "reply_id": "2037609214554628465",
       "reply_url": "https://x.com/RJstimeoff/status/2037609214554628465",
-      "previous_rank": 91,
+      "previous_rank": 109,
       "author": {
         "handle": "RJstimeoff",
         "name": "RJ",
@@ -3194,10 +3225,10 @@
       "enrichment": null
     },
     {
-      "rank": 110,
+      "rank": 111,
       "reply_id": "2037603339123278174",
       "reply_url": "https://x.com/utilitylabz/status/2037603339123278174",
-      "previous_rank": 92,
+      "previous_rank": 110,
       "author": {
         "handle": "utilitylabz",
         "name": "Utility Labz",
@@ -3222,10 +3253,10 @@
       "enrichment": null
     },
     {
-      "rank": 111,
+      "rank": 112,
       "reply_id": "2037588789028364526",
       "reply_url": "https://x.com/willisdeving/status/2037588789028364526",
-      "previous_rank": 93,
+      "previous_rank": 111,
       "author": {
         "handle": "willisdeving",
         "name": "willdev",
@@ -3249,10 +3280,10 @@
       "enrichment": null
     },
     {
-      "rank": 112,
+      "rank": 113,
       "reply_id": "2037563065810710722",
       "reply_url": "https://x.com/LamitrD/status/2037563065810710722",
-      "previous_rank": 94,
+      "previous_rank": 112,
       "author": {
         "handle": "LamitrD",
         "name": "Lamitr Dhir",
@@ -3278,10 +3309,10 @@
       "enrichment": null
     },
     {
-      "rank": 113,
+      "rank": 114,
       "reply_id": "2037597389348020450",
       "reply_url": "https://x.com/jerchung/status/2037597389348020450",
-      "previous_rank": 95,
+      "previous_rank": 113,
       "author": {
         "handle": "jerchung",
         "name": "Jer Chung",
@@ -3307,10 +3338,10 @@
       "enrichment": null
     },
     {
-      "rank": 114,
+      "rank": 115,
       "reply_id": "2037570416286601455",
       "reply_url": "https://x.com/EricSuNet/status/2037570416286601455",
-      "previous_rank": 96,
+      "previous_rank": 114,
       "author": {
         "handle": "EricSuNet",
         "name": "Eric Su",
@@ -3334,10 +3365,10 @@
       "enrichment": null
     },
     {
-      "rank": 115,
+      "rank": 116,
       "reply_id": "2037827226922635609",
       "reply_url": "https://x.com/gaurabhmathure/status/2037827226922635609",
-      "previous_rank": null,
+      "previous_rank": 115,
       "author": {
         "handle": "gaurabhmathure",
         "name": "Gaurabh",
@@ -3361,10 +3392,10 @@
       "enrichment": null
     },
     {
-      "rank": 116,
+      "rank": 117,
       "reply_id": "2037713769988550977",
       "reply_url": "https://x.com/manan_suneja/status/2037713769988550977",
-      "previous_rank": null,
+      "previous_rank": 116,
       "author": {
         "handle": "manan_suneja",
         "name": "Manan",
@@ -3388,10 +3419,10 @@
       "enrichment": null
     },
     {
-      "rank": 117,
+      "rank": 118,
       "reply_id": "2037619903415676978",
       "reply_url": "https://x.com/LFGAmy/status/2037619903415676978",
-      "previous_rank": 97,
+      "previous_rank": 117,
       "author": {
         "handle": "LFGAmy",
         "name": "LFGAmy \ud83d\udc96",
@@ -3415,10 +3446,10 @@
       "enrichment": null
     },
     {
-      "rank": 118,
+      "rank": 119,
       "reply_id": "2037608707157352867",
       "reply_url": "https://x.com/jarrensj/status/2037608707157352867",
-      "previous_rank": 98,
+      "previous_rank": 118,
       "author": {
         "handle": "jarrensj",
         "name": "kwaji \ud83c\udf63",
@@ -3443,10 +3474,10 @@
       "enrichment": null
     },
     {
-      "rank": 119,
+      "rank": 120,
       "reply_id": "2037572863549403269",
       "reply_url": "https://x.com/ChaSolutions/status/2037572863549403269",
-      "previous_rank": 99,
+      "previous_rank": 119,
       "author": {
         "handle": "ChaSolutions",
         "name": "Agents and Robots",
@@ -3471,10 +3502,10 @@
       "enrichment": null
     },
     {
-      "rank": 120,
+      "rank": 121,
       "reply_id": "2037568674186281065",
       "reply_url": "https://x.com/najahpokkiri/status/2037568674186281065",
-      "previous_rank": 100,
+      "previous_rank": 120,
       "author": {
         "handle": "najahpokkiri",
         "name": "Najah",
@@ -3498,10 +3529,10 @@
       "enrichment": null
     },
     {
-      "rank": 121,
+      "rank": 122,
       "reply_id": "2037614222851358990",
       "reply_url": "https://x.com/SreeramBangaru/status/2037614222851358990",
-      "previous_rank": 101,
+      "previous_rank": 121,
       "author": {
         "handle": "SreeramBangaru",
         "name": "Sreeram Bangaru",
@@ -3526,10 +3557,10 @@
       "enrichment": null
     },
     {
-      "rank": 122,
+      "rank": 123,
       "reply_id": "2037570168264733041",
       "reply_url": "https://x.com/MattRosendin/status/2037570168264733041",
-      "previous_rank": 102,
+      "previous_rank": 122,
       "author": {
         "handle": "MattRosendin",
         "name": "matt \ud83c\uddfa\ud83c\uddf8",
@@ -3553,10 +3584,10 @@
       "enrichment": null
     },
     {
-      "rank": 123,
+      "rank": 124,
       "reply_id": "2037592636681294015",
       "reply_url": "https://x.com/khizar_mm/status/2037592636681294015",
-      "previous_rank": 103,
+      "previous_rank": 123,
       "author": {
         "handle": "khizar_mm",
         "name": "Khizar",
@@ -3581,10 +3612,10 @@
       "enrichment": null
     },
     {
-      "rank": 124,
+      "rank": 125,
       "reply_id": "2037583574191226985",
       "reply_url": "https://x.com/notnotsahil/status/2037583574191226985",
-      "previous_rank": 104,
+      "previous_rank": 124,
       "author": {
         "handle": "notnotsahil",
         "name": "Sahil",
@@ -3609,10 +3640,10 @@
       "enrichment": null
     },
     {
-      "rank": 125,
+      "rank": 126,
       "reply_id": "2037581526146167054",
       "reply_url": "https://x.com/PeonMusk_/status/2037581526146167054",
-      "previous_rank": 105,
+      "previous_rank": 125,
       "author": {
         "handle": "PeonMusk_",
         "name": "Himothy",
@@ -3639,10 +3670,10 @@
       "enrichment": null
     },
     {
-      "rank": 126,
+      "rank": 127,
       "reply_id": "2037593853226627169",
       "reply_url": "https://x.com/AkpapunamEkenej/status/2037593853226627169",
-      "previous_rank": 106,
+      "previous_rank": 126,
       "author": {
         "handle": "AkpapunamEkenej",
         "name": "Akpapunam Ekene Joshua",
@@ -3670,10 +3701,10 @@
       "enrichment": null
     },
     {
-      "rank": 127,
+      "rank": 128,
       "reply_id": "2037674373138518507",
       "reply_url": "https://x.com/bizgeneralz/status/2037674373138518507",
-      "previous_rank": 107,
+      "previous_rank": 127,
       "author": {
         "handle": "bizgeneralz",
         "name": "Matthew Feather",
@@ -3698,10 +3729,10 @@
       "enrichment": null
     },
     {
-      "rank": 128,
+      "rank": 129,
       "reply_id": "2037892687831994584",
       "reply_url": "https://x.com/AiBlitzBuilds/status/2037892687831994584",
-      "previous_rank": null,
+      "previous_rank": 128,
       "author": {
         "handle": "AiBlitzBuilds",
         "name": "Blitz Builds",
@@ -3725,10 +3756,10 @@
       "enrichment": null
     },
     {
-      "rank": 129,
+      "rank": 130,
       "reply_id": "2037842846019879067",
       "reply_url": "https://x.com/GetBrandReel/status/2037842846019879067",
-      "previous_rank": null,
+      "previous_rank": 129,
       "author": {
         "handle": "GetBrandReel",
         "name": "BrandReel",
@@ -3754,10 +3785,10 @@
       "enrichment": null
     },
     {
-      "rank": 130,
+      "rank": 131,
       "reply_id": "2037760414549938332",
       "reply_url": "https://x.com/ZachNye187629/status/2037760414549938332",
-      "previous_rank": null,
+      "previous_rank": 130,
       "author": {
         "handle": "ZachNye187629",
         "name": "Zach Nye",
@@ -3782,10 +3813,10 @@
       "enrichment": null
     },
     {
-      "rank": 131,
+      "rank": 132,
       "reply_id": "2037611230874206226",
       "reply_url": "https://x.com/samhayek_/status/2037611230874206226",
-      "previous_rank": 108,
+      "previous_rank": 131,
       "author": {
         "handle": "samhayek_",
         "name": "Sam",
@@ -3809,10 +3840,10 @@
       "enrichment": null
     },
     {
-      "rank": 132,
+      "rank": 133,
       "reply_id": "2037608447051538629",
       "reply_url": "https://x.com/odincode/status/2037608447051538629",
-      "previous_rank": 109,
+      "previous_rank": 132,
       "author": {
         "handle": "odincode",
         "name": "Mikey",
@@ -3836,10 +3867,10 @@
       "enrichment": null
     },
     {
-      "rank": 133,
+      "rank": 134,
       "reply_id": "2037607242959061097",
       "reply_url": "https://x.com/devbyslavi/status/2037607242959061097",
-      "previous_rank": 110,
+      "previous_rank": 133,
       "author": {
         "handle": "devbyslavi",
         "name": "Slavi",
@@ -3863,10 +3894,10 @@
       "enrichment": null
     },
     {
-      "rank": 134,
+      "rank": 135,
       "reply_id": "2037601000396394623",
       "reply_url": "https://x.com/lamuriam/status/2037601000396394623",
-      "previous_rank": 111,
+      "previous_rank": 134,
       "author": {
         "handle": "lamuriam",
         "name": "\u2500 0xfefcd7",
@@ -3892,10 +3923,10 @@
       "enrichment": null
     },
     {
-      "rank": 135,
+      "rank": 136,
       "reply_id": "2037591142233973116",
       "reply_url": "https://x.com/MeOsipov/status/2037591142233973116",
-      "previous_rank": 112,
+      "previous_rank": 135,
       "author": {
         "handle": "MeOsipov",
         "name": "Anton",
@@ -3920,10 +3951,10 @@
       "enrichment": null
     },
     {
-      "rank": 136,
+      "rank": 137,
       "reply_id": "2037568597233414242",
       "reply_url": "https://x.com/najahpokkiri/status/2037568597233414242",
-      "previous_rank": 113,
+      "previous_rank": 136,
       "author": {
         "handle": "najahpokkiri",
         "name": "Najah",
@@ -3948,10 +3979,10 @@
       "enrichment": null
     },
     {
-      "rank": 137,
+      "rank": 138,
       "reply_id": "2037656099537531027",
       "reply_url": "https://x.com/PriymwadaPandey/status/2037656099537531027",
-      "previous_rank": 114,
+      "previous_rank": 137,
       "author": {
         "handle": "PriymwadaPandey",
         "name": "Priyamwada",
@@ -3976,10 +4007,10 @@
       "enrichment": null
     },
     {
-      "rank": 138,
+      "rank": 139,
       "reply_id": "2037811779162853745",
       "reply_url": "https://x.com/Finmarkers/status/2037811779162853745",
-      "previous_rank": null,
+      "previous_rank": 138,
       "author": {
         "handle": "Finmarkers",
         "name": "Finmarkers",
@@ -4004,10 +4035,10 @@
       "enrichment": null
     },
     {
-      "rank": 139,
+      "rank": 140,
       "reply_id": "2037587259327922186",
       "reply_url": "https://x.com/MeetAiqi/status/2037587259327922186",
-      "previous_rank": 115,
+      "previous_rank": 139,
       "author": {
         "handle": "MeetAiqi",
         "name": "Aiqi Liu",
@@ -4031,10 +4062,10 @@
       "enrichment": null
     },
     {
-      "rank": 140,
+      "rank": 141,
       "reply_id": "2037646709711614433",
       "reply_url": "https://x.com/haseeebkh/status/2037646709711614433",
-      "previous_rank": 116,
+      "previous_rank": 140,
       "author": {
         "handle": "haseeebkh",
         "name": "haseeb",
@@ -4059,10 +4090,10 @@
       "enrichment": null
     },
     {
-      "rank": 141,
+      "rank": 142,
       "reply_id": "2037575547392237617",
       "reply_url": "https://x.com/PrettyNerdee/status/2037575547392237617",
-      "previous_rank": 117,
+      "previous_rank": 141,
       "author": {
         "handle": "PrettyNerdee",
         "name": "Clay Forde",
@@ -4087,10 +4118,10 @@
       "enrichment": null
     },
     {
-      "rank": 142,
+      "rank": 143,
       "reply_id": "2037655217282400287",
       "reply_url": "https://x.com/OddlyStoked/status/2037655217282400287",
-      "previous_rank": 118,
+      "previous_rank": 142,
       "author": {
         "handle": "OddlyStoked",
         "name": "Andrew",
@@ -4114,10 +4145,10 @@
       "enrichment": null
     },
     {
-      "rank": 143,
+      "rank": 144,
       "reply_id": "2037563877232107913",
       "reply_url": "https://x.com/TheLoneWulf_WA/status/2037563877232107913",
-      "previous_rank": null,
+      "previous_rank": 143,
       "author": {
         "handle": "TheLoneWulf_WA",
         "name": "ATMR",
@@ -4141,10 +4172,10 @@
       "enrichment": null
     },
     {
-      "rank": 144,
+      "rank": 145,
       "reply_id": "2037846927052779850",
       "reply_url": "https://x.com/tanishqicreate/status/2037846927052779850",
-      "previous_rank": null,
+      "previous_rank": 144,
       "author": {
         "handle": "tanishqicreate",
         "name": "Tanishq Pratap",
@@ -4168,10 +4199,10 @@
       "enrichment": null
     },
     {
-      "rank": 145,
+      "rank": 146,
       "reply_id": "2037798921448333375",
       "reply_url": "https://x.com/junaiid_khattak/status/2037798921448333375",
-      "previous_rank": null,
+      "previous_rank": 145,
       "author": {
         "handle": "junaiid_khattak",
         "name": "Junaid Khattak",
@@ -4196,10 +4227,10 @@
       "enrichment": null
     },
     {
-      "rank": 146,
+      "rank": 147,
       "reply_id": "2037566477180518726",
       "reply_url": "https://x.com/julian_kheyr/status/2037566477180518726",
-      "previous_rank": 119,
+      "previous_rank": 146,
       "author": {
         "handle": "julian_kheyr",
         "name": "Julian Kheyrbeyk",
@@ -4224,10 +4255,10 @@
       "enrichment": null
     },
     {
-      "rank": 147,
+      "rank": 148,
       "reply_id": "2037809660292743639",
       "reply_url": "https://x.com/niravbond/status/2037809660292743639",
-      "previous_rank": null,
+      "previous_rank": 147,
       "author": {
         "handle": "niravbond",
         "name": "Nirav Suthar",
@@ -4251,10 +4282,10 @@
       "enrichment": null
     },
     {
-      "rank": 148,
+      "rank": 149,
       "reply_id": "2037742848880394351",
       "reply_url": "https://x.com/icyexcel/status/2037742848880394351",
-      "previous_rank": null,
+      "previous_rank": 148,
       "author": {
         "handle": "icyexcel",
         "name": "icyexcel",
@@ -4278,10 +4309,10 @@
       "enrichment": null
     },
     {
-      "rank": 149,
+      "rank": 150,
       "reply_id": "2037585414811463689",
       "reply_url": "https://x.com/biggucci303/status/2037585414811463689",
-      "previous_rank": 120,
+      "previous_rank": 149,
       "author": {
         "handle": "biggucci303",
         "name": "Andrew R",
@@ -4305,10 +4336,10 @@
       "enrichment": null
     },
     {
-      "rank": 150,
+      "rank": 151,
       "reply_id": "2037596253538897983",
       "reply_url": "https://x.com/vctotrn/status/2037596253538897983",
-      "previous_rank": 121,
+      "previous_rank": 150,
       "author": {
         "handle": "vctotrn",
         "name": "victor",
@@ -4332,10 +4363,10 @@
       "enrichment": null
     },
     {
-      "rank": 151,
+      "rank": 152,
       "reply_id": "2037570585224450328",
       "reply_url": "https://x.com/nodcodes/status/2037570585224450328",
-      "previous_rank": 122,
+      "previous_rank": 151,
       "author": {
         "handle": "nodcodes",
         "name": "Nod Codes",
@@ -4359,10 +4390,10 @@
       "enrichment": null
     },
     {
-      "rank": 152,
+      "rank": 153,
       "reply_id": "2037643947355283880",
       "reply_url": "https://x.com/YuriiSolwees/status/2037643947355283880",
-      "previous_rank": 123,
+      "previous_rank": 152,
       "author": {
         "handle": "YuriiSolwees",
         "name": "Yurii",
@@ -4387,10 +4418,10 @@
       "enrichment": null
     },
     {
-      "rank": 153,
+      "rank": 154,
       "reply_id": "2037671864445644843",
       "reply_url": "https://x.com/Ydj79/status/2037671864445644843",
-      "previous_rank": 124,
+      "previous_rank": 153,
       "author": {
         "handle": "Ydj79",
         "name": "Yash Joshi",
@@ -4415,10 +4446,10 @@
       "enrichment": null
     },
     {
-      "rank": 154,
+      "rank": 155,
       "reply_id": "2037831528072307068",
       "reply_url": "https://x.com/andreidanca8/status/2037831528072307068",
-      "previous_rank": null,
+      "previous_rank": 154,
       "author": {
         "handle": "andreidanca8",
         "name": "Andrei.Ionut",
@@ -4443,10 +4474,10 @@
       "enrichment": null
     },
     {
-      "rank": 155,
+      "rank": 156,
       "reply_id": "2037756076674965892",
       "reply_url": "https://x.com/brennanrooks/status/2037756076674965892",
-      "previous_rank": null,
+      "previous_rank": 155,
       "author": {
         "handle": "brennanrooks",
         "name": "Brennan",
@@ -4473,10 +4504,10 @@
       "enrichment": null
     },
     {
-      "rank": 156,
+      "rank": 157,
       "reply_id": "2037596967983861957",
       "reply_url": "https://x.com/A1116743535373/status/2037596967983861957",
-      "previous_rank": 125,
+      "previous_rank": 156,
       "author": {
         "handle": "A1116743535373",
         "name": "A",
@@ -4498,10 +4529,10 @@
       "enrichment": null
     },
     {
-      "rank": 157,
+      "rank": 158,
       "reply_id": "2037887894690402797",
       "reply_url": "https://x.com/VictorMotricala/status/2037887894690402797",
-      "previous_rank": null,
+      "previous_rank": 157,
       "author": {
         "handle": "VictorMotricala",
         "name": "Victor Motricala",
@@ -4525,10 +4556,10 @@
       "enrichment": null
     },
     {
-      "rank": 158,
+      "rank": 159,
       "reply_id": "2037604208447311986",
       "reply_url": "https://x.com/dimovdaniel/status/2037604208447311986",
-      "previous_rank": 126,
+      "previous_rank": 158,
       "author": {
         "handle": "dimovdaniel",
         "name": "Daniel",
@@ -4552,10 +4583,10 @@
       "enrichment": null
     },
     {
-      "rank": 159,
+      "rank": 160,
       "reply_id": "2037575463954952445",
       "reply_url": "https://x.com/MaksymSherman/status/2037575463954952445",
-      "previous_rank": 127,
+      "previous_rank": 159,
       "author": {
         "handle": "MaksymSherman",
         "name": "Maksym Sherman",
@@ -4579,10 +4610,10 @@
       "enrichment": null
     },
     {
-      "rank": 160,
+      "rank": 161,
       "reply_id": "2037600481728667657",
       "reply_url": "https://x.com/vishalg47/status/2037600481728667657",
-      "previous_rank": 128,
+      "previous_rank": 160,
       "author": {
         "handle": "vishalg47",
         "name": "Vishal R Gadiya",
@@ -4608,10 +4639,10 @@
       "enrichment": null
     },
     {
-      "rank": 161,
+      "rank": 162,
       "reply_id": "2037598486091182189",
       "reply_url": "https://x.com/lombardinelson/status/2037598486091182189",
-      "previous_rank": 129,
+      "previous_rank": 161,
       "author": {
         "handle": "lombardinelson",
         "name": "Mark Lombardi",
@@ -4640,10 +4671,10 @@
       "enrichment": null
     },
     {
-      "rank": 162,
+      "rank": 163,
       "reply_id": "2037579176019218473",
       "reply_url": "https://x.com/kairon007/status/2037579176019218473",
-      "previous_rank": 130,
+      "previous_rank": 162,
       "author": {
         "handle": "kairon007",
         "name": "Amit Kairon",
@@ -4669,10 +4700,10 @@
       "enrichment": null
     },
     {
-      "rank": 163,
+      "rank": 164,
       "reply_id": "2037579627477270540",
       "reply_url": "https://x.com/Kenbuildsthings/status/2037579627477270540",
-      "previous_rank": 131,
+      "previous_rank": 163,
       "author": {
         "handle": "Kenbuildsthings",
         "name": "Kenneth Johnson",
@@ -4696,10 +4727,10 @@
       "enrichment": null
     },
     {
-      "rank": 164,
+      "rank": 165,
       "reply_id": "2037597436252762252",
       "reply_url": "https://x.com/kavir777/status/2037597436252762252",
-      "previous_rank": 132,
+      "previous_rank": 164,
       "author": {
         "handle": "kavir777",
         "name": "Kavir",
@@ -4723,10 +4754,10 @@
       "enrichment": null
     },
     {
-      "rank": 165,
+      "rank": 166,
       "reply_id": "2037600319849320796",
       "reply_url": "https://x.com/JackEvka09125/status/2037600319849320796",
-      "previous_rank": 133,
+      "previous_rank": 165,
       "author": {
         "handle": "JackEvka09125",
         "name": "Jack Evans",
@@ -4751,10 +4782,10 @@
       "enrichment": null
     },
     {
-      "rank": 166,
+      "rank": 167,
       "reply_id": "2037592396720955499",
       "reply_url": "https://x.com/Xy63ry0rx/status/2037592396720955499",
-      "previous_rank": null,
+      "previous_rank": 166,
       "author": {
         "handle": "Xy63ry0rx",
         "name": "Joel \ud83d\udc09",
@@ -4778,10 +4809,10 @@
       "enrichment": null
     },
     {
-      "rank": 167,
+      "rank": 168,
       "reply_id": "2037729870248354205",
       "reply_url": "https://x.com/YashWadgave/status/2037729870248354205",
-      "previous_rank": null,
+      "previous_rank": 167,
       "author": {
         "handle": "YashWadgave",
         "name": "Yash Wadgave Jain",
@@ -4805,10 +4836,10 @@
       "enrichment": null
     },
     {
-      "rank": 168,
+      "rank": 169,
       "reply_id": "2037616348956672368",
       "reply_url": "https://x.com/troyassoignon/status/2037616348956672368",
-      "previous_rank": 134,
+      "previous_rank": 168,
       "author": {
         "handle": "troyassoignon",
         "name": "Troy Assoignon",
@@ -4833,10 +4864,10 @@
       "enrichment": null
     },
     {
-      "rank": 169,
+      "rank": 170,
       "reply_id": "2037562565338001905",
       "reply_url": "https://x.com/_twochanz/status/2037562565338001905",
-      "previous_rank": 135,
+      "previous_rank": 169,
       "author": {
         "handle": "_twochanz",
         "name": "twochanz",
@@ -4860,10 +4891,10 @@
       "enrichment": null
     },
     {
-      "rank": 170,
+      "rank": 171,
       "reply_id": "2037633556701131214",
       "reply_url": "https://x.com/veronicahylak/status/2037633556701131214",
-      "previous_rank": 136,
+      "previous_rank": 170,
       "author": {
         "handle": "veronicahylak",
         "name": "veronica hylak",
@@ -4887,10 +4918,10 @@
       "enrichment": null
     },
     {
-      "rank": 171,
+      "rank": 172,
       "reply_id": "2037619994557648920",
       "reply_url": "https://x.com/tamba_io/status/2037619994557648920",
-      "previous_rank": 137,
+      "previous_rank": 171,
       "author": {
         "handle": "tamba_io",
         "name": "tamba",
@@ -4916,10 +4947,10 @@
       "enrichment": null
     },
     {
-      "rank": 172,
+      "rank": 173,
       "reply_id": "2037573788318187829",
       "reply_url": "https://x.com/gouravbht/status/2037573788318187829",
-      "previous_rank": 138,
+      "previous_rank": 172,
       "author": {
         "handle": "gouravbht",
         "name": "Gourav Bhati",
@@ -4945,10 +4976,10 @@
       "enrichment": null
     },
     {
-      "rank": 173,
+      "rank": 174,
       "reply_id": "2037562268011925944",
       "reply_url": "https://x.com/zinnMK_/status/2037562268011925944",
-      "previous_rank": 139,
+      "previous_rank": 173,
       "author": {
         "handle": "zinnMK_",
         "name": "zin",
@@ -4972,10 +5003,10 @@
       "enrichment": null
     },
     {
-      "rank": 174,
+      "rank": 175,
       "reply_id": "2037632003437158702",
       "reply_url": "https://x.com/captainscorch/status/2037632003437158702",
-      "previous_rank": 140,
+      "previous_rank": 174,
       "author": {
         "handle": "captainscorch",
         "name": "daniel",
@@ -4999,10 +5030,10 @@
       "enrichment": null
     },
     {
-      "rank": 175,
+      "rank": 176,
       "reply_id": "2037588820175274008",
       "reply_url": "https://x.com/jnveryser/status/2037588820175274008",
-      "previous_rank": 141,
+      "previous_rank": 175,
       "author": {
         "handle": "jnveryser",
         "name": "Josh Veryser",
@@ -5027,10 +5058,10 @@
       "enrichment": null
     },
     {
-      "rank": 176,
+      "rank": 177,
       "reply_id": "2037585850590998812",
       "reply_url": "https://x.com/_joeln_/status/2037585850590998812",
-      "previous_rank": 142,
+      "previous_rank": 176,
       "author": {
         "handle": "_joeln_",
         "name": "Joel N \ud83c\udde8\ud83c\udde9",
@@ -5057,10 +5088,10 @@
       "enrichment": null
     },
     {
-      "rank": 177,
+      "rank": 178,
       "reply_id": "2037569356406956267",
       "reply_url": "https://x.com/Web3zy/status/2037569356406956267",
-      "previous_rank": 143,
+      "previous_rank": 177,
       "author": {
         "handle": "Web3zy",
         "name": "Jean-Paul Faraj",
@@ -5084,10 +5115,10 @@
       "enrichment": null
     },
     {
-      "rank": 178,
+      "rank": 179,
       "reply_id": "2037601400335790467",
       "reply_url": "https://x.com/Anubhav_Mishra_/status/2037601400335790467",
-      "previous_rank": 144,
+      "previous_rank": 178,
       "author": {
         "handle": "Anubhav_Mishra_",
         "name": "Anubhav Mishra",
@@ -5111,10 +5142,10 @@
       "enrichment": null
     },
     {
-      "rank": 179,
+      "rank": 180,
       "reply_id": "2037593272671928441",
       "reply_url": "https://x.com/Shnay_2/status/2037593272671928441",
-      "previous_rank": 145,
+      "previous_rank": 179,
       "author": {
         "handle": "Shnay_2",
         "name": "Shnay",
@@ -5138,10 +5169,10 @@
       "enrichment": null
     },
     {
-      "rank": 180,
+      "rank": 181,
       "reply_id": "2037593958604566625",
       "reply_url": "https://x.com/gala_paarth/status/2037593958604566625",
-      "previous_rank": 146,
+      "previous_rank": 180,
       "author": {
         "handle": "gala_paarth",
         "name": "Paarth Gala",
@@ -5165,10 +5196,10 @@
       "enrichment": null
     },
     {
-      "rank": 181,
+      "rank": 182,
       "reply_id": "2037593940870733910",
       "reply_url": "https://x.com/jonniefive/status/2037593940870733910",
-      "previous_rank": 147,
+      "previous_rank": 181,
       "author": {
         "handle": "jonniefive",
         "name": "Jonathan",
@@ -5193,10 +5224,10 @@
       "enrichment": null
     },
     {
-      "rank": 182,
+      "rank": 183,
       "reply_id": "2037581304078663911",
       "reply_url": "https://x.com/yawbtng_/status/2037581304078663911",
-      "previous_rank": 148,
+      "previous_rank": 182,
       "author": {
         "handle": "yawbtng_",
         "name": "Yaw Boateng",
@@ -5220,10 +5251,10 @@
       "enrichment": null
     },
     {
-      "rank": 183,
+      "rank": 184,
       "reply_id": "2037598745739587906",
       "reply_url": "https://x.com/amfonte/status/2037598745739587906",
-      "previous_rank": 149,
+      "previous_rank": 183,
       "author": {
         "handle": "amfonte",
         "name": "Anthony",
@@ -5247,10 +5278,10 @@
       "enrichment": null
     },
     {
-      "rank": 184,
+      "rank": 185,
       "reply_id": "2037624920424018220",
       "reply_url": "https://x.com/kalizzle_studio/status/2037624920424018220",
-      "previous_rank": 150,
+      "previous_rank": 184,
       "author": {
         "handle": "kalizzle_studio",
         "name": "Kalizzle Studio",
@@ -5274,10 +5305,10 @@
       "enrichment": null
     },
     {
-      "rank": 185,
+      "rank": 186,
       "reply_id": "2037640807482540386",
       "reply_url": "https://x.com/Tharun1/status/2037640807482540386",
-      "previous_rank": 151,
+      "previous_rank": 185,
       "author": {
         "handle": "Tharun1",
         "name": "Tharun Josh",
@@ -5301,10 +5332,10 @@
       "enrichment": null
     },
     {
-      "rank": 186,
+      "rank": 187,
       "reply_id": "2037655755005071859",
       "reply_url": "https://x.com/_Anil_Murty_/status/2037655755005071859",
-      "previous_rank": 152,
+      "previous_rank": 186,
       "author": {
         "handle": "_Anil_Murty_",
         "name": "Anil Murty \u27c1",
@@ -5328,10 +5359,10 @@
       "enrichment": null
     },
     {
-      "rank": 187,
+      "rank": 188,
       "reply_id": "2037602921421103470",
       "reply_url": "https://x.com/jasham_a/status/2037602921421103470",
-      "previous_rank": 153,
+      "previous_rank": 187,
       "author": {
         "handle": "jasham_a",
         "name": "Jasham",
@@ -5355,10 +5386,10 @@
       "enrichment": null
     },
     {
-      "rank": 188,
+      "rank": 189,
       "reply_id": "2037620389090640002",
       "reply_url": "https://x.com/iam_krisjoe/status/2037620389090640002",
-      "previous_rank": 154,
+      "previous_rank": 188,
       "author": {
         "handle": "iam_krisjoe",
         "name": "Christian",
@@ -5382,10 +5413,10 @@
       "enrichment": null
     },
     {
-      "rank": 189,
+      "rank": 190,
       "reply_id": "2037873619435503626",
       "reply_url": "https://x.com/BuildWithJosh/status/2037873619435503626",
-      "previous_rank": null,
+      "previous_rank": 189,
       "author": {
         "handle": "BuildWithJosh",
         "name": "Josh",
@@ -5409,10 +5440,10 @@
       "enrichment": null
     },
     {
-      "rank": 190,
+      "rank": 191,
       "reply_id": "2037634249205887328",
       "reply_url": "https://x.com/BuildWithDani/status/2037634249205887328",
-      "previous_rank": 155,
+      "previous_rank": 190,
       "author": {
         "handle": "BuildWithDani",
         "name": "BuildWithDani",
@@ -5437,10 +5468,10 @@
       "enrichment": null
     },
     {
-      "rank": 191,
+      "rank": 192,
       "reply_id": "2037573492481073508",
       "reply_url": "https://x.com/aiden_gilmore0/status/2037573492481073508",
-      "previous_rank": 156,
+      "previous_rank": 191,
       "author": {
         "handle": "aiden_gilmore0",
         "name": "Aiden Gilmore",
@@ -5464,10 +5495,10 @@
       "enrichment": null
     },
     {
-      "rank": 192,
+      "rank": 193,
       "reply_id": "2037615145589854444",
       "reply_url": "https://x.com/andrewstaci_/status/2037615145589854444",
-      "previous_rank": 157,
+      "previous_rank": 192,
       "author": {
         "handle": "andrewstaci_",
         "name": "Staci",
@@ -5489,10 +5520,10 @@
       "enrichment": null
     },
     {
-      "rank": 193,
+      "rank": 194,
       "reply_id": "2037598833979396608",
       "reply_url": "https://x.com/amfonte/status/2037598833979396608",
-      "previous_rank": 158,
+      "previous_rank": 193,
       "author": {
         "handle": "amfonte",
         "name": "Anthony",
@@ -5516,10 +5547,10 @@
       "enrichment": null
     },
     {
-      "rank": 194,
+      "rank": 195,
       "reply_id": "2037584542241038833",
       "reply_url": "https://x.com/bluequbit/status/2037584542241038833",
-      "previous_rank": 159,
+      "previous_rank": 194,
       "author": {
         "handle": "bluequbit",
         "name": "shubham",
@@ -5544,10 +5575,10 @@
       "enrichment": null
     },
     {
-      "rank": 195,
+      "rank": 196,
       "reply_id": "2037569989524480032",
       "reply_url": "https://x.com/thestudioalpine/status/2037569989524480032",
-      "previous_rank": 160,
+      "previous_rank": 195,
       "author": {
         "handle": "thestudioalpine",
         "name": "studio alpine",
@@ -5572,10 +5603,10 @@
       "enrichment": null
     },
     {
-      "rank": 196,
+      "rank": 197,
       "reply_id": "2037560223490249053",
       "reply_url": "https://x.com/Rajdeep__ds/status/2037560223490249053",
-      "previous_rank": 161,
+      "previous_rank": 196,
       "author": {
         "handle": "Rajdeep__ds",
         "name": "Rajdeep",
@@ -5599,10 +5630,10 @@
       "enrichment": null
     },
     {
-      "rank": 197,
+      "rank": 198,
       "reply_id": "2037627128506638649",
       "reply_url": "https://x.com/hark0nnen_/status/2037627128506638649",
-      "previous_rank": 162,
+      "previous_rank": 197,
       "author": {
         "handle": "hark0nnen_",
         "name": "Hark0nnen",
@@ -5626,10 +5657,10 @@
       "enrichment": null
     },
     {
-      "rank": 198,
+      "rank": 199,
       "reply_id": "2037603961474105430",
       "reply_url": "https://x.com/BhadKingArmani/status/2037603961474105430",
-      "previous_rank": 163,
+      "previous_rank": 198,
       "author": {
         "handle": "BhadKingArmani",
         "name": "IAmArmani",
@@ -5653,10 +5684,10 @@
       "enrichment": null
     },
     {
-      "rank": 199,
+      "rank": 200,
       "reply_id": "2037636460195492122",
       "reply_url": "https://x.com/MuktarRazaq/status/2037636460195492122",
-      "previous_rank": 164,
+      "previous_rank": 199,
       "author": {
         "handle": "MuktarRazaq",
         "name": "Muktar Abdul-Razaq",
@@ -5680,10 +5711,10 @@
       "enrichment": null
     },
     {
-      "rank": 200,
+      "rank": 201,
       "reply_id": "2037718395584442590",
       "reply_url": "https://x.com/breakaleggie/status/2037718395584442590",
-      "previous_rank": null,
+      "previous_rank": 200,
       "author": {
         "handle": "breakaleggie",
         "name": "Sandra Cai",
@@ -5703,33 +5734,6 @@
         "creativity": 35,
         "quirkiness": 25,
         "composite": 32
-      },
-      "enrichment": null
-    },
-    {
-      "rank": 201,
-      "reply_id": "2037755510469050640",
-      "reply_url": "https://x.com/send_eze/status/2037755510469050640",
-      "previous_rank": null,
-      "author": {
-        "handle": "send_eze",
-        "name": "Ezekiel \ud83c\udfc4",
-        "bio": "permissionless leverage. compiling a stack of robots & high-agency-ness.",
-        "followers": 2,
-        "profile_image_url": "https://pbs.twimg.com/profile_images/2032303087684370433/Dh9XB8br_normal.jpg"
-      },
-      "project": {
-        "name": "MonkCard \u2014 Physical NFC Card App Blocker",
-        "summary": "MonkCard is a live product at monkcard.com consisting of a physical NFC card paired with a mobile app that locks distracting apps (TikTok, Instagram, etc.) until the card is tapped. The website shows pricing (S$25\u2013S$39), product photos, user testimonials, and a purchasing flow. The tweet also references two larger prior projects (NFT loans marketplace with $450K/day revenue peak, and a Telegram mini-app with $10M revenue) though those lack direct links.",
-        "links": [
-          "http://monkcard.com"
-        ]
-      },
-      "scores": {
-        "builder": 0,
-        "creativity": 0,
-        "quirkiness": 0,
-        "composite": 0
       },
       "enrichment": null
     }
