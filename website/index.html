@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reply Arena — Builder Scorecard</title>
+  <title>Reply Arena — Builder Scorecard (Prototype)</title>
   <meta name="description" content="AI-scored leaderboard of replies to @eglyman's hiring tweet">
   <meta property="og:title" content="Reply Arena — Builder Scorecard">
   <meta property="og:description" content="AI-scored leaderboard of replies to @eglyman's hiring tweet">
@@ -44,6 +44,10 @@
     }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <style>
     /* === BASE === */
     * { box-sizing: border-box; }
@@ -59,13 +63,18 @@
       -moz-osx-font-smoothing: unset;
     }
 
+    /* === Readable content font === */
+    .readable {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
     /* === MATRIX RAIN CANVAS === */
     #matrix-canvas {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       z-index: 0;
       opacity: 0.07;
       pointer-events: none;
@@ -74,10 +83,8 @@
     /* === CRT SCANLINES === */
     .crt-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       z-index: 1;
       pointer-events: none;
       background: repeating-linear-gradient(
@@ -102,14 +109,10 @@
       border-radius: 2px;
       position: relative;
     }
-
     .panel::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
       border-radius: 2px;
       box-shadow: inset 0 0 30px rgba(0, 255, 65, 0.03);
       pointer-events: none;
@@ -119,13 +122,8 @@
     .glow {
       text-shadow: 0 0 8px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.2);
     }
-
     .glow-score {
       text-shadow: 0 0 8px rgba(255, 204, 0, 0.6), 0 0 20px rgba(255, 204, 0, 0.25);
-    }
-
-    .glow-danger {
-      text-shadow: 0 0 8px rgba(255, 0, 85, 0.5), 0 0 20px rgba(255, 0, 85, 0.2);
     }
 
     /* === LEADERBOARD ENTRY === */
@@ -134,15 +132,12 @@
       cursor: pointer;
       transition: background 0.15s ease;
     }
-
     .entry:hover {
       background: rgba(0, 255, 65, 0.03);
     }
-
     .entry:last-child {
       border-bottom: none;
     }
-
     .entry-active {
       background: rgba(0, 255, 65, 0.04) !important;
       border-left: 2px solid #00ff41;
@@ -155,9 +150,8 @@
       transition: max-height 0.35s ease, opacity 0.25s ease;
       opacity: 0;
     }
-
     .dossier-open {
-      max-height: 800px;
+      max-height: 1200px;
       opacity: 1;
     }
 
@@ -165,20 +159,6 @@
     .rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); }
     .rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.4); }
     .rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.4); }
-
-    /* === SCORE BAR === */
-    .score-bar-bg {
-      background: #1a1a1a;
-      height: 6px;
-      border-radius: 1px;
-      overflow: hidden;
-    }
-
-    .score-bar-fill {
-      height: 100%;
-      border-radius: 1px;
-      transition: width 0.5s ease;
-    }
 
     /* === PROFILE IMAGE === */
     .profile-img {
@@ -189,7 +169,6 @@
       object-fit: cover;
       flex-shrink: 0;
     }
-
     .profile-placeholder {
       width: 36px;
       height: 36px;
@@ -209,7 +188,6 @@
       opacity: 0;
       animation: bootFade 0.8s ease forwards;
     }
-
     @keyframes bootFade {
       0% { opacity: 0; transform: translateY(4px); }
       100% { opacity: 0.5; transform: translateY(0); }
@@ -220,7 +198,6 @@
       content: '_';
       animation: blink 1s step-end infinite;
     }
-
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
@@ -243,14 +220,79 @@
       border-color: #00c8ff;
     }
 
+    /* === TAGLINE (new: short project descriptor) === */
+    .entry-tagline {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 3px;
+      line-height: 1.35;
+    }
+
+    /* === DOSSIER CONTENT (readable) === */
+    .dos-label {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 9px;
+      color: rgba(0, 255, 65, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      margin-top: 14px;
+    }
+    .dos-label:first-child { margin-top: 0; }
+
+    .dos-text {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.65;
+    }
+    .dos-project-name {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 600;
+    }
+    .dos-project-desc {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.55;
+      margin-top: 4px;
+    }
+    .dos-bio {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+      font-style: italic;
+    }
+
+    /* === RUBRIC DESCRIPTIONS (readable) === */
+    .rubric-desc {
+      font-family: 'IBM Plex Mono', monospace;
+      -webkit-font-smoothing: antialiased;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.4;
+    }
+
     /* === RESPONSIVE === */
     @media (max-width: 600px) {
-      .entry-row { flex-direction: column; gap: 8px; align-items: center !important; text-align: center; }
-      .entry-meta { width: 100%; }
       .dossier-grid { grid-template-columns: 1fr !important; }
       .credits-grid { grid-template-columns: 1fr 1fr !important; }
       .hero-two-col { grid-template-columns: 1fr !important; }
-      .hero-two-col > div:first-child { border-right: none !important; padding-right: 0 !important; border-bottom: 1px solid #1a1a1a; padding-bottom: 16px; margin-bottom: 4px; }
+      .hero-two-col > div:first-child {
+        border-right: none !important;
+        padding-right: 0 !important;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 16px;
+        margin-bottom: 4px;
+      }
     }
   </style>
 </head>
@@ -308,21 +350,21 @@
         <!-- Right: Scoring Rubric -->
         <div>
           <div class="text-xs tracking-widest mb-3" style="color: rgba(0,255,65,0.5);">SCORING CRITERIA</div>
-          <div class="text-xs mb-3" style="color: rgba(0,255,65,0.35); line-height: 1.5;">
+          <div class="text-xs mb-3 readable" style="color: rgba(255,255,255,0.4); line-height: 1.5;">
             Based on <a href="https://x.com/eglyman/status/2037554997982871650" target="_blank" rel="noopener" class="arena-link" style="font-size: inherit;">@eglyman's original tweet</a> &mdash; "You'll be a good fit if you work best without permission, default to 'how could I automate this', and had weird teenage hobbies."
           </div>
           <div style="display: flex; flex-direction: column; gap: 10px;">
             <div>
               <div class="text-xs"><span class="font-bold" style="color: #00ff41;">BUILDER</span> <span style="color: rgba(0,255,65,0.35);">wgt .40</span></div>
-              <div class="text-xs mt-1" style="color: rgba(0,255,65,0.5);">Shipped something real. Works without permission. Evidence of velocity.</div>
+              <div class="rubric-desc mt-1">Shipped something real. Works without permission. Evidence of velocity.</div>
             </div>
             <div>
               <div class="text-xs"><span class="font-bold" style="color: #00ff41;">CREATIVITY</span> <span style="color: rgba(0,255,65,0.35);">wgt .35</span></div>
-              <div class="text-xs mt-1" style="color: rgba(0,255,65,0.5);">Novel or unexpected. Not another todo app. Original thinking.</div>
+              <div class="rubric-desc mt-1">Novel or unexpected. Not another todo app. Original thinking.</div>
             </div>
             <div>
               <div class="text-xs"><span class="font-bold" style="color: #00ff41;">QUIRKINESS</span> <span style="color: rgba(0,255,65,0.35);">wgt .25</span></div>
-              <div class="text-xs mt-1" style="color: rgba(0,255,65,0.5);">Personality shines through. "Weird teenage hobbies" energy. Memorable.</div>
+              <div class="rubric-desc mt-1">Personality shines through. "Weird teenage hobbies" energy. Memorable.</div>
             </div>
           </div>
         </div>
@@ -333,10 +375,45 @@
     <!-- 4. LEADERBOARD -->
     <div class="panel mb-4" id="leaderboard">
       <div class="p-3 border-b" style="border-color: #1a1a1a;">
-        <span class="text-xs tracking-widest" style="color: rgba(0,255,65,0.5);">LEADERBOARD</span>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+          <span class="text-xs tracking-widest" style="color: rgba(0,255,65,0.5);">LEADERBOARD</span>
+          <div style="position: relative; flex: 1; max-width: 220px;">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="search by name or @handle"
+              spellcheck="false"
+              style="
+                width: 100%;
+                background: rgba(0,255,65,0.03);
+                border: 1px solid #1a3a1a;
+                border-radius: 2px;
+                padding: 5px 28px 5px 10px;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 12px;
+                color: rgba(255,255,255,0.7);
+                outline: none;
+                transition: border-color 0.15s;
+                -webkit-font-smoothing: antialiased;
+              "
+              onfocus="this.style.borderColor='rgba(0,255,65,0.4)'"
+              onblur="this.style.borderColor='#1a3a1a'"
+            >
+            <span id="search-clear" onclick="clearSearch()" style="
+              position: absolute;
+              right: 8px;
+              top: 50%;
+              transform: translateY(-50%);
+              color: rgba(0,255,65,0.3);
+              font-size: 14px;
+              cursor: pointer;
+              display: none;
+              line-height: 1;
+            ">&times;</span>
+          </div>
+        </div>
       </div>
       <div id="entries-container">
-        <!-- Entries rendered by JS -->
         <div class="p-6 text-center text-xs" style="color: rgba(0,255,65,0.35);">
           <span class="cursor-blink">loading entries</span>
         </div>
@@ -349,7 +426,7 @@
       <div class="credits-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
         <div>
           <div class="text-xs" style="color: rgba(0,255,65,0.4);">OPERATOR</div>
-          <div class="text-sm" style="color: rgba(0,255,65,0.85);">
+          <div class="text-sm readable" style="color: rgba(255,255,255,0.65);">
             <a href="https://x.com/plumberahad" target="_blank" rel="noopener" class="arena-link">@plumberahad</a>
             &middot; <a href="https://www.ahad.nyc" target="_blank" rel="noopener" class="arena-link">ahad.nyc</a>
             &middot; <a href="https://github.com/ahadplumber/reply-arena" target="_blank" rel="noopener" class="arena-link">github</a>
@@ -357,15 +434,15 @@
         </div>
         <div>
           <div class="text-xs" style="color: rgba(0,255,65,0.4);">ENGINE</div>
-          <div class="text-sm" style="color: rgba(0,255,65,0.85);">Claude Code + Opus 4.6</div>
+          <div class="text-sm readable" style="color: rgba(255,255,255,0.65);">Claude Code + Opus 4.6</div>
         </div>
         <div>
           <div class="text-xs" style="color: rgba(0,255,65,0.4);">WEAPONS</div>
-          <div class="text-sm" style="color: rgba(0,255,65,0.85);">Skills &times; Plugins &times; Subagents &times; Loops &times; Firecrawl</div>
+          <div class="text-sm readable" style="color: rgba(255,255,255,0.65);">Skills &times; Plugins &times; Subagents &times; Loops &times; Firecrawl</div>
         </div>
         <div>
           <div class="text-xs" style="color: rgba(0,255,65,0.4);">IDEA &rarr; DEPLOYED</div>
-          <div class="text-sm glow-score" style="color: #ffcc00;" id="deploy-time">&lt; 3 HOURS</div>
+          <div class="text-sm glow-score" style="color: #ffcc00;">&lt; 3 HOURS</div>
         </div>
       </div>
     </div>
@@ -377,7 +454,6 @@
       </a>
     </div>
 
-    <!-- ASCII accent -->
     <div class="text-center mt-2 mb-4" style="color: rgba(0,255,65,0.12); font-size: 10px; line-height: 1.2; white-space: pre;">
   .  *  .    *    .  *
     .    *  .   .    *
@@ -393,42 +469,27 @@
     (function initMatrix() {
       const canvas = document.getElementById('matrix-canvas');
       const ctx = canvas.getContext('2d');
-
-      function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
+      function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
       resize();
       window.addEventListener('resize', resize);
-
       const fontSize = 14;
       const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+-=[]{}|;:,.<>?/~`';
       let columns = Math.floor(canvas.width / fontSize);
       let drops = new Array(columns).fill(1);
-
       function draw() {
         ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = '#00ff41';
         ctx.font = fontSize + 'px monospace';
-
         for (let i = 0; i < drops.length; i++) {
           const char = chars[Math.floor(Math.random() * chars.length)];
           ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-
-          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-            drops[i] = 0;
-          }
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
           drops[i]++;
         }
       }
-
       setInterval(draw, 60);
-
-      window.addEventListener('resize', () => {
-        columns = Math.floor(canvas.width / fontSize);
-        drops = new Array(columns).fill(1);
-      });
+      window.addEventListener('resize', () => { columns = Math.floor(canvas.width / fontSize); drops = new Array(columns).fill(1); });
     })();
 
     // ==========================================
@@ -443,61 +504,88 @@
       } catch (e) {
         document.getElementById('entries-container').innerHTML =
           '<div class="p-6 text-center text-xs" style="color: rgba(255,0,85,0.7);">[ERR] failed to load scored-replies.json</div>';
-        console.error(e);
         return;
       }
 
       const meta = data.meta;
       const entries = data.entries || [];
 
-      // -- Boot sequence
-      const bootText = document.getElementById('boot-text');
-      const bootSeq = document.getElementById('boot-sequence');
-      bootText.textContent = `X API connected \u00b7 ${meta.total_replies} replies fetched \u00b7 pipeline armed`;
+      // Boot
+      document.getElementById('boot-text').textContent =
+        `X API connected · ${meta.total_replies} replies fetched · pipeline armed`;
 
-      // -- Scan timestamp
+      // Timestamp
       if (meta.scanned_at) {
         const d = new Date(meta.scanned_at);
-        const ts = d.toLocaleString('en-US', {
-          month: 'short', day: 'numeric',
-          hour: '2-digit', minute: '2-digit',
-          hour12: false,
-          timeZoneName: 'short'
-        });
-        document.getElementById('scan-timestamp').textContent = 'last scan: ' + ts;
+        document.getElementById('scan-timestamp').textContent = 'last scan: ' +
+          d.toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit', hour12:false, timeZoneName:'short' });
       }
 
-      // -- Hero stat
+      // Hero
       document.getElementById('hero-total').textContent = meta.total_replies || '?';
       const dropped = (meta.total_replies || 0) - (meta.after_synthesize || entries.length);
-      if (dropped > 0) {
-        document.getElementById('hero-filtered').textContent = ' -' + dropped;
-      }
+      if (dropped > 0) document.getElementById('hero-filtered').textContent = ' -' + dropped;
 
-      // -- Render entries
+      // Store globally for search
+      window._allEntries = entries;
+
       renderEntries(entries);
+
+      // Wire up search
+      const searchInput = document.getElementById('search-input');
+      const searchClear = document.getElementById('search-clear');
+      let debounceTimer;
+      searchInput.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          const q = searchInput.value.trim().toLowerCase();
+          searchClear.style.display = q ? 'block' : 'none';
+          if (!q) {
+            renderEntries(window._allEntries);
+            return;
+          }
+          const filtered = window._allEntries.filter(e => {
+            const name = (e.author.name || '').toLowerCase();
+            const handle = (e.author.handle || '').toLowerCase();
+            const project = (e.project && e.project.name || '').toLowerCase();
+            return name.includes(q) || handle.includes(q) || project.includes(q);
+          });
+          renderEntries(filtered, true); // true = show all, no pagination
+        }, 150);
+      });
     })();
+
+    function clearSearch() {
+      const input = document.getElementById('search-input');
+      input.value = '';
+      document.getElementById('search-clear').style.display = 'none';
+      renderEntries(window._allEntries);
+      input.focus();
+    }
 
     const INITIAL_SHOW = 10;
 
-    function renderEntries(entries) {
+    function renderEntries(entries, showAll) {
       const container = document.getElementById('entries-container');
       if (!entries.length) {
         container.innerHTML = '<div class="p-6 text-center text-xs" style="color: rgba(0,255,65,0.35);">[NO ENTRIES]</div>';
         return;
       }
-
       container.innerHTML = '';
 
-      // Show top 10 initially
+      if (showAll) {
+        entries.forEach(entry => container.appendChild(createEntryEl(entry)));
+        if (!entries.length) {
+          container.innerHTML = '<div class="p-6 text-center text-xs" style="color: rgba(0,255,65,0.35);">[NO MATCHES]</div>';
+        }
+        return;
+      }
+
       const initial = entries.slice(0, INITIAL_SHOW);
       const rest = entries.slice(INITIAL_SHOW);
 
-      initial.forEach((entry) => {
-        container.appendChild(createEntryEl(entry));
-      });
+      initial.forEach(entry => container.appendChild(createEntryEl(entry)));
 
-      // "Load more" button if there are more
       if (rest.length > 0) {
         const loadMore = document.createElement('div');
         loadMore.className = 'p-4 text-center cursor-pointer';
@@ -507,13 +595,10 @@
                 onmouseover="this.style.borderColor='#00ff41'; this.style.color='#00ff41';"
                 onmouseout="this.style.borderColor='rgba(0,255,65,0.2)'; this.style.color='rgba(0,255,65,0.5)';">
             SHOW ALL ${entries.length} RANKED &darr;
-          </span>
-        `;
+          </span>`;
         loadMore.addEventListener('click', () => {
           loadMore.remove();
-          rest.forEach((entry) => {
-            container.appendChild(createEntryEl(entry));
-          });
+          rest.forEach(entry => container.appendChild(createEntryEl(entry)));
         });
         container.appendChild(loadMore);
       }
@@ -528,6 +613,19 @@
         toggleDossier(el, entry);
       });
       return el;
+    }
+
+    // Short tagline from project name
+    function getTagline(entry) {
+      const p = entry.project;
+      if (!p || !p.name) return '';
+      // Use project name, strip the author name suffix if present
+      let name = p.name;
+      // Remove " — Author" or " (Author)" patterns
+      name = name.replace(/\s*[\(\u2014\-]\s*[A-Z][a-z]+\)?$/, '');
+      // Truncate if too long
+      if (name.length > 50) name = name.substring(0, 47) + '...';
+      return name;
     }
 
     function buildEntryHTML(entry) {
@@ -546,17 +644,19 @@
       const compColor = entry.scores.composite >= 85 ? '#00ff41' :
                         entry.scores.composite >= 70 ? '#ffcc00' : '#ff0055';
 
+      const tagline = getTagline(entry);
+
       return `
-        <div class="p-3 entry-row" style="display: flex; align-items: center; gap: 12px;">
+        <div class="p-3" style="display: flex; align-items: flex-start; gap: 12px;">
           <!-- Rank -->
-          <div style="width: 36px; text-align: center; flex-shrink: 0; font-family: 'Courier New', monospace;">
+          <div style="width: 36px; text-align: center; flex-shrink: 0; font-family: 'Courier New', monospace; padding-top: 2px;">
             ${rankDisplay}
           </div>
 
           <!-- Profile image -->
-          ${profileImg}
+          <div style="padding-top: 2px;">${profileImg}</div>
 
-          <!-- Name + Handle -->
+          <!-- Name + Handle + Tagline -->
           <div style="flex: 1; min-width: 0;">
             <div class="text-sm font-bold" style="color: rgba(0,255,65,0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
               ${escapeHTML(entry.author.name || entry.author.handle)}
@@ -564,10 +664,11 @@
             <div class="text-xs" style="color: rgba(0,255,65,0.45);">
               @${escapeHTML(entry.author.handle)}
             </div>
+            ${tagline ? `<div class="entry-tagline">${escapeHTML(tagline)}</div>` : ''}
           </div>
 
           <!-- Composite score -->
-          <div style="flex-shrink: 0; text-align: right;">
+          <div style="flex-shrink: 0; text-align: right; padding-top: 2px;">
             <div class="font-bold" style="font-size: 1.25rem; color: ${compColor};">
               ${entry.scores.composite}
             </div>
@@ -575,15 +676,12 @@
           </div>
 
           <!-- Expand indicator -->
-          <div style="flex-shrink: 0; color: rgba(0,255,65,0.25); font-size: 0.7rem;" class="expand-arrow">
+          <div style="flex-shrink: 0; color: rgba(0,255,65,0.25); font-size: 0.7rem; padding-top: 4px;" class="expand-arrow">
             &#9660;
           </div>
         </div>
 
-        <!-- DOSSIER (hidden by default) -->
-        <div class="dossier" data-dossier>
-          <!-- filled on expand -->
-        </div>
+        <div class="dossier" data-dossier></div>
       `;
     }
 
@@ -592,7 +690,6 @@
       const arrow = el.querySelector('.expand-arrow');
       const isOpen = dossier.classList.contains('dossier-open');
 
-      // Close all others first
       document.querySelectorAll('.dossier-open').forEach(d => {
         d.classList.remove('dossier-open');
         d.closest('.entry').classList.remove('entry-active');
@@ -601,15 +698,10 @@
 
       if (isOpen) return;
 
-      // Open this one
       dossier.innerHTML = buildDossierHTML(entry);
       el.classList.add('entry-active');
       arrow.innerHTML = '&#9650;';
-
-      // Small delay for transition
-      requestAnimationFrame(() => {
-        dossier.classList.add('dossier-open');
-      });
+      requestAnimationFrame(() => { dossier.classList.add('dossier-open'); });
     }
 
     function buildDossierHTML(entry) {
@@ -617,56 +709,68 @@
       const p = entry.project || {};
       const s = entry.scores;
 
-      // Links — show domain names, not generic "Project"
+      // Links
       const projectLinks = [];
-      if (e.github_url) projectLinks.push(`<a href="${e.github_url}" target="_blank" rel="noopener" class="arena-link text-xs">GitHub</a>`);
-      if (e.linkedin_url) projectLinks.push(`<a href="${e.linkedin_url}" target="_blank" rel="noopener" class="arena-link text-xs">LinkedIn</a>`);
+      if (e.github_url) projectLinks.push(`<a href="${e.github_url}" target="_blank" rel="noopener" class="arena-link" style="font-family:'IBM Plex Mono',monospace; font-size:11px; padding:3px 8px; border:1px solid rgba(0,200,255,0.25); border-radius:2px; border-bottom:none;">GitHub</a>`);
+      if (e.linkedin_url) projectLinks.push(`<a href="${e.linkedin_url}" target="_blank" rel="noopener" class="arena-link" style="font-family:'IBM Plex Mono',monospace; font-size:11px; padding:3px 8px; border:1px solid rgba(0,200,255,0.25); border-radius:2px; border-bottom:none;">LinkedIn</a>`);
       if (p.links && p.links.length) {
         p.links.forEach(l => {
           if (l !== e.github_url && l !== e.linkedin_url) {
             try {
               const domain = new URL(l).hostname.replace('www.', '');
-              projectLinks.push(`<a href="${l}" target="_blank" rel="noopener" class="arena-link text-xs">${escapeHTML(domain)}</a>`);
+              projectLinks.push(`<a href="${l}" target="_blank" rel="noopener" class="arena-link" style="font-family:'IBM Plex Mono',monospace; font-size:11px; padding:3px 8px; border:1px solid rgba(0,200,255,0.25); border-radius:2px; border-bottom:none;">${escapeHTML(domain)}</a>`);
             } catch {
-              projectLinks.push(`<a href="${l}" target="_blank" rel="noopener" class="arena-link text-xs">Link</a>`);
+              projectLinks.push(`<a href="${l}" target="_blank" rel="noopener" class="arena-link" style="font-family:'IBM Plex Mono',monospace; font-size:11px; padding:3px 8px; border:1px solid rgba(0,200,255,0.25); border-radius:2px; border-bottom:none;">Link</a>`);
             }
           }
         });
       }
-      // "Open Reply" is a primary CTA, separate from project links
+
       const replyButton = entry.reply_url
-        ? `<a href="${entry.reply_url}" target="_blank" rel="noopener" style="display:inline-block; padding: 6px 16px; border: 1px solid #00ff41; color: #00ff41; font-size: 11px; letter-spacing: 2px; text-decoration: none; border-radius: 2px; transition: all 0.15s;" onmouseover="this.style.background='rgba(0,255,65,0.1)'" onmouseout="this.style.background='transparent'">OPEN REPLY &rarr;</a>`
+        ? `<a href="${entry.reply_url}" target="_blank" rel="noopener" style="display:inline-block; padding: 7px 16px; border: 1px solid #00ff41; color: #00ff41; font-size: 11px; letter-spacing: 1px; text-decoration: none; border-radius: 2px; transition: all 0.15s; font-family: 'Courier New', monospace;" onmouseover="this.style.background='rgba(0,255,65,0.08)'" onmouseout="this.style.background='transparent'">OPEN REPLY &rarr;</a>`
         : '';
-      const links = projectLinks;
 
       return `
-        <div class="px-4 pb-4 pt-2" style="border-top: 1px solid #1a1a1a; margin-top: 0;">
+        <div class="px-4 pb-4 pt-2" style="border-top: 1px solid #1a1a1a; border-left: 2px solid #00ff41; margin-left: 0;">
 
-          <!-- Write-up / project summary -->
-          ${e.write_up ? `<div class="mb-3 text-sm" style="color: rgba(0,255,65,0.85); line-height: 1.5;">${escapeHTML(e.write_up)}</div>` : ''}
-          ${p.summary ? `<div class="mb-3 text-xs" style="color: rgba(0,255,65,0.65); line-height: 1.5;"><span style="color: rgba(0,255,65,0.4);">PROJECT:</span> ${escapeHTML(p.name || '')} &mdash; ${escapeHTML(p.summary)}</div>` : ''}
+          <!-- Write-up -->
+          ${e.write_up ? `
+            <div class="dos-label">Dossier</div>
+            <div class="dos-text">${escapeHTML(e.write_up)}</div>
+          ` : ''}
+
+          <!-- Project -->
+          ${p.name ? `
+            <div class="dos-label">Project</div>
+            <div class="dos-project-name">${escapeHTML(p.name)}</div>
+            ${p.summary ? `<div class="dos-project-desc">${escapeHTML(p.summary)}</div>` : ''}
+          ` : ''}
 
           <!-- Bio + followers -->
-          ${entry.author.bio ? `<div class="mb-3 text-xs" style="color: rgba(0,255,65,0.55); line-height: 1.4;"><span style="color: rgba(0,255,65,0.35);">BIO:</span> ${escapeHTML(entry.author.bio)}</div>` : ''}
-          ${entry.author.followers != null ? `<div class="mb-3 text-xs" style="color: rgba(0,255,65,0.45);"><span style="color: rgba(0,255,65,0.35);">FOLLOWERS:</span> ${Number(entry.author.followers).toLocaleString()}</div>` : ''}
+          ${entry.author.bio ? `
+            <div class="dos-label">Bio</div>
+            <div class="dos-bio">${escapeHTML(entry.author.bio)}${entry.author.followers != null ? ` · ${Number(entry.author.followers).toLocaleString()} followers` : ''}</div>
+          ` : ''}
 
-          <!-- Score rings — 3 separate, color = score quality -->
-          <div class="mb-3" style="display: flex; justify-content: space-around; gap: 12px;">
-            ${buildSingleRing('BUILDER', s.builder, scoreColor(s.builder))}
-            ${buildSingleRing('CREATIVITY', s.creativity, scoreColor(s.creativity))}
-            ${buildSingleRing('QUIRKINESS', s.quirkiness, scoreColor(s.quirkiness))}
+          <!-- Score rings -->
+          <div class="dos-label">Scores</div>
+          <div style="display: flex; justify-content: space-around; gap: 12px; margin-top: 4px;">
+            ${buildRing('BUILDER', s.builder, scoreColor(s.builder))}
+            ${buildRing('CREATIVITY', s.creativity, scoreColor(s.creativity))}
+            ${buildRing('QUIRKINESS', s.quirkiness, scoreColor(s.quirkiness))}
           </div>
 
-          <!-- Project links -->
-          ${links.length ? `
-            <div class="flex flex-wrap gap-3 mt-2 mb-3">
-              ${links.join('')}
+          <!-- Links -->
+          ${projectLinks.length ? `
+            <div class="dos-label">Links</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px;">
+              ${projectLinks.join('')}
             </div>
           ` : ''}
 
-          <!-- Primary CTA: Open Reply -->
+          <!-- CTA -->
           ${replyButton ? `
-            <div class="mt-3 pt-3" style="border-top: 1px solid #1a1a1a;">
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #1a1a1a;">
               ${replyButton}
             </div>
           ` : ''}
@@ -680,24 +784,18 @@
       return '#ff0055';
     }
 
-    function buildSingleRing(label, score, color) {
-      const size = 70;
-      const cx = size / 2;
-      const cy = size / 2;
-      const r = 26;
-      const width = 5;
-      const circumference = 2 * Math.PI * r;
-      const filled = (score / 100) * circumference;
-      const gap = circumference - filled;
-
+    function buildRing(label, score, color) {
+      const size = 60, cx = 30, cy = 30, r = 22, w = 4;
+      const circ = 2 * Math.PI * r;
+      const filled = (score / 100) * circ;
       return `
-        <div style="text-align: center;">
+        <div style="text-align:center;">
           <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-            <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="${width}"/>
-            <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${width}" stroke-dasharray="${filled} ${gap}" stroke-dashoffset="${circumference * 0.25}" stroke-linecap="round" style="filter: drop-shadow(0 0 4px ${color}50);"/>
-            <text x="${cx}" y="${cy + 1}" text-anchor="middle" dominant-baseline="central" fill="${color}" font-family="'Courier New', monospace" font-size="14" font-weight="bold">${score}</text>
+            <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="${w}"/>
+            <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${w}" stroke-dasharray="${filled} ${circ - filled}" stroke-dashoffset="${circ * 0.25}" stroke-linecap="round" style="filter: drop-shadow(0 0 4px ${color}50);"/>
+            <text x="${cx}" y="${cy + 1}" text-anchor="middle" dominant-baseline="central" fill="${color}" font-family="'Courier New', monospace" font-size="13" font-weight="bold">${score}</text>
           </svg>
-          <div class="text-xs" style="color: rgba(0,255,65,0.5); margin-top: 2px;">${label}</div>
+          <div style="font-size:8px; color:rgba(0,255,65,0.5); margin-top:2px; text-transform:uppercase; letter-spacing:0.5px;">${label}</div>
         </div>
       `;
     }
