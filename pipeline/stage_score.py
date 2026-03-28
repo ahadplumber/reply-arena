@@ -1,13 +1,11 @@
 # pipeline/stage_score.py
-"""Stage 4: LLM-based scoring on Builder, Creativity, Quirkiness."""
+"""Stage 4: LLM-based scoring on Builder, Creativity, Quirkiness. One project at a time."""
 import json
 import anthropic
 from prompts import SCORE_SYSTEM, SCORE_USER
 from config import CLAUDE_MODEL, SCORE_WEIGHTS
 
 client = anthropic.Anthropic()
-
-BATCH_SIZE = 15  # Score in batches
 
 
 def _compute_composite(scores: dict) -> int:
@@ -16,54 +14,52 @@ def _compute_composite(scores: dict) -> int:
     return round(total)
 
 
-def score_projects(tweets: list[dict]) -> dict:
-    """Score each project on 3 dimensions. Returns ranked list."""
-    results = []
+def _score_single(tweet: dict) -> dict:
+    """Score a single project. No batch comparison — absolute scoring."""
+    synthesis = tweet.get("synthesis", {})
 
-    for i in range(0, len(tweets), BATCH_SIZE):
-        batch = tweets[i : i + BATCH_SIZE]
-        projects = [
+    response = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=1024,
+        system=SCORE_SYSTEM,
+        messages=[
             {
-                "id": t["id"],
-                "text": t["text"],
-                "author_handle": t["author"].get("username", "unknown"),
-                "author_bio": t["author"].get("description", ""),
-                "project_name": t["synthesis"]["project_name"],
-                "project_summary": t["synthesis"]["project_summary"],
-                "links": t["synthesis"].get("links_found", []),
+                "role": "user",
+                "content": SCORE_USER.format(
+                    project_id=tweet["id"],
+                    author_handle=tweet["author"].get("username", "unknown"),
+                    author_bio=tweet["author"].get("description", ""),
+                    project_name=synthesis.get("project_name", ""),
+                    project_summary=synthesis.get("project_summary", ""),
+                    project_links=json.dumps(synthesis.get("links_found", [])),
+                ),
             }
-            for t in batch
-        ]
+        ],
+    )
 
-        response = client.messages.create(
-            model=CLAUDE_MODEL,
-            max_tokens=4096,
-            system=SCORE_SYSTEM,
-            messages=[
-                {
-                    "role": "user",
-                    "content": SCORE_USER.format(
-                        projects_json=json.dumps(projects, indent=2)
-                    ),
-                }
-            ],
-        )
+    text = response.content[0].text
+    if "```" in text:
+        text = text.split("```json")[-1].split("```")[0] if "```json" in text else text.split("```")[1].split("```")[0]
+    return json.loads(text.strip())
 
-        text = response.content[0].text
-        if "```" in text:
-            text = text.split("```json")[-1].split("```")[0] if "```json" in text else text.split("```")[1].split("```")[0]
-        batch_results = json.loads(text.strip())
-        results.extend(batch_results)
 
-    # Merge scores with tweet data and compute composites
-    scores_by_id = {r["id"]: r for r in results}
+def score_projects(tweets: list[dict]) -> dict:
+    """Score each project individually. Returns ranked list."""
     scored = []
-    for tweet in tweets:
-        score_data = scores_by_id.get(tweet["id"])
-        if score_data:
-            tweet["scores"] = score_data["scores"]
-            tweet["scores"]["composite"] = _compute_composite(score_data["scores"])
-            tweet["justification"] = score_data.get("justification", {})
+
+    for i, tweet in enumerate(tweets):
+        try:
+            result = _score_single(tweet)
+            tweet["scores"] = result["scores"]
+            tweet["scores"]["composite"] = _compute_composite(result["scores"])
+            tweet["justification"] = result.get("justification", {})
+            scored.append(tweet)
+            print(f"  [{i+1}/{len(tweets)}] @{tweet['author'].get('username', '?')} — {tweet['scores']['composite']} pts")
+        except Exception as e:
+            print(f"  [{i+1}/{len(tweets)}] @{tweet['author'].get('username', '?')} — SCORE ERROR: {e}")
+            # Don't drop — assign zero scores
+            tweet["scores"] = {"builder": 0, "creativity": 0, "quirkiness": 0, "composite": 0}
+            tweet["justification"] = {"error": str(e)}
             scored.append(tweet)
 
     # Sort by composite score descending

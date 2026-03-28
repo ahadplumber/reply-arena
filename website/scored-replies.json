@@ -2,10 +2,10 @@
   "meta": {
     "tweet_id": "2037554997982871650",
     "author": "eglyman",
-    "scanned_at": "2026-03-27T20:33:28.434864+00:00",
-    "total_replies": 311,
-    "after_filter": 163,
-    "after_synthesize": 79,
+    "scanned_at": "2026-03-27T23:43:33.454656+00:00",
+    "total_replies": 378,
+    "after_filter": 222,
+    "after_synthesize": 161,
     "elite_count": 10
   },
   "entries": [
@@ -13,6 +13,7 @@
       "rank": 1,
       "reply_id": "2037562551542698084",
       "reply_url": "https://x.com/brannewthoughts/status/2037562551542698084",
+      "previous_rank": 1,
       "author": {
         "handle": "brannewthoughts",
         "name": "Bran",
@@ -35,7 +36,7 @@
         "composite": 91
       },
       "enrichment": {
-        "write_up": "Bran is a NYC-based physicist-turned-founder who built Loyalty-Test.com solo \u2014 a two-sided marketplace where people hire strangers to flirt with their partners \u2014 and somehow turned it into a $200k+ revenue business that landed in the NYT, Business Insider, and Barstool Sports. It's a weird idea executed with real distribution instincts: live product, real tester profiles, actual press, actual money. Small follower count, zero hype machine \u2014 just a builder who found a market and ran with it.",
+        "write_up": "Bran is a solo founder physicist out of NYC who built Loyalty-Test.com \u2014 a two-sided marketplace where people hire strangers to flirt with their partners \u2014 to $200k+ in revenue entirely on his own. The concept is polarizing by design, but the execution isn't: he got NYT, Business Insider, and Barstool coverage, built real tester profiles, and shipped a live marketplace without a team or funding. Someone who can monetize human insecurity at that scale and attract press attention knows how to find demand and move fast.",
         "github_url": null,
         "linkedin_url": null
       }
@@ -44,6 +45,7 @@
       "rank": 2,
       "reply_id": "2037568029375037896",
       "reply_url": "https://x.com/sriramkiron/status/2037568029375037896",
+      "previous_rank": 2,
       "author": {
         "handle": "sriramkiron",
         "name": "Sriram Kiron",
@@ -65,15 +67,121 @@
         "composite": 83
       },
       "enrichment": {
-        "write_up": "Purdue CS student who built Moltopia \u2014 a live pixel-art virtual world where autonomous AI agents chat, trade, craft, and negotiate loans with each other in real time. This isn't a demo or mockup; it's a deployed product with named agents actively running an economy. Also shipping a video acceleration tool on the side, which tells you he doesn't wait around.",
+        "write_up": "Sriram is a Purdue CS student who built Moltopia \u2014 a live pixel-art virtual world where autonomous AI agents chat, trade, craft, and negotiate loans with each other in real time. This isn't a demo or a concept; it's a deployed, functioning multi-agent economy with named characters and a live activity feed. He's also a Codex Ambassador and active in the Purdue Hackers community, signaling he's deep in the builder ecosystem and moves fast.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
       "rank": 3,
+      "reply_id": "2037566387833426137",
+      "reply_url": "https://x.com/boiopollo/status/2037566387833426137",
+      "previous_rank": null,
+      "author": {
+        "handle": "boiopollo",
+        "name": "Ben (kakawww)",
+        "bio": "Series A employee #2 | Built to $100M valuation | Recovering B2C addict (my B2B site here)\ud83d\udc47",
+        "followers": 129,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1920410671495233536/THiNP-Za_normal.jpg"
+      },
+      "project": {
+        "name": "GOM LLC \u2014 Multi-Product Portfolio (Ben)",
+        "summary": "Ben (GOM LLC) has shipped 11+ products including Aura Invest (a tax-aware fintech iOS app built in 3 weeks and pitched to Logan Paul), an enterprise RAG/Slack knowledge base for a 30-person customer success team, RoomRocket (AI real estate image editing via Stable Diffusion), GolfWink (computer vision golf swing analyzer), and several other live apps. The portfolio site links to live products with case studies, demonstrating a consistent track record of shipping real software across mobile, AI, and enterprise domains.",
+        "links": [
+          "https://projects.gom.vc/",
+          "https://lurnit.gom.vc/",
+          "https://roomrocket.io/",
+          "https://bentobear.co/",
+          "https://wordrobin.com/",
+          "https://golfwink.com/",
+          "https://pawcraft.gom.vc/",
+          "https://dreamloop.gom.vc/"
+        ]
+      },
+      "scores": {
+        "builder": 88,
+        "creativity": 78,
+        "quirkiness": 82,
+        "composite": 83
+      },
+      "enrichment": {
+        "write_up": "Ben is a serial builder who's shipped 11+ real products across fintech, AI, and enterprise \u2014 not side projects, actual live software. He was employee #2 at a Series A company that scaled to $100M valuation, and on the indie side he built a tax-aware fintech iOS app in 3 weeks and pitched it to Logan Paul. The range is rare: RAG pipelines for enterprise Slack, computer vision for golf swings, AI real estate image editing \u2014 this guy doesn't prototype, he ships.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 4,
+      "reply_id": "2037656827454693771",
+      "reply_url": "https://x.com/vincentaamato/status/2037656827454693771",
+      "previous_rank": null,
+      "author": {
+        "handle": "vincentaamato",
+        "name": "Vincent Amato",
+        "bio": "CS @BrownUniversity",
+        "followers": 232,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1808956822382071812/zea7McZN_normal.jpg"
+      },
+      "project": {
+        "name": "Mushroom AI \u2014 iOS App (DINOv3 + MLX Swift)",
+        "summary": "A free iOS app that classifies wild mushroom species using a model trained with DINOv3 and ported to MLX Swift so inference runs 100% locally on-device. The app is live on the App Store and accompanied by a web app (mushroomai.app) running on a local GPU. Strong technical depth: custom-trained vision model, on-device ML, cross-platform deployment.",
+        "links": [
+          "https://apps.apple.com/us/app/mushroo",
+          "http://mushroomai.app",
+          "https://twitter.com/vincentaamato/status/1985907080390173138"
+        ]
+      },
+      "scores": {
+        "builder": 88,
+        "creativity": 82,
+        "quirkiness": 78,
+        "composite": 83
+      },
+      "enrichment": {
+        "write_up": "Brown CS student who didn't just fine-tune a model \u2014 he trained a custom vision classifier using DINOv3, ported it to MLX Swift, and shipped it as a live iOS app with 100% on-device inference. The fact that he also spun up a web app backed by a local GPU shows he thinks end-to-end, not just notebook-to-demo. Mushroom classification is a niche problem but the technical stack \u2014 on-device ML, cross-platform deployment, custom training pipeline \u2014 is exactly the kind of 0-to-1 execution you want to see from someone early in their career.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 5,
+      "reply_id": "2037660509986566478",
+      "reply_url": "https://x.com/plumberahad/status/2037660509986566478",
+      "previous_rank": null,
+      "author": {
+        "handle": "plumberahad",
+        "name": "Ahad",
+        "bio": "Context overlord \ud83e\udd16",
+        "followers": 135,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1890038830087966720/WmKUa90S_normal.jpg"
+      },
+      "project": {
+        "name": "Reply Arena \u2014 Builder Scorecard",
+        "summary": "A live AI-scored leaderboard that fetches and ranks replies to @eglyman's hiring tweet using Claude/Opus with custom scoring criteria (builder, creativity, quirkiness). Built and deployed in under 3 hours using Claude Code, Firecrawl, and custom subagent pipelines. The live site at reply-arena.ahad.nyc shows 311 replies fetched and 79 ranked, with a public GitHub repo.",
+        "links": [
+          "https://reply-arena.ahad.nyc/",
+          "https://reply-arena.ahad.nyc/how.html",
+          "https://github.com/ahadplumber/reply-arena",
+          "https://www.ahad.nyc/"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 85,
+        "quirkiness": 78,
+        "composite": 82
+      },
+      "enrichment": {
+        "write_up": "Ahad built a live AI-scored leaderboard to rank replies to the exact tweet this dossier is for \u2014 meta doesn't begin to cover it. Shipped in under 3 hours using Claude Code, Firecrawl, and custom subagent pipelines, with 311 replies fetched and 79 ranked at reply-arena.ahad.nyc. The kind of person who responds to a hiring challenge by building infrastructure around it.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 6,
       "reply_id": "2037610866200179020",
       "reply_url": "https://x.com/0xultravioleta/status/2037610866200179020",
+      "previous_rank": 3,
       "author": {
         "handle": "0xultravioleta",
         "name": "ultravioleta",
@@ -98,15 +206,47 @@
         "composite": 81
       },
       "enrichment": {
-        "write_up": "Ultravioleta is building live, working AI agent infrastructure \u2014 not whitepapers. Execution Market already has 57 users and 252 completed tasks where AI agents post real-world jobs (photo verification, location checks) and pay out instantly in stablecoins across 10 chains; MeshRelay adds an IRC-based agent comms layer with on-chain identity and x402 payments. This is someone who ships functional systems in a space full of vaporware, learning loudly and moving fast.",
+        "write_up": "Ultravioleta is shipping real AI agent infrastructure, not just whitepapers \u2014 Execution Market has 57 users and 252 completed tasks with stablecoin payouts across 10 chains, and MeshRelay adds on-chain identity and x402 payments to an IRC-based agent comms layer. Both are live and functional, which puts her miles ahead of the 'building soon' crowd. She's learning in public, running a DAO, and clearly comfortable at the intersection of crypto rails and agentic systems.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 4,
+      "rank": 7,
+      "reply_id": "2037593054249443562",
+      "reply_url": "https://x.com/bigboardlab/status/2037593054249443562",
+      "previous_rank": null,
+      "author": {
+        "handle": "bigboardlab",
+        "name": "BigBoardLab",
+        "bio": "Making the NFL Draft beautiful and accurate @BigBoardLab\n\nEx @espn @foxsports @cbs @nbc covering the NFL Draft",
+        "followers": 494,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2034307545733476352/RbPCBRzo_normal.jpg"
+      },
+      "project": {
+        "name": "Big Board Lab \u2014 NFL Mock Draft Simulator & Board Builder",
+        "summary": "A live web application at bigboardlab.com that lets users build NFL draft big boards and run mock drafts against 32 AI GMs with team personalities, live trades, combine data, and scheme fit analysis. The site shows 17,868 mock drafts run by the community and displays real player rankings with college affiliations. Built by someone with ex-ESPN/Fox Sports/CBS/NBC NFL Draft coverage experience.",
+        "links": [
+          "http://bigboardlab.com"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 78,
+        "quirkiness": 85,
+        "composite": 81
+      },
+      "enrichment": {
+        "write_up": "Former NFL Draft analyst across ESPN, Fox Sports, CBS, and NBC who turned deep domain expertise into a live product \u2014 bigboardlab.com has already logged 17,868 community mock drafts, with 32 AI GMs running trades, scheme fit analysis, and combine data in real time. This isn't a side project built on vibes; it's someone who spent years inside the machine, identified what the tools lacked, and shipped something better. Rare combo of legitimate sports media credibility and the technical chops to build and scale a consumer product from scratch.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 8,
       "reply_id": "2037617112450277401",
       "reply_url": "https://x.com/chef_zlatko/status/2037617112450277401",
+      "previous_rank": 4,
       "author": {
         "handle": "chef_zlatko",
         "name": "Zlatko Bijelic",
@@ -130,15 +270,16 @@
         "composite": 80
       },
       "enrichment": {
-        "write_up": "Zlatko is a self-taught builder who ships \u2014 three live, revenue-generating products across healthcare, sports, and productivity, all deployed and functional. SimpleMedDocs alone shows real product instinct: turning dense hospital discharge paperwork into plain English with medication schedules is a genuinely useful, underserved problem. Low follower count, high output \u2014 the kind of quiet executor who lets the work speak.",
+        "write_up": "Zlatko is a self-taught builder who ships \u2014 three live, monetized products across healthcare, sports, and productivity, all deployed and functional. SimpleMedDocs alone shows real product instinct: turning dense discharge paperwork into plain English with medication reminders is a genuine pain point solved cleanly. Low follower count, high output \u2014 exactly the kind of quiet operator who just gets things done.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 5,
+      "rank": 9,
       "reply_id": "2037607805863985161",
       "reply_url": "https://x.com/Ozair_Khan_zae/status/2037607805863985161",
+      "previous_rank": 5,
       "author": {
         "handle": "Ozair_Khan_zae",
         "name": "Ozair Khan",
@@ -162,15 +303,16 @@
         "composite": 79
       },
       "enrichment": {
-        "write_up": "Ozair built smash.watch, a live esports analytics platform that pulls competitive Super Smash Bros. bracket data and ranks players using weighted win rates and opponent strength \u2014 the kind of nuanced, domain-specific metric design that most data people skip over. He shipped it end-to-end: custom ranking algorithm, interactive scatter plot dashboard, filter controls, docs, and a live deployment at his own domain. Small following, zero fluff \u2014 just someone who picked a hard problem in a niche space and actually finished it.",
+        "write_up": "Ozair built smash.watch, a live esports analytics platform that crunches competitive Super Smash Bros. bracket data to rank players by weighted win rate and opponent strength \u2014 fully deployed with an interactive scatter plot dashboard and real state-level data. It's a niche problem that required real data pipeline thinking, and he shipped it end-to-end. Small following, but the work speaks louder than the follower count.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 6,
+      "rank": 10,
       "reply_id": "2037588257769230484",
       "reply_url": "https://x.com/janndriessen/status/2037588257769230484",
+      "previous_rank": 6,
       "author": {
         "handle": "janndriessen",
         "name": "JD\ud83d\udd76\u26a1\ufe0f",
@@ -192,15 +334,52 @@
         "composite": 79
       },
       "enrichment": {
-        "write_up": "Jan is a DeFi engineer who shipped real infrastructure at Index Coop \u2014 the FlashMint SDK is live on npm, open source, and still being actively maintained into 2026. He solo-built a DeFi Earn iOS app in Swift with Passkeys and Morpho integration, and has stacked multiple ETHGlobal hackathon wins. The kind of full-stack crypto builder who goes from protocol-level SDK to consumer iOS app without blinking.",
+        "write_up": "Jan shipped the FlashMint SDK solo at Index Coop \u2014 a production TypeScript library on npm that handles flash minting of DeFi tokens on Ethereum, with real commits and active maintenance into 2026. He also built a DeFi Earn iOS app from scratch using Swift, Passkeys, and Morpho, and has stacked multiple ETHGlobal hackathon wins along the way. This is a hands-on protocol engineer who builds full-stack across mobile and smart contract infra, not just another DeFi tourist.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 7,
+      "rank": 11,
+      "reply_id": "2037581431543652713",
+      "reply_url": "https://x.com/anuukriti/status/2037581431543652713",
+      "previous_rank": null,
+      "author": {
+        "handle": "anuukriti",
+        "name": "Anukriti",
+        "bio": "projects lead @CapeCellular\nhttps://t.co/DdxhfhfBeo",
+        "followers": 746,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1701662765172047872/1QOoe2z9_normal.jpg"
+      },
+      "project": {
+        "name": "Multiple side projects (straitwatch, mamas-kb, keepmehonest-pantry)",
+        "summary": "GitHub profile shows multiple live projects: 'straitwatch' is a real-time dashboard tracking shadow fleet vessels using AIS data and OFAC sanctions list (Next.js/TypeScript/Leaflet); 'mamas-kb' extracts knowledge from WhatsApp groups into a searchable site using Claude AI; 'keepmehonest-pantry' is a household pantry tracker. Multiple projects are deployed and live.",
+        "links": [
+          "https://github.com/datawithak",
+          "https://straitwatch.onrender.com/",
+          "https://mamas-kb-psf8.vercel.app/",
+          "https://github.com/datawithak/straitwatch",
+          "https://github.com/datawithak/mamas-kb",
+          "https://github.com/datawithak/keepmehonest-pantry"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 82,
+        "quirkiness": 75,
+        "composite": 79
+      },
+      "enrichment": {
+        "write_up": "Anukriti is a projects lead at Cape Cellular who builds and ships real things \u2014 her GitHub has live, deployed projects ranging from a real-time sanctions/shadow fleet vessel tracker (AIS data + OFAC list, Next.js/TypeScript) to an AI-powered tool that mines WhatsApp groups for searchable knowledge using Claude. The range is telling: geopolitical data infrastructure, AI pipelines, and practical household tools \u2014 she's not building demos, she's solving actual problems and putting them in front of users.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 12,
       "reply_id": "2037619206624039208",
       "reply_url": "https://x.com/Pnlpal/status/2037619206624039208",
+      "previous_rank": 7,
       "author": {
         "handle": "Pnlpal",
         "name": "Penpal",
@@ -225,15 +404,16 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "Shipped four working products in a single week spanning mobile fitness tracking, blockchain analytics bots, 3D browser games, and crypto tooling \u2014 that's not a portfolio, that's a proof of work. Has the full stack range to go from React + Three.js 3D environments to Solana key management with Privy, and clearly doesn't wait for permission to build. Crypto-native background with a builder's bias toward action \u2014 the kind of person who treats a hiring tweet as a starting gun.",
+        "write_up": "Shipped four distinct working products in a single week \u2014 an iOS fitness tracker, a Telegram blockchain intelligence bot pulling Nansen API data, a 3D capybara browser game built with React + Three.js, and a Solana vanity address generator with Privy key management. That's not a portfolio, that's a production sprint. Crypto-native builder who clearly doesn't wait for permission to go broad across mobile, web3, and gaming.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 8,
+      "rank": 13,
       "reply_id": "2037589086018383961",
       "reply_url": "https://x.com/MacKub94/status/2037589086018383961",
+      "previous_rank": 8,
       "author": {
         "handle": "MacKub94",
         "name": "maciek kubinski",
@@ -255,15 +435,49 @@
         "composite": 78
       },
       "enrichment": {
-        "write_up": "Maciek built Skanujemy.app solo and took it from zero to 4,000 users and $3,500 MRR in four months \u2014 that's a builder who ships and converts. His background is unusual in the best way: 4 years of professional poker before pivoting into 5 years of software development, meaning he understands risk, probability, and reading situations under pressure. No Twitter presence or follower count to speak of, but the product does the talking.",
+        "write_up": "Maciek bootstrapped a mobile app to $3,500 MRR and 350 paid users in 4 months \u2014 solo, no noise, just results. His background is an unusual combo: 4 years as a professional poker player (read: high-stakes decision-making under pressure) plus 5 years of software development, which means he can ship and he can think probabilistically. The 429s on his live app aren't a bug, they're a flex \u2014 real traffic, real load.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 9,
+      "rank": 14,
+      "reply_id": "2037601871062335772",
+      "reply_url": "https://x.com/im_hash_im/status/2037601871062335772",
+      "previous_rank": null,
+      "author": {
+        "handle": "im_hash_im",
+        "name": "Hash",
+        "bio": "operations & swe | https://t.co/zDXMRvLAme & https://t.co/jPrSwSCJl0",
+        "followers": 42,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2036787101086482432/jC4AhktW_normal.jpg"
+      },
+      "project": {
+        "name": "Hachi (Iraqi Arabic learning app) & Manzil (Halal food discovery)",
+        "summary": "Hachi is a live iOS app (5.0 App Store rating, 200+ active learners across 15+ countries) focused on teaching authentic Iraqi Arabic dialect with real street phrases. Manzil is a coming-soon Halal food discovery app for Muslims with verified restaurant listings. Both are side projects by a London-based physicist-turned-engineer who also runs a software agency, with a portfolio site confirming the work.",
+        "links": [
+          "http://tryhachi.com",
+          "http://trymanzil.com",
+          "http://rafiq.codes"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 72,
+        "quirkiness": 78,
+        "composite": 78
+      },
+      "enrichment": {
+        "write_up": "Hash is a London-based physicist-turned-engineer who spans operations and software \u2014 rare combo. He's shipped Hachi, a live iOS app teaching Iraqi Arabic dialect that's pulled in 200+ active learners across 15+ countries with a perfect 5.0 App Store rating, while also running a software agency and building Manzil, a halal food discovery app. The kind of builder who doesn't wait for permission \u2014 he just ships.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 15,
       "reply_id": "2037565661384229130",
       "reply_url": "https://x.com/subrhozuh/status/2037565661384229130",
+      "previous_rank": 9,
       "author": {
         "handle": "subrhozuh",
         "name": "jimmy valentine",
@@ -285,15 +499,47 @@
         "composite": 77
       },
       "enrichment": {
-        "write_up": "Jimmy built AnthroVision, a web-based body scanner that pulls 24 precise measurements from a short spin video in under 30 seconds \u2014 the kind of computer vision + UX compression that's genuinely hard to pull off. He shipped it to a live URL and bolted on a Telegram bot integration, which shows he thinks about real distribution channels, not just demos. The 'pseudo-intellectual creature of leisure' bio is a red flag for nothing except maybe too much range.",
+        "write_up": "Jimmy built AnthroVision, a web app that extracts 24 body measurements accurate to 1cm in under 30 seconds from a spinning video \u2014 that's a genuinely hard computer vision problem shipped to a live product. He also wired up a Telegram bot integration, showing he thinks about real distribution channels, not just demos. The 'creature of leisure' bio is doing a lot of heavy lifting to hide someone who clearly ships.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 10,
+      "rank": 16,
+      "reply_id": "2037590294217290232",
+      "reply_url": "https://x.com/10xdevdotio/status/2037590294217290232",
+      "previous_rank": null,
+      "author": {
+        "handle": "10xdevdotio",
+        "name": "BetBot NBA Picks",
+        "bio": "https://t.co/MR83tG8ZxX\n\ud83d\udda5\ufe0f I build software systems with AI\n\ud83c\udfc0 Built BetBot and posting its NBA picks",
+        "followers": 319,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1957642848553308160/xC3vldPn_normal.jpg"
+      },
+      "project": {
+        "name": "BetBot",
+        "summary": "A live AI-powered NBA betting research platform at betbot.10xdev.io with a real dashboard, $19.99/month subscription, 7-day free trial, and a publicly auditable all-time pick record (33W-25L, 56.9% win rate). The system runs autonomous agents that scrape odds, perform two research passes per game (24hr and 3hr pre-tip), and deliver picks with full reasoning and edge strength ratings via dashboard and SMS.",
+        "links": [
+          "http://betbot.10xdev.io"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 72,
+        "quirkiness": 75,
+        "composite": 77
+      },
+      "enrichment": {
+        "write_up": "Built and monetized BetBot \u2014 a live AI-powered NBA betting platform with autonomous agents running dual research passes per game, real-time odds scraping, SMS delivery, and a publicly auditable pick record (33W-25L, 56.9% win rate) \u2014 all shipped to a $19.99/month subscription product. This isn't a side project demo; it's a full-stack autonomous system with paying users and transparent performance tracking. The kind of builder who doesn't wait for permission to ship something real.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 17,
       "reply_id": "2037598949633052953",
       "reply_url": "https://x.com/flamygg/status/2037598949633052953",
+      "previous_rank": 10,
       "author": {
         "handle": "flamygg",
         "name": "flamy.gg",
@@ -315,15 +561,47 @@
         "composite": 76
       },
       "enrichment": {
-        "write_up": "Flamy built the first third-party terminal for predict.fun from scratch \u2014 real-time whale tracking, oracle monitoring, live trade charts, sub-1 second latency across $10M+ daily volume. No login, no paywall, just shipped. Small following but the product speaks louder \u2014 this is someone who identifies a gap in a fast-moving market and fills it before anyone else does.",
+        "write_up": "Flamy built the first-ever terminal for predict.fun \u2014 a real-time analytics layer tracking $10M+ daily volume with whale wallet alerts, live trade charts, and oracle monitoring, all under 1-second latency. No account required, just shipped and live. Small follower count, but this is exactly the profile of someone who moves fast and builds real infrastructure before anyone else thinks to.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 11,
+      "rank": 18,
+      "reply_id": "2037602122364076198",
+      "reply_url": "https://x.com/streamclout_io/status/2037602122364076198",
+      "previous_rank": null,
+      "author": {
+        "handle": "streamclout_io",
+        "name": "streamclout",
+        "bio": "Spotify streaming analytics platform",
+        "followers": 1,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2026387610646548480/Q4D0vkmW_normal.jpg"
+      },
+      "project": {
+        "name": "StreamClout - Music Prediction Market & Spotify Analytics",
+        "summary": "A live platform tracking historical Spotify stream counts for 3.1M artists, 18M albums, and 62M tracks updated daily, combined with a prediction market for album milestones. The site shows real-time trending charts with actual stream numbers and is reportedly trusted by teams at Republic Records, Interscope, UMG, Atlantic, and Def Jam. The scale of data and live functionality demonstrate substantial engineering work.",
+        "links": [
+          "https://streamclout.io"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 78,
+        "quirkiness": 65,
+        "composite": 76
+      },
+      "enrichment": {
+        "write_up": "Built and runs StreamClout, a live Spotify analytics platform indexing 62M tracks, 18M albums, and 3.1M artists with daily updates \u2014 that's a serious data pipeline running at scale. Layered a prediction market on top of streaming milestones, which shows product instinct beyond just raw engineering. If teams at Republic, Interscope, UMG, Atlantic, and Def Jam are actually using this, they've figured out how to ship something real people pay attention to \u2014 with essentially no social footprint to show for it.",
+        "github_url": null,
+        "linkedin_url": null
+      }
+    },
+    {
+      "rank": 19,
       "reply_id": "2037591035862192321",
       "reply_url": "https://x.com/kylem_dev/status/2037591035862192321",
+      "previous_rank": 11,
       "author": {
         "handle": "kylem_dev",
         "name": "Kyle Moore",
@@ -345,15 +623,16 @@
         "composite": 74
       },
       "enrichment": {
-        "write_up": "Kyle just made his first dollar online in April 2025 and already has $350/month MRR and 2,000 MAUs \u2014 that's a real product, not a side project. GrepJob scrapes company career pages hourly to surface software engineering jobs, and it's already gotten someone an interview, which is the only metric that matters for a job board. He's early, hungry, and building in public with concrete goals \u2014 exactly the kind of scrappy operator Ramp should want to talk to before he hits $500 MRR and stops returning emails.",
+        "write_up": "Kyle built GrepJob \u2014 a scrappy job board that hits company career pages every hour \u2014 and turned it into $350/month with 2,000 MAUs, all while openly documenting the grind of making his first dollar online in April 2025. The 429 on the site means it's getting hammered with traffic, not collecting dust. He's got a real user (got an interview through it), real revenue, and a clear next target \u2014 exactly the kind of builder who figures things out without being asked twice.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 12,
+      "rank": 20,
       "reply_id": "2037584520849785335",
       "reply_url": "https://x.com/victr22/status/2037584520849785335",
+      "previous_rank": 12,
       "author": {
         "handle": "victr22",
         "name": "vik",
@@ -375,15 +654,16 @@
         "composite": 74
       },
       "enrichment": {
-        "write_up": "Vik built Zcrafter \u2014 a natural language interface that lets you talk to IBM mainframes, arguably one of the least approachable pieces of enterprise infrastructure on the planet. The demo shows a live, polished dark-themed UI hitting a real mainframe endpoint with actual ops: browsing datasets, submitting JCL, pulling job output. Someone who's reading quantum/ML papers for fun and shipping AI wrappers on 50-year-old mainframe tech is exactly the kind of technically fearless builder Ramp should talk to.",
+        "write_up": "Vik built Zcrafter, a natural language interface that lets users talk to IBM mainframes \u2014 one of the most arcane and underloved corners of enterprise infrastructure. The fact that he shipped a polished, live-connected UI with real mainframe actions (JCL submission, dataset browsing, USS files) suggests he went deep on z/OS internals, not just vibes-coded a wrapper. Someone who reads quantum/ML papers for fun and decides to modernize 1960s enterprise tech for a side project is exactly the kind of weird-smart that thrives at Ramp.",
         "github_url": null,
         "linkedin_url": null
       }
     },
     {
-      "rank": 13,
+      "rank": 21,
       "reply_id": "2037582660810211825",
       "reply_url": "https://x.com/CJKMerriman/status/2037582660810211825",
+      "previous_rank": 13,
       "author": {
         "handle": "CJKMerriman",
         "name": "\ud83e\udd26\ud83c\udffb\u200d\u2640\ufe0f Callum",
@@ -411,9 +691,10 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 22,
       "reply_id": "2037578910720831642",
       "reply_url": "https://x.com/itsandrewrivers/status/2037578910720831642",
+      "previous_rank": 14,
       "author": {
         "handle": "itsandrewrivers",
         "name": "Andrew Rivers",
@@ -441,9 +722,10 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 23,
       "reply_id": "2037574674700189753",
       "reply_url": "https://x.com/vec0zy/status/2037574674700189753",
+      "previous_rank": 15,
       "author": {
         "handle": "vec0zy",
         "name": "cozy",
@@ -477,9 +759,37 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 24,
+      "reply_id": "2037659103913193680",
+      "reply_url": "https://x.com/vincentaamato/status/2037659103913193680",
+      "previous_rank": null,
+      "author": {
+        "handle": "vincentaamato",
+        "name": "Vincent Amato",
+        "bio": "CS @BrownUniversity",
+        "followers": 232,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1808956822382071812/zea7McZN_normal.jpg"
+      },
+      "project": {
+        "name": "Mushroom AI (web app)",
+        "summary": "A web application companion to the iOS Mushroom AI app that runs mushroom species identification inference on the author's local 3060 GPU. Users can upload up to 3 photos of a mushroom from different angles for classification. This is a follow-up tweet to the main submission (2037656827454693771) describing the same project.",
+        "links": [
+          "http://mushroomai.app"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 72,
+        "quirkiness": 78,
+        "composite": 74
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 25,
       "reply_id": "2037591447948431743",
       "reply_url": "https://x.com/MaddaliManu/status/2037591447948431743",
+      "previous_rank": 16,
       "author": {
         "handle": "MaddaliManu",
         "name": "Manu",
@@ -505,9 +815,93 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 26,
+      "reply_id": "2037582939882664383",
+      "reply_url": "https://x.com/RawJobbed/status/2037582939882664383",
+      "previous_rank": null,
+      "author": {
+        "handle": "RawJobbed",
+        "name": "Raw Jobs",
+        "bio": "Real talent raw jobs the market.\n\nThe job board agents love.",
+        "followers": 66,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2029920848912474112/EDrRqCX__normal.jpg"
+      },
+      "project": {
+        "name": "RawJobbed \u2013 Crowdsourced Job Board from X",
+        "summary": "RawJobbed is a live, functioning job board that aggregates hiring posts from X/Twitter, including a specific listing for the Ramp 'Builder' role. The site is live at rawjobbed.com and shows real job listings scraped from Twitter posts, with employer details, job descriptions, and apply functionality.",
+        "links": [
+          "https://www.rawjobbed.com/jobs/builder-at-ramp"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 75,
+        "quirkiness": 70,
+        "composite": 73
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 27,
+      "reply_id": "2037585241649365215",
+      "reply_url": "https://x.com/CharityBetDave/status/2037585241649365215",
+      "previous_rank": null,
+      "author": {
+        "handle": "CharityBetDave",
+        "name": "Dave Maloney",
+        "bio": "Husband to Greek goddess, father of 3, AI entrepreneur, angel investor, raised $20M+ for pediatric cancer @thedecathlon, @watchnorma @playpackpts @firemarketusa",
+        "followers": 289,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1514994589945454601/ZX8K8AGw_normal.jpg"
+      },
+      "project": {
+        "name": "Watch NORMA \u2014 NCAA Basketball Smart Alerts App",
+        "summary": "A published iOS app on the App Store that serves as an NCAA basketball command center with live scores, smart alerts for close games/momentum swings, wager tracking with bet-slip camera scanning, and one-tap streaming deep links to ESPN+/Paramount+. The app has multiple version releases (1.0 through 1.2.0) and integrates with sportsbooks and prediction markets like Kalshi and Polymarket.",
+        "links": [
+          "https://apps.apple.com/us/app/watch-norma/id6759508383"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 72,
+        "quirkiness": 65,
+        "composite": 73
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 28,
+      "reply_id": "2037670668683059432",
+      "reply_url": "https://x.com/montesdeocajijo/status/2037670668683059432",
+      "previous_rank": null,
+      "author": {
+        "handle": "montesdeocajijo",
+        "name": "Leo Ackerman",
+        "bio": "23 / amante de jojos y snk, amo los colores pastel y rosa, tengo una f\u00e1brica de helado",
+        "followers": 86,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2036813845243813888/DB6dReKX_normal.jpg"
+      },
+      "project": {
+        "name": "Multiple projects: Illustra, PrintBet (Solana Casino), CSManager",
+        "summary": "Three deployed solo-built projects: Illustra (a social platform for digital artists with login/registration), PrintBet (a Solana-based casino with multiple games including roulette, crash, dice, mines, tower \u2014 deployed on Vercel), and CSManager (a CS2 skin inventory/investment tracker with Steam auth, price tracking, and portfolio analytics). All three have live deployments with functional frontends.",
+        "links": [
+          "http://Illustraapp.com",
+          "https://printbet.vercel.app/",
+          "https://csmanager-sigma.vercel.app/dashboard"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 72,
+        "quirkiness": 65,
+        "composite": 73
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 29,
       "reply_id": "2037614948696658252",
       "reply_url": "https://x.com/SVarrera25357/status/2037614948696658252",
+      "previous_rank": 17,
       "author": {
         "handle": "SVarrera25357",
         "name": "Saul Varrera",
@@ -533,9 +927,10 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 30,
       "reply_id": "2037609615999828364",
       "reply_url": "https://x.com/firatcand/status/2037609615999828364",
+      "previous_rank": 18,
       "author": {
         "handle": "firatcand",
         "name": "Fred Dogan",
@@ -563,9 +958,10 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 31,
       "reply_id": "2037574220637777986",
       "reply_url": "https://x.com/SiddhuDai/status/2037574220637777986",
+      "previous_rank": 19,
       "author": {
         "handle": "SiddhuDai",
         "name": "Sid Dai",
@@ -596,9 +992,10 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 32,
       "reply_id": "2037572621806580053",
       "reply_url": "https://x.com/thetronchguy/status/2037572621806580053",
+      "previous_rank": 20,
       "author": {
         "handle": "thetronchguy",
         "name": "saint",
@@ -627,9 +1024,97 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 33,
+      "reply_id": "2037588373100019780",
+      "reply_url": "https://x.com/hariharprasadd/status/2037588373100019780",
+      "previous_rank": null,
+      "author": {
+        "handle": "hariharprasadd",
+        "name": "Harihar Prasad",
+        "bio": "koinophobic meliorist. cs @johnshopkins.",
+        "followers": 57,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1872682715956363264/t0JeJ9lB_normal.jpg"
+      },
+      "project": {
+        "name": "plshelp - Local-first documentation search CLI",
+        "summary": "An open-source CLI tool that crawls documentation websites and local files, indexes them into a local SQLite database, and enables hybrid BM25/embedding search for coding agents and RAG workflows. It features a registry of 500+ pre-crawled documentation pages and supports export to markdown/text. MIT licensed on GitHub with npm/bun/curl install options.",
+        "links": [
+          "http://plshelp.run",
+          "https://github.com/HariharPrasadd/plshelp",
+          "http://plshelp.run/docs",
+          "http://plshelp.run/registry"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 72,
+        "quirkiness": 62,
+        "composite": 72
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 34,
+      "reply_id": "2037587872610721901",
+      "reply_url": "https://x.com/charles07_s/status/2037587872610721901",
+      "previous_rank": null,
+      "author": {
+        "handle": "charles07_s",
+        "name": "charles s.",
+        "bio": "\ud83c\udfa8 Blender3D CGI Enthusiast\n\ud83c\udfd4 Enjoys Climbing Rocks, Biking\n\ud83e\udd16 AI Tool Hacker\n@orgestra_ai\nSlop is not Art, it is a propaganda tool",
+        "followers": 32,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1956149079106576386/4zHl4Cmu_normal.jpg"
+      },
+      "project": {
+        "name": "Orgestra - Org chart for AI agents",
+        "summary": "A web app that visualizes and manages hybrid human-agent organizations as a living org graph. Users can prompt to spawn specialized AI agents (secretary, developer, social media manager, etc.) with defined roles, tools, and reporting lines. The site is live at orgestra.ai with an interactive org chart demo and a clear value proposition around agent workforce management.",
+        "links": [
+          "http://orgestra.ai",
+          "https://orgestra.ai/orgchart"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 78,
+        "quirkiness": 65,
+        "composite": 72
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 35,
+      "reply_id": "2037577138849906907",
+      "reply_url": "https://x.com/oncelcebeci/status/2037577138849906907",
+      "previous_rank": null,
+      "author": {
+        "handle": "oncelcebeci",
+        "name": "Oncel Cebeci",
+        "bio": "Multidisciplinary designer. Building tiny apps in https://t.co/vN4Bx8Go7y",
+        "followers": 614,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1996100522013851649/79UYK3Da_normal.jpg"
+      },
+      "project": {
+        "name": "Manwe \u2014 AI Advisor Debate Engine (macOS)",
+        "summary": "Manwe is a macOS app that assembles 4\u20136 AI advisors to debate user questions across 8 rounds, pulling real-time research from 9 sources (PubMed, arXiv, Wikipedia, etc.) and generating structured reports with confidence-scored predictions. It supports both local models (Qwen3 via MLX on Apple Silicon) and cloud models (Claude via CLI). A downloadable beta DMG (v0.1.3) is available via GitHub releases, with a Discord community linked.",
+        "links": [
+          "https://tinythings.app/manwe",
+          "https://github.com/lemberalla/manwe-releases/releases/download/v0.1.3/Manwe-0.1.3.dmg",
+          "https://discord.gg/Nz6RExEpSD"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 78,
+        "quirkiness": 65,
+        "composite": 72
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 36,
       "reply_id": "2037590587210403923",
       "reply_url": "https://x.com/c0ncepT314/status/2037590587210403923",
+      "previous_rank": 21,
       "author": {
         "handle": "c0ncepT314",
         "name": "Vamsi Vinta",
@@ -655,9 +1140,10 @@
       "enrichment": null
     },
     {
-      "rank": 22,
+      "rank": 37,
       "reply_id": "2037590570458079539",
       "reply_url": "https://x.com/godsent_izinyon/status/2037590570458079539",
+      "previous_rank": 22,
       "author": {
         "handle": "godsent_izinyon",
         "name": "Godsent Izinyon",
@@ -681,9 +1167,68 @@
       "enrichment": null
     },
     {
-      "rank": 23,
+      "rank": 38,
+      "reply_id": "2037584284618535132",
+      "reply_url": "https://x.com/iamanupdhakal/status/2037584284618535132",
+      "previous_rank": null,
+      "author": {
+        "handle": "iamanupdhakal",
+        "name": "Anup Dhakal",
+        "bio": "Software Engineer by Day | Solopreneur by Night | Live and Breathe AI | Building https://t.co/bWtWr8xGjt in public.",
+        "followers": 415,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1996028963916001280/P3VUqHLk_normal.jpg"
+      },
+      "project": {
+        "name": "BlackjackIQ Pro",
+        "summary": "A published iOS app (available on the App Store) that trains users in blackjack basic strategy using adaptive drills, AI-powered mistake explanations, and casino-accurate rule configurations. The landing page shows multiple app screenshots, 23+ focus areas, analytics dashboards, and a 10-hand assessment system. Evidence of real work includes a live App Store listing and a full-featured marketing site.",
+        "links": [
+          "https://blackjackiq.pro",
+          "https://apps.apple.com/us/app/blackjackiq-pro/id6754751115",
+          "https://blackjackiq.pro/blackjack-basic-strategy/",
+          "https://blackjackiq.pro/strategy/"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 65,
+        "quirkiness": 62,
+        "composite": 71
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 39,
+      "reply_id": "2037570529755095215",
+      "reply_url": "https://x.com/buildwithfede/status/2037570529755095215",
+      "previous_rank": null,
+      "author": {
+        "handle": "buildwithfede",
+        "name": "Fede",
+        "bio": "Product builder",
+        "followers": 1992,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1995007092269486083/8tvKGBwb_normal.jpg"
+      },
+      "project": {
+        "name": "Shoperly + Worknotes",
+        "summary": "Two live products: Shoperly is a Spanish-language e-commerce platform with 3,500+ stores created, allowing entrepreneurs to sell via WhatsApp with order management. Worknotes is an AI-powered changelog/product update tool that integrates with Linear to auto-draft release notes and publish them to changelog, email, and in-app announcements. Both have live websites with real users and feature content.",
+        "links": [
+          "http://www.shoperly.app",
+          "http://www.worknotes.ai"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 72,
+        "quirkiness": 52,
+        "composite": 71
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 40,
       "reply_id": "2037625855447626178",
       "reply_url": "https://x.com/Eflo1978/status/2037625855447626178",
+      "previous_rank": 23,
       "author": {
         "handle": "Eflo1978",
         "name": "Eflo",
@@ -707,9 +1252,10 @@
       "enrichment": null
     },
     {
-      "rank": 24,
+      "rank": 41,
       "reply_id": "2037593955454669297",
       "reply_url": "https://x.com/popo_banana/status/2037593955454669297",
+      "previous_rank": 24,
       "author": {
         "handle": "popo_banana",
         "name": "Banana POPO",
@@ -733,9 +1279,10 @@
       "enrichment": null
     },
     {
-      "rank": 25,
+      "rank": 42,
       "reply_id": "2037573012749172899",
       "reply_url": "https://x.com/odincode/status/2037573012749172899",
+      "previous_rank": 25,
       "author": {
         "handle": "odincode",
         "name": "Mikey",
@@ -761,9 +1308,119 @@
       "enrichment": null
     },
     {
-      "rank": 26,
+      "rank": 43,
+      "reply_id": "2037614356171477312",
+      "reply_url": "https://x.com/edisonjoao6871/status/2037614356171477312",
+      "previous_rank": null,
+      "author": {
+        "handle": "edisonjoao6871",
+        "name": "Edison Jo\u00e3o",
+        "bio": "\ud83e\udd8a\ud83e\udd8a\ud83e\udd8a",
+        "followers": 276,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1179582194299412480/1E9yS5MJ_normal.jpg"
+      },
+      "project": {
+        "name": "Edison Espinosa iOS App Portfolio + Gen Us News Platform (duplicate tweet)",
+        "summary": "Same submission as tweet 2037614848297574493 \u2014 Edison Espinosa's portfolio of 35+ App Store apps and the Gen Us media bias/propaganda scoring news platform at gen-us.space. All links resolve to live, functional products with verifiable App Store presence and a working web application.",
+        "links": [
+          "https://apps.apple.com/us/developer/edison-espinosa/id1368707952",
+          "https://edisonjoao.com/",
+          "http://gen-us.space/"
+        ]
+      },
+      "scores": {
+        "builder": 85,
+        "creativity": 72,
+        "quirkiness": 45,
+        "composite": 70
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 44,
+      "reply_id": "2037575789772996653",
+      "reply_url": "https://x.com/kunalbhusare/status/2037575789772996653",
+      "previous_rank": null,
+      "author": {
+        "handle": "kunalbhusare",
+        "name": "Kunal Bhusare",
+        "bio": "Chief Product Officer at https://t.co/6pRnpbhggZ. Sharing about AI first Product Development and my journey of PM back to Software Dev.",
+        "followers": 580,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1549603977213648896/xjLTl_rg_normal.jpg"
+      },
+      "project": {
+        "name": "TEX - Career Readiness Platform for Schools",
+        "summary": "TEX is a live SaaS platform that automates career guidance workflows for school counselors, matches students to opportunities, and tracks outcomes. Built solo with AI assistance, it has real paying customers including Graded School, Canberra Grammar School, Mastercard Foundation, and Common Purpose across 20+ schools globally. The product includes a counselor dashboard, student matching engine, and a custom interactive pitch deck built as a web page instead of a traditional presentation.",
+        "links": [
+          "https://www.texedu.app/",
+          "https://www.texedu.app/deck/customer"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 68,
+        "quirkiness": 55,
+        "composite": 70
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 45,
+      "reply_id": "2037575685988864452",
+      "reply_url": "https://x.com/gsmmtt/status/2037575685988864452",
+      "previous_rank": null,
+      "author": {
+        "handle": "gsmmtt",
+        "name": "Gilbert",
+        "bio": "long live b2b saas",
+        "followers": 87,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1606810969946132481/35BHLfp7_normal.jpg"
+      },
+      "project": {
+        "name": "MinuteDebate - Real-time 1v1 Debate Game",
+        "summary": "MinuteDebate is a live web game where players compete in real-time one-minute 1v1 debate matches on rotating topics, with no signup required. The site is live and functional with a queue system and Oxford Mode format. Evidence of real work includes a deployed product at minutedebate.com with active matchmaking infrastructure.",
+        "links": [
+          "http://minutedebate.com"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 73,
+        "quirkiness": 62,
+        "composite": 70
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 46,
+      "reply_id": "2037599877480280078",
+      "reply_url": "https://x.com/lucia_noah/status/2037599877480280078",
+      "previous_rank": null,
+      "author": {
+        "handle": "lucia_noah",
+        "name": "Noah Lucia",
+        "bio": "filming + building filmify @cornell",
+        "followers": 125,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1045790352416952321/GKdxjdWw_normal.jpg"
+      },
+      "project": {
+        "name": "Filmify",
+        "summary": "Filmify is an AI-driven tax credit compliance tool for film and TV productions that automates audit trails previously handled manually by CPAs. The author reports closing paying customers before a full product was built, suggesting validated demand and real traction. Built while studying at Cornell.",
+        "links": []
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 78,
+        "quirkiness": 72,
+        "composite": 70
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 47,
       "reply_id": "2037614848297574493",
       "reply_url": "https://x.com/edisonjoao6871/status/2037614848297574493",
+      "previous_rank": 26,
       "author": {
         "handle": "edisonjoao6871",
         "name": "Edison Jo\u00e3o",
@@ -789,9 +1446,10 @@
       "enrichment": null
     },
     {
-      "rank": 27,
+      "rank": 48,
       "reply_id": "2037569409301033344",
       "reply_url": "https://x.com/kuberdenis/status/2037569409301033344",
+      "previous_rank": 27,
       "author": {
         "handle": "kuberdenis",
         "name": "Denislav Gavrilov",
@@ -819,9 +1477,10 @@
       "enrichment": null
     },
     {
-      "rank": 28,
+      "rank": 49,
       "reply_id": "2037561037063635081",
       "reply_url": "https://x.com/_nwyin/status/2037561037063635081",
+      "previous_rank": 28,
       "author": {
         "handle": "_nwyin",
         "name": "nwyin",
@@ -846,9 +1505,94 @@
       "enrichment": null
     },
     {
-      "rank": 29,
+      "rank": 50,
+      "reply_id": "2037635087475384442",
+      "reply_url": "https://x.com/_faizm/status/2037635087475384442",
+      "previous_rank": null,
+      "author": {
+        "handle": "_faizm",
+        "name": "faiz",
+        "bio": "cs @uofg & @uwaterloo | swe intern @ @td_canada",
+        "followers": 32,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2018576031779594240/h3L_doOH_normal.jpg"
+      },
+      "project": {
+        "name": "uoguelph.courses - University of Guelph Academic Planning Platform",
+        "summary": "A student-built academic planning platform for University of Guelph students featuring a schedule builder, course explorer with difficulty ratings and student reviews, GPA calculator, and available classroom finder. The site reports 5,999+ active visitors and 25,995+ page views, with the GitHub contribution graph showing 3,378 commits in the past year as evidence of sustained development activity. The author also claims VP of Technology at Hack Canada and shipping Canada's largest hackathon platform.",
+        "links": [
+          "http://uoguelph.courses",
+          "https://x.com/_faizm/status/2037635087475384442/photo/1"
+        ]
+      },
+      "scores": {
+        "builder": 85,
+        "creativity": 62,
+        "quirkiness": 55,
+        "composite": 69
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 51,
+      "reply_id": "2037600737434435870",
+      "reply_url": "https://x.com/therexycodes/status/2037600737434435870",
+      "previous_rank": null,
+      "author": {
+        "handle": "therexycodes",
+        "name": "TheRexyCodes",
+        "bio": "Just a rexy \ud83e\udd96 turning modern AI into real software. Because good engineering still matters. Building https://t.co/3sExkGFdNh",
+        "followers": 4,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1963702829224169472/bu3pLr9I_normal.jpg"
+      },
+      "project": {
+        "name": "Klypus - Agentic AI Video Editor",
+        "summary": "Klypus is an AI-powered video editor for macOS and Windows that lets users describe edits in plain English and automatically handles transcription, captioning, B-roll insertion, color grading, and audio mixing. It features a multi-track timeline, text-based editing, and an agentic layer (powered by Claude) that plans and executes edit steps autonomously. The product has a live landing page with detailed feature descriptions, a closed beta download, and a waitlist \u2014 indicating a real product in active distribution.",
+        "links": [
+          "http://klypus.com",
+          "https://klypus.com/download",
+          "https://klypus.com/waitlist"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 75,
+        "quirkiness": 55,
+        "composite": 69
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 52,
+      "reply_id": "2037560405547970654",
+      "reply_url": "https://x.com/tadasgedgaudas/status/2037560405547970654",
+      "previous_rank": null,
+      "author": {
+        "handle": "tadasgedgaudas",
+        "name": "TadasG \ud83d\udcbb",
+        "bio": "\ud83c\udfb5 https://t.co/7YTirGsXqC - AI Agent for Creator Marketing. All platforms supported.\n\n\ud83d\ude3a https://t.co/6FgAIOZHO4 - a more advanced Sensortower alternative",
+        "followers": 7225,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1984184086991138817/FlSYVd74_normal.jpg"
+      },
+      "project": {
+        "name": "topYappers - Influencer Database & Automated Outreach Platform",
+        "summary": "topYappers is a live SaaS platform with 33M+ creator profiles across TikTok, Instagram, and YouTube, featuring 30+ advanced filters, verified contact data, and AI-powered automated outreach. The platform has real paying users (500+ marketing professionals claimed) with verifiable Twitter testimonials from actual users discussing specific use cases like finding 434 TikTok influencers and reaching out to 11,000+ creators. Evidence of a live Viral Video API for AI agents is also present.",
+        "links": [
+          "http://topyappers.com"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 65,
+        "quirkiness": 55,
+        "composite": 69
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 53,
       "reply_id": "2037621282787725537",
       "reply_url": "https://x.com/n_matamoros/status/2037621282787725537",
+      "previous_rank": 29,
       "author": {
         "handle": "n_matamoros",
         "name": "Nick M",
@@ -873,9 +1617,10 @@
       "enrichment": null
     },
     {
-      "rank": 30,
+      "rank": 54,
       "reply_id": "2037614416431055015",
       "reply_url": "https://x.com/TrevorLongino/status/2037614416431055015",
+      "previous_rank": 30,
       "author": {
         "handle": "TrevorLongino",
         "name": "Trevor Longino",
@@ -903,9 +1648,10 @@
       "enrichment": null
     },
     {
-      "rank": 31,
+      "rank": 55,
       "reply_id": "2037602537743040818",
       "reply_url": "https://x.com/SaviPabla/status/2037602537743040818",
+      "previous_rank": 31,
       "author": {
         "handle": "SaviPabla",
         "name": "Savi",
@@ -930,9 +1676,64 @@
       "enrichment": null
     },
     {
-      "rank": 32,
+      "rank": 56,
+      "reply_id": "2037641535139836380",
+      "reply_url": "https://x.com/will_lam/status/2037641535139836380",
+      "previous_rank": null,
+      "author": {
+        "handle": "will_lam",
+        "name": "Will Lam",
+        "bio": "Product & Marketer. Vibing with code. ex @taplytics @devcycle alum (YC W14, acquired). Maker of ManaVaultApp, Really Good Notifications. I play competitive MTG.",
+        "followers": 2700,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/3432156639/d875912dc61ff8e5b8c7e965ef5b4ae2_normal.jpeg"
+      },
+      "project": {
+        "name": "ManaVault \u2014 MTG Collection & Finance App",
+        "summary": "A full-featured Magic: The Gathering collection tracker and finance app available at manavaultapp.net. It offers real-time Scryfall pricing, portfolio history charts, digital binder organization, a deck builder with sideboard support, CSV bulk import, social/trading features, and multi-currency support (USD/EUR/GBP). The site is live with a working registration flow, indicating a deployed product with substantial feature depth.",
+        "links": [
+          "https://manavaultapp.net"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 55,
+        "quirkiness": 78,
+        "composite": 68
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 57,
+      "reply_id": "2037597209974235139",
+      "reply_url": "https://x.com/e_kopen/status/2037597209974235139",
+      "previous_rank": null,
+      "author": {
+        "handle": "e_kopen",
+        "name": "Eric Kopen",
+        "bio": "Building infrastructure for prediction markets. Working on @predidesk",
+        "followers": 21,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1989369178541920256/0NUxeBp7_normal.jpg"
+      },
+      "project": {
+        "name": "PrediDesk",
+        "summary": "PrediDesk is a live web platform that aggregates prediction market data from 6+ exchanges (100k+ markets) into a unified, normalized UI. It uses a 20+ step LLM pipeline to process and categorize contracts, with pricing updated every 15 minutes. The site is live at PrediDesk.com with a working beta for the Elections view.",
+        "links": [
+          "http://PrediDesk.com"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 72,
+        "quirkiness": 45,
+        "composite": 68
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 58,
       "reply_id": "2037598815163715809",
       "reply_url": "https://x.com/siddhantparadox/status/2037598815163715809",
+      "previous_rank": 32,
       "author": {
         "handle": "siddhantparadox",
         "name": "Siddhant Gupta",
@@ -956,9 +1757,10 @@
       "enrichment": null
     },
     {
-      "rank": 33,
+      "rank": 59,
       "reply_id": "2037575320715366498",
       "reply_url": "https://x.com/Moore/status/2037575320715366498",
+      "previous_rank": 33,
       "author": {
         "handle": "Moore",
         "name": "Jonathan Moore",
@@ -983,9 +1785,10 @@
       "enrichment": null
     },
     {
-      "rank": 34,
+      "rank": 60,
       "reply_id": "2037569981693530171",
       "reply_url": "https://x.com/o_fabriciosouza/status/2037569981693530171",
+      "previous_rank": 34,
       "author": {
         "handle": "o_fabriciosouza",
         "name": "Fabricio \u2794 gitquest.dev",
@@ -1009,9 +1812,10 @@
       "enrichment": null
     },
     {
-      "rank": 35,
+      "rank": 61,
       "reply_id": "2037566639428808952",
       "reply_url": "https://x.com/projectanas/status/2037566639428808952",
+      "previous_rank": 35,
       "author": {
         "handle": "projectanas",
         "name": "Anas",
@@ -1035,9 +1839,37 @@
       "enrichment": null
     },
     {
-      "rank": 36,
+      "rank": 62,
+      "reply_id": "2037645294389821553",
+      "reply_url": "https://x.com/croculator/status/2037645294389821553",
+      "previous_rank": null,
+      "author": {
+        "handle": "croculator",
+        "name": "Croculator",
+        "bio": "test tube alien space cat\nHollywood-Gaming-FAANG",
+        "followers": 67,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1527743597985992705/i_pPrtU6_normal.jpg"
+      },
+      "project": {
+        "name": "Scout \u2014 Company & Job Search Tracker",
+        "summary": "Scout is a live web app at michaeldiaz.design/scout that aggregates 4,400+ companies and 11,000+ jobs across 27 role categories, allowing job seekers to filter by hiring status, company size, funding round, and industry. It supports resume import for personalized role-matching scores and application status tracking. The tool is clearly functional with real data populated and a working UI.",
+        "links": [
+          "https://michaeldiaz.design/scout"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 62,
+        "quirkiness": 55,
+        "composite": 67
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 63,
       "reply_id": "2037623879410332130",
       "reply_url": "https://x.com/racerpersonguy/status/2037623879410332130",
+      "previous_rank": 36,
       "author": {
         "handle": "racerpersonguy",
         "name": "Brett Benassi",
@@ -1061,9 +1893,10 @@
       "enrichment": null
     },
     {
-      "rank": 37,
+      "rank": 64,
       "reply_id": "2037581924789858398",
       "reply_url": "https://x.com/Danmontgomery/status/2037581924789858398",
+      "previous_rank": 37,
       "author": {
         "handle": "Danmontgomery",
         "name": "Daniel Montgomery",
@@ -1087,9 +1920,211 @@
       "enrichment": null
     },
     {
-      "rank": 38,
+      "rank": 65,
+      "reply_id": "2037643864492671018",
+      "reply_url": "https://x.com/wahm0017/status/2037643864492671018",
+      "previous_rank": null,
+      "author": {
+        "handle": "wahm0017",
+        "name": "Saladin",
+        "bio": "....im spiderman",
+        "followers": 81,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1512195427256389640/2p-FjRJI_normal.jpg"
+      },
+      "project": {
+        "name": "Meccanic.io",
+        "summary": "A marketplace platform connecting mechanics with car owners for pre-purchase inspections, tool rentals, parts browsing, and remote DIY guidance. The live website at meccanic.io shows a working login/register system, Stripe integration, and multiple product features. The platform appears functional with authentication, tool rental, and parts marketplace components.",
+        "links": [
+          "https://meccanic.io"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 68,
+        "quirkiness": 55,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 66,
+      "reply_id": "2037580026611433914",
+      "reply_url": "https://x.com/asagarwal10/status/2037580026611433914",
+      "previous_rank": null,
+      "author": {
+        "handle": "asagarwal10",
+        "name": "Ashish Agarwal",
+        "bio": "Founder at - \nhttps://t.co/bPg0drCV2V | Trading ideas from English into AI agents\nhttps://t.co/fFmonSg0vd | Transform your product photos with AI",
+        "followers": 30,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1688689641892073477/q5_ZXjCA_normal.jpg"
+      },
+      "project": {
+        "name": "QuantDock",
+        "summary": "QuantDock (quantdock.io) is a live product that converts plain-English trading strategies into backtested, automated trading agents executing via Alpaca brokerage. The platform supports 50+ technical indicators, 7 years of historical data for backtesting, non-custodial OAuth brokerage connectivity, and risk management features including stop-losses and position sizing. The landing page demonstrates a working product with a live app at app.quantdock.io and a $49/month pricing tier, suggesting real deployment.",
+        "links": [
+          "http://QuantDock.io",
+          "https://app.quantdock.io"
+        ]
+      },
+      "scores": {
+        "builder": 75,
+        "creativity": 72,
+        "quirkiness": 45,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 67,
+      "reply_id": "2037574232566018512",
+      "reply_url": "https://x.com/mojeebeth/status/2037574232566018512",
+      "previous_rank": null,
+      "author": {
+        "handle": "mojeebeth",
+        "name": "Mojeeb | Arcapush.com",
+        "bio": "I build at the edge of thought | AI Native Developer | Vibe Coder | AI x Web3 | Founder @BlindspotLab\nBuilding: https://t.co/BWgrwVD9oE \u2022 https://t.co/Eb2kLaoGLh \u2022 https://t.co/N9VCSEbcuS, etc.",
+        "followers": 5902,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2034373682684915713/QG16qyJh_normal.jpg"
+      },
+      "project": {
+        "name": "Multiple vibe-coded projects: ArcaPush, AngelVow, WHATE, Dearly, xunfollow.xyz, BlindspotLab, ArcaPrompt, PromptRank",
+        "summary": "This developer has shipped a portfolio of live web products including ArcaPush (a product discovery directory for vibe-coded products), AngelVow (an on-chain crowdfunding platform on Base using USDC), WHATE (a meal suggestion platform with 10k+ recipes and persona-based filtering), xunfollow.xyz (a privacy-first X archive analyzer), Dearly (AI-powered personalized greeting pages), BlindspotLab (a Web3 strategy diagnostics service), and AI prompt tools (ArcaPrompt, PromptRank). All sites are live and functional, though scale appears early-stage (e.g., AngelVow shows only 1 wish made).",
+        "links": [
+          "http://arcapush.com",
+          "http://angelvow.xyz",
+          "http://whate.online",
+          "http://dearly.icu",
+          "http://xunfollow.xyz",
+          "http://BlindspotLab.xyz",
+          "http://arcaprompt.arcapush.com",
+          "http://promptrank.arcapush.com",
+          "http://mojeeb.xyz"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 65,
+        "quirkiness": 58,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 68,
+      "reply_id": "2037567523395420458",
+      "reply_url": "https://x.com/pranav6226/status/2037567523395420458",
+      "previous_rank": null,
+      "author": {
+        "handle": "pranav6226",
+        "name": "Pranav Mahesh",
+        "bio": "Building Cursor for investing, turning plain language investment ideas into institutional grade portfolios.",
+        "followers": 81,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2026101328607694848/OydoIm7S_normal.jpg"
+      },
+      "project": {
+        "name": "Baskets AI",
+        "summary": "Baskets AI is an iOS app (available on TestFlight) that lets users describe investment strategies in plain language, which the AI converts into stock baskets with instant backtesting against the S&P 500, Sharpe ratio analysis, and paper trading with a $50K virtual balance. The beta includes a gamified competition with a $500 real cash prize for the top portfolio. The site is live with a detailed feature breakdown and working TestFlight link.",
+        "links": [
+          "https://basketsai.com",
+          "https://testflight.apple.com/join/JGzYVPDS"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 68,
+        "quirkiness": 52,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 69,
+      "reply_id": "2037600623630135421",
+      "reply_url": "https://x.com/_BurntUniverse/status/2037600623630135421",
+      "previous_rank": null,
+      "author": {
+        "handle": "_BurntUniverse",
+        "name": "Orlando",
+        "bio": "tasteful trader",
+        "followers": 171,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1900250924657876992/p-x0WmpM_normal.jpg"
+      },
+      "project": {
+        "name": "Price-Vault \u2014 Trading Stop Level Tool",
+        "summary": "Price-Vault is a live web application that surfaces historically meaningful stop-loss levels for 1,200+ assets across stocks, crypto, FX, and futures. Quarter models are recomputed nightly and probability levels are surfaced each morning. The site has a working demo and pricing page.",
+        "links": [
+          "http://price-vault.com"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 68,
+        "quirkiness": 55,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 70,
+      "reply_id": "2037580828125872389",
+      "reply_url": "https://x.com/14hous/status/2037580828125872389",
+      "previous_rank": null,
+      "author": {
+        "handle": "14hous",
+        "name": "Drew Redloh",
+        "bio": "SWE @ Fin | Indie Dev | Running 3 Profitable SaaS | @buildinpublic | All thoughts bought and paid for",
+        "followers": 504,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1995594459535364097/a2mbTr3L_normal.jpg"
+      },
+      "project": {
+        "name": "TryDrobe \u2014 AI Virtual Try-On for Fashion",
+        "summary": "TryDrobe is a live SaaS product and iOS app that lets users upload a photo and virtually try on clothes using AI. It has a published App Store listing (id6754575707), a working marketing site with pricing tiers, a Shopify integration page, and a demo section. The product appears to be actively monetized with subscription pricing.",
+        "links": [
+          "http://Trydrobe.com",
+          "https://apps.apple.com/us/app/trydrobe-ai-clothing-tryons/id6754575707"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 62,
+        "quirkiness": 45,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 71,
+      "reply_id": "2037666244422250815",
+      "reply_url": "https://x.com/Mik3yPttr/status/2037666244422250815",
+      "previous_rank": null,
+      "author": {
+        "handle": "Mik3yPttr",
+        "name": "Mik3y",
+        "bio": "trying to figure out what I want to do",
+        "followers": 163,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1895645766338686976/rZ1MK9n3_normal.jpg"
+      },
+      "project": {
+        "name": "DropConvert",
+        "summary": "A macOS menu bar app for local file conversion (HEIC\u2192JPG/PNG, MOV\u2192MP4, PDF\u2192JPG/PNG) that runs entirely offline with no cloud upload. Available as a signed/notarized DMG (v1.0.5), via curl installer, Homebrew cask, and also as an MCP agent skill (pip installable). Has a live website and GitHub releases, indicating a real, shipped product.",
+        "links": [
+          "https://dropconvert.app/",
+          "https://github.com/mpotter2002/DropConvert/releases/download/v1.0.5/DropConvert.dmg"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 62,
+        "quirkiness": 45,
+        "composite": 66
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 72,
       "reply_id": "2037626094287749579",
       "reply_url": "https://x.com/tchadwhitaker/status/2037626094287749579",
+      "previous_rank": 38,
       "author": {
         "handle": "tchadwhitaker",
         "name": "Chad Whitaker",
@@ -1113,9 +2148,10 @@
       "enrichment": null
     },
     {
-      "rank": 39,
+      "rank": 73,
       "reply_id": "2037594165257580648",
       "reply_url": "https://x.com/Two_dollarBill/status/2037594165257580648",
+      "previous_rank": 39,
       "author": {
         "handle": "Two_dollarBill",
         "name": "Bruno Quagliata",
@@ -1139,9 +2175,121 @@
       "enrichment": null
     },
     {
-      "rank": 40,
+      "rank": 74,
+      "reply_id": "2037632878821994685",
+      "reply_url": "https://x.com/AmbarSNY/status/2037632878821994685",
+      "previous_rank": null,
+      "author": {
+        "handle": "AmbarSNY",
+        "name": "Ambar Shrivastava",
+        "bio": "Product Growth leader. Building tools to empower immigrant job seekers (https://t.co/EVvWZC9bYu). Winner of Zapier's 2023 No-Code Day Contest (AI) #BillsMafia",
+        "followers": 789,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1610466024180023296/AH4X0z2d_normal.jpg"
+      },
+      "project": {
+        "name": "CoverDoc AI + AI Voice Agents for Small Businesses + X Founders Marketplace",
+        "summary": "CoverDoc.ai is a job-seeker tool with 21,500+ job guides created, offering cover letter generation, hiring team identification with contact details, personality profiling, and interview prep with real user reviews and paid pricing tiers. The AI voice agent service targets dental/medical practices for after-hours call handling and appointment booking, with demo videos available. The X Founders Marketplace is a Lovable-generated prototype connecting ex-founders with companies, currently with placeholder data.",
+        "links": [
+          "https://coverdoc.ai/product/hiring-team-outreach-insights",
+          "https://ambarshrivastava.com/services/ai-voice-agent-demo",
+          "https://preview--x-founders-marketplace.lovable.app/"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 65,
+        "quirkiness": 55,
+        "composite": 65
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 75,
+      "reply_id": "2037596885297295468",
+      "reply_url": "https://x.com/zganieany/status/2037596885297295468",
+      "previous_rank": null,
+      "author": {
+        "handle": "zganieany",
+        "name": "Zack Ganieany",
+        "bio": "Co-founder & CEO @meritfirstus (backed by 8VC & Slow Ventures). \nAmerica's frontier is in unlocking our hidden talent.",
+        "followers": 407,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1873553042928242688/0VHKJPGV_normal.jpg"
+      },
+      "project": {
+        "name": "MeritFirst - Builder DNA Assessment",
+        "summary": "MeritFirst is a live hiring assessment platform (backed by 8VC & Slow Ventures) that evaluates candidates for builder traits using video/audio assessments. The submission links to a specific 'Builder DNA' assessment directly inspired by Eric Glyman's hiring post, featuring 4 questions designed to identify shipping instincts and strategic thinking. The platform has a working product with verified, shareable results trusted by hiring partners.",
+        "links": [
+          "https://www.meritfirst.us/candidate/tests/bc1595ce-3061-4ea2-b036-961d152de2f0"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 65,
+        "quirkiness": 55,
+        "composite": 65
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 76,
+      "reply_id": "2037577585563926579",
+      "reply_url": "https://x.com/PlanVersion/status/2037577585563926579",
+      "previous_rank": null,
+      "author": {
+        "handle": "PlanVersion",
+        "name": "PlanVersion",
+        "bio": "Bringing structure in a world of messy vibe coders",
+        "followers": 4,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2034342741564370944/oDE9HgRU_normal.jpg"
+      },
+      "project": {
+        "name": "PlanVersion - AI Requirements to Architecture Copilot",
+        "summary": "PlanVersion is a live, working web application at planversion.com that transforms software requirements into traceable architecture artifacts including C4 diagrams, ERDs, ADRs, and sequence diagrams. It has a real pricing page, GitHub integration, a functional demo on the homepage, and has been featured in a tech article. The product appears genuinely built with multiple tiers of paid plans.",
+        "links": [
+          "http://planversion.com",
+          "https://planversion.com/auth"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 65,
+        "quirkiness": 45,
+        "composite": 65
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 77,
+      "reply_id": "2037576890362347815",
+      "reply_url": "https://x.com/brandon_galang/status/2037576890362347815",
+      "previous_rank": null,
+      "author": {
+        "handle": "brandon_galang",
+        "name": "Brandon Galang",
+        "bio": "Industrial Engineer turned AI Product Builder.\n\nArchitecting agentic workflows and full-stack applications.\n\nProduct @wonder \u2022 ex @amazon \u2022 MBA @yalesom",
+        "followers": 3263,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1995511002117337088/39ao10P4_normal.jpg"
+      },
+      "project": {
+        "name": "ChatMBA \u2014 AI-Powered MBA Admissions Platform",
+        "summary": "ChatMBA (at admitstudios.xyz) is a full-stack AI-assisted MBA admissions service built over the holiday break, featuring story mining, personalized essay feedback, admissions committee simulation with scoring, and memory of past sessions. The product is live with authentication, a free tier, and a detailed UI demoing school-specific guidance. Built by an industrial engineer with an MBA from Yale SOM, testing Claude Opus 4.5 as a PM tool.",
+        "links": [
+          "http://admitstudios.xyz"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 58,
+        "quirkiness": 62,
+        "composite": 65
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 78,
       "reply_id": "2037574647768617092",
       "reply_url": "https://x.com/stephdiedrich/status/2037574647768617092",
+      "previous_rank": 40,
       "author": {
         "handle": "stephdiedrich",
         "name": "Stephen Diedrich",
@@ -1166,9 +2314,10 @@
       "enrichment": null
     },
     {
-      "rank": 41,
+      "rank": 79,
       "reply_id": "2037571367671857622",
       "reply_url": "https://x.com/0xKilroy/status/2037571367671857622",
+      "previous_rank": 41,
       "author": {
         "handle": "0xKilroy",
         "name": "0xKilroy",
@@ -1194,9 +2343,10 @@
       "enrichment": null
     },
     {
-      "rank": 42,
+      "rank": 80,
       "reply_id": "2037615459894456389",
       "reply_url": "https://x.com/faizanwr/status/2037615459894456389",
+      "previous_rank": 42,
       "author": {
         "handle": "faizanwr",
         "name": "faiz \ud83c\udf49",
@@ -1220,9 +2370,10 @@
       "enrichment": null
     },
     {
-      "rank": 43,
+      "rank": 81,
       "reply_id": "2037569678307184797",
       "reply_url": "https://x.com/WanderSamsara/status/2037569678307184797",
+      "previous_rank": 43,
       "author": {
         "handle": "WanderSamsara",
         "name": "Konner",
@@ -1248,9 +2399,10 @@
       "enrichment": null
     },
     {
-      "rank": 44,
+      "rank": 82,
       "reply_id": "2037567521860231397",
       "reply_url": "https://x.com/rushikkkk/status/2037567521860231397",
+      "previous_rank": 44,
       "author": {
         "handle": "rushikkkk",
         "name": "Rushik",
@@ -1275,9 +2427,10 @@
       "enrichment": null
     },
     {
-      "rank": 45,
+      "rank": 83,
       "reply_id": "2037622188673503647",
       "reply_url": "https://x.com/AdrianPatziF/status/2037622188673503647",
+      "previous_rank": 45,
       "author": {
         "handle": "AdrianPatziF",
         "name": "Adrian Patzi",
@@ -1302,9 +2455,10 @@
       "enrichment": null
     },
     {
-      "rank": 46,
+      "rank": 84,
       "reply_id": "2037620778942840999",
       "reply_url": "https://x.com/marlouiise/status/2037620778942840999",
+      "previous_rank": 46,
       "author": {
         "handle": "marlouiise",
         "name": "ML Howell",
@@ -1330,9 +2484,10 @@
       "enrichment": null
     },
     {
-      "rank": 47,
+      "rank": 85,
       "reply_id": "2037575877219774748",
       "reply_url": "https://x.com/hugoibanez_/status/2037575877219774748",
+      "previous_rank": 47,
       "author": {
         "handle": "hugoibanez_",
         "name": "Hugo Ibanez",
@@ -1358,9 +2513,10 @@
       "enrichment": null
     },
     {
-      "rank": 48,
+      "rank": 86,
       "reply_id": "2037569015241973955",
       "reply_url": "https://x.com/WeirdoWizard/status/2037569015241973955",
+      "previous_rank": 48,
       "author": {
         "handle": "WeirdoWizard",
         "name": "Darshan Gajara",
@@ -1384,9 +2540,120 @@
       "enrichment": null
     },
     {
-      "rank": 49,
+      "rank": 87,
+      "reply_id": "2037629335935635490",
+      "reply_url": "https://x.com/LookWhatIbuild/status/2037629335935635490",
+      "previous_rank": null,
+      "author": {
+        "handle": "LookWhatIbuild",
+        "name": "Shubh",
+        "bio": "19! dev\ud83d\udc68\u200d\ud83d\udcbb @1ndexOne | Built @getblinkdotfun https://t.co/a1cGpg74r9 | ex @gib_work | contributor to @anza_xyz, @EthereumRemix , @neur_sh etc. SchoolOfSolana G",
+        "followers": 179,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1790791560440713217/GD8eVAn-_normal.jpg"
+      },
+      "project": {
+        "name": "Rusty Runtime \u2013 TypeScript-inspired language runtime in Rust",
+        "summary": "A custom language runtime (RTS/Rusty TypeScript) built in Rust that compiles to bytecode and executes on a custom VM, with a planned WASM backend. The GitHub repo shows a complete architecture including lexer, parser, AST, compiler, and frame-based VM, created and actively updated in March 2026.",
+        "links": [
+          "https://github.com/shubhiscoding/Rusty-runtime"
+        ]
+      },
+      "scores": {
+        "builder": 55,
+        "creativity": 72,
+        "quirkiness": 60,
+        "composite": 62
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 88,
+      "reply_id": "2037567539639714305",
+      "reply_url": "https://x.com/jaykch/status/2037567539639714305",
+      "previous_rank": null,
+      "author": {
+        "handle": "jaykch",
+        "name": "Jay",
+        "bio": "Ex-founder who ships. 4x Founder, 2 Exits \u00b7 40+ Countries \u00b7 \n\nHelping startups ship faster: https://t.co/2Y1Ji6ybwD\n\nhttps://t.co/2Y1Ji6ybwD - $8,000/mo\nhttps://t.co/mGQeUflF5f - $598/mo",
+        "followers": 723,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2011876738167640065/Q_JUHD28_normal.jpg"
+      },
+      "project": {
+        "name": "Follwr",
+        "summary": "Follwr (follwr.app) is a social media platform and monetization tool for content creators, positioning itself as an all-in-one platform to build community and generate predictable income, replacing brand deals. The site is live with a login/signup flow, creator testimonials claiming $5K in first two weeks, and multiple product screenshots showing creator tools. The author's bio indicates it generates $8,000/month in revenue.",
+        "links": [
+          "https://home.follwr.app/",
+          "https://follwr.app/auth/login"
+        ]
+      },
+      "scores": {
+        "builder": 82,
+        "creativity": 52,
+        "quirkiness": 45,
+        "composite": 62
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 89,
+      "reply_id": "2037674198676701487",
+      "reply_url": "https://x.com/SinghMaharshi/status/2037674198676701487",
+      "previous_rank": null,
+      "author": {
+        "handle": "SinghMaharshi",
+        "name": "Maharshi Singh",
+        "bio": "Building Goal Based Social Media Platform @ GoalHive\n\nPreviously @ Snap, Microsoft, Convoy, Samsung. 10+ years building software. I build what I wish existed",
+        "followers": 175,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2000677586989670402/u00EYpuh_normal.jpg"
+      },
+      "project": {
+        "name": "GoalHive \u2013 Goal-Based Social Media Platform",
+        "summary": "A live iOS app (on the App Store, ID 6746683535) that combines social media mechanics with goal tracking: goal-based feed, TikTok-style progress updates, AI coach, streak tracking, team check-ins, and nudge accountability features. The website shows multiple product screenshots and is built by a founder with 10+ years of experience at Snap, Microsoft, and Convoy. The app is downloadable and in active use by early users.",
+        "links": [
+          "http://goalhive.com",
+          "https://apps.apple.com/app/id6746683535"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 58,
+        "quirkiness": 42,
+        "composite": 62
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 90,
+      "reply_id": "2037656205406142585",
+      "reply_url": "https://x.com/therealtongchen/status/2037656205406142585",
+      "previous_rank": null,
+      "author": {
+        "handle": "therealtongchen",
+        "name": "Tong Chen",
+        "bio": "Multi-location business owner \u2014 running traditional business like tech companies\nData background \u2192 dog daycare empire\nScaling with SEO, SEM & systems",
+        "followers": 1,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1935749542109949952/6NKbYPu-_normal.jpg"
+      },
+      "project": {
+        "name": "Toprank \u2013 Open-source Claude SEO skill",
+        "summary": "Toprank is an open-source Python tool that connects Claude (via Claude Code) to Google Search Console and Google Ads data, enabling natural-language SEO analysis and automated fixes like rewriting meta tags, fixing headings, and adding structured data. The GitHub repo exists with a detailed README demonstrating real usage flows. It was created recently (March 27, 2026) and shows active development.",
+        "links": [
+          "https://github.com/nowork-studio/toprank"
+        ]
+      },
+      "scores": {
+        "builder": 52,
+        "creativity": 65,
+        "quirkiness": 72,
+        "composite": 62
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 91,
       "reply_id": "2037609214554628465",
       "reply_url": "https://x.com/RJstimeoff/status/2037609214554628465",
+      "previous_rank": 49,
       "author": {
         "handle": "RJstimeoff",
         "name": "RJ",
@@ -1410,9 +2677,10 @@
       "enrichment": null
     },
     {
-      "rank": 50,
+      "rank": 92,
       "reply_id": "2037603339123278174",
       "reply_url": "https://x.com/utilitylabz/status/2037603339123278174",
+      "previous_rank": 50,
       "author": {
         "handle": "utilitylabz",
         "name": "Utility Labz",
@@ -1437,9 +2705,10 @@
       "enrichment": null
     },
     {
-      "rank": 51,
+      "rank": 93,
       "reply_id": "2037588789028364526",
       "reply_url": "https://x.com/willisdeving/status/2037588789028364526",
+      "previous_rank": 51,
       "author": {
         "handle": "willisdeving",
         "name": "willdev",
@@ -1463,9 +2732,10 @@
       "enrichment": null
     },
     {
-      "rank": 52,
+      "rank": 94,
       "reply_id": "2037563065810710722",
       "reply_url": "https://x.com/LamitrD/status/2037563065810710722",
+      "previous_rank": 52,
       "author": {
         "handle": "LamitrD",
         "name": "Lamitr Dhir",
@@ -1491,9 +2761,66 @@
       "enrichment": null
     },
     {
-      "rank": 53,
+      "rank": 95,
+      "reply_id": "2037597389348020450",
+      "reply_url": "https://x.com/jerchung/status/2037597389348020450",
+      "previous_rank": null,
+      "author": {
+        "handle": "jerchung",
+        "name": "Jer Chung",
+        "bio": "Paid Media Leader + Building startups.",
+        "followers": 49,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1587878088062697472/TNSmgPLY_normal.jpg"
+      },
+      "project": {
+        "name": "VetScribe - AI Clinical Documentation for Veterinarians",
+        "summary": "VetScribe is a live AI scribe product for veterinarians that records exam room visits and generates SOAP notes with confidence scores and audio-linked source attribution. The product has a working app (app.getvetscribe.com), claims 10,000+ users, charges $79/month, and features a unique confidence-scoring system that highlights uncertain AI-generated content. Pre-seed funded and seeking VC.",
+        "links": [
+          "http://getvetscribe.com",
+          "https://www.getvetscribe.com/auth",
+          "https://www.getvetscribe.com/book-demo"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 68,
+        "quirkiness": 35,
+        "composite": 61
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 96,
+      "reply_id": "2037570416286601455",
+      "reply_url": "https://x.com/EricSuNet/status/2037570416286601455",
+      "previous_rank": null,
+      "author": {
+        "handle": "EricSuNet",
+        "name": "Eric Su",
+        "bio": "Writing what I learned. Generalist with exp in internet marketing, investment banking, payment sales, and software engineering",
+        "followers": 31,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2019591967466758144/1COyO0Fc_normal.jpg"
+      },
+      "project": {
+        "name": "ClawLuv - Hosted OpenClaw AI Agent via Telegram",
+        "summary": "ClawLuv is a managed hosting service for OpenClaw AI agents, enabling non-technical users to run a personal AI agent on Telegram without any server setup or coding. The service includes optimized memory retrieval using Voyage.ai embeddings, a dashboard for agent customization, and integrations with multiple LLMs (ChatGPT, Claude, Gemini, DeepSeek) at $49/month with a $1 trial. The live website shows a working sign-up flow with Apple Pay support.",
+        "links": [
+          "http://clawluv.com"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 62,
+        "quirkiness": 42,
+        "composite": 61
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 97,
       "reply_id": "2037619903415676978",
       "reply_url": "https://x.com/LFGAmy/status/2037619903415676978",
+      "previous_rank": 53,
       "author": {
         "handle": "LFGAmy",
         "name": "LFGAmy \ud83d\udc96",
@@ -1517,9 +2844,10 @@
       "enrichment": null
     },
     {
-      "rank": 54,
+      "rank": 98,
       "reply_id": "2037608707157352867",
       "reply_url": "https://x.com/jarrensj/status/2037608707157352867",
+      "previous_rank": 54,
       "author": {
         "handle": "jarrensj",
         "name": "kwaji \ud83c\udf63",
@@ -1544,9 +2872,10 @@
       "enrichment": null
     },
     {
-      "rank": 55,
+      "rank": 99,
       "reply_id": "2037572863549403269",
       "reply_url": "https://x.com/ChaSolutions/status/2037572863549403269",
+      "previous_rank": 55,
       "author": {
         "handle": "ChaSolutions",
         "name": "Agents and Robots",
@@ -1571,9 +2900,10 @@
       "enrichment": null
     },
     {
-      "rank": 56,
+      "rank": 100,
       "reply_id": "2037568674186281065",
       "reply_url": "https://x.com/najahpokkiri/status/2037568674186281065",
+      "previous_rank": 56,
       "author": {
         "handle": "najahpokkiri",
         "name": "Najah",
@@ -1597,9 +2927,210 @@
       "enrichment": null
     },
     {
-      "rank": 57,
+      "rank": 101,
+      "reply_id": "2037614222851358990",
+      "reply_url": "https://x.com/SreeramBangaru/status/2037614222851358990",
+      "previous_rank": null,
+      "author": {
+        "handle": "SreeramBangaru",
+        "name": "Sreeram Bangaru",
+        "bio": "Founding Engineer of https://t.co/Dx3RKXo4GJ",
+        "followers": 22,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2032628276586319872/v3BdnXsi_normal.jpg"
+      },
+      "project": {
+        "name": "Zahan AI",
+        "summary": "Zahan AI is a live, deployed platform that turns user expertise into interactive training sessions with AI-generated slides, quizzes, and leaderboards. It includes an AI coach that helps presenters practice and delivers facilitation hints during live sessions. The website is fully functional with a detailed product description, FAQ, and free early access offering.",
+        "links": [
+          "http://Zahan.ai",
+          "https://zahan.ai/#session-input"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 65,
+        "quirkiness": 35,
+        "composite": 60
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 102,
+      "reply_id": "2037570168264733041",
+      "reply_url": "https://x.com/MattRosendin/status/2037570168264733041",
+      "previous_rank": null,
+      "author": {
+        "handle": "MattRosendin",
+        "name": "matt \ud83c\uddfa\ud83c\uddf8",
+        "bio": "Vires in numeris.",
+        "followers": 5166,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2008817676404297728/h9X_-atx_normal.jpg"
+      },
+      "project": {
+        "name": "Axiomatic - Noncustodial Neobank with ERP and Ramp Integration",
+        "summary": "Axiomatic is a private beta noncustodial neobank built on EVM that combines a self-custodied ETH wallet with a Visa debit card, DeFi yield routing through Morpho vaults (targeting 2-6% APY), zero-knowledge private balances, and an AI financial assistant. The tweet also mentions an ERP with a Ramp integration, though the website focuses on the wallet product. The site is live with a waitlist and detailed feature documentation.",
+        "links": [
+          "https://axiomatic.us"
+        ]
+      },
+      "scores": {
+        "builder": 52,
+        "creativity": 72,
+        "quirkiness": 55,
+        "composite": 60
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 103,
+      "reply_id": "2037592636681294015",
+      "reply_url": "https://x.com/khizar_mm/status/2037592636681294015",
+      "previous_rank": null,
+      "author": {
+        "handle": "khizar_mm",
+        "name": "Khizar",
+        "bio": "i sometimes code and write | cs @ carleton | @cansbridgeproj | eng @fullscript_dev | https://t.co/GX3SvDMgmJ",
+        "followers": 98,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1925214541438214144/siTaCvHl_normal.jpg"
+      },
+      "project": {
+        "name": "Linkd \u2014 AI Outreach Automation Tool",
+        "summary": "A live SaaS product at try-linkd.com that automates cold email outreach by performing LinkedIn research to find targets, generating personalized emails sent via Gmail, scheduling sends, and tracking open rates. It has a freemium pricing model ($0/$20/month) and claims adoption by students at multiple universities including Michigan, Carleton, and UC Santa Barbara.",
+        "links": [
+          "http://try-linkd.com",
+          "https://www.try-linkd.com"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 55,
+        "quirkiness": 40,
+        "composite": 60
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 104,
+      "reply_id": "2037583574191226985",
+      "reply_url": "https://x.com/notnotsahil/status/2037583574191226985",
+      "previous_rank": null,
+      "author": {
+        "handle": "notnotsahil",
+        "name": "Sahil",
+        "bio": "https://t.co/uDtojNPvqs",
+        "followers": 51,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1992364292113567744/JXVtjsac_normal.jpg"
+      },
+      "project": {
+        "name": "AI Recipe Generator: Meal Scan (What's for Dinner)",
+        "summary": "A published iOS/iPadOS app that uses AI vision to scan photos of ingredients and generate custom recipes instantly. It supports dietary filters (Keto, Vegan, Gluten-Free), has a freemium model with a Pro tier, and has multiple version releases on the App Store since January 2025.",
+        "links": [
+          "https://apps.apple.com/us/app/ai-recipe-generator-meal-scan/id6757024375",
+          "https://trywhatsfordinner.com/privacy"
+        ]
+      },
+      "scores": {
+        "builder": 78,
+        "creativity": 55,
+        "quirkiness": 40,
+        "composite": 60
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 105,
+      "reply_id": "2037581526146167054",
+      "reply_url": "https://x.com/PeonMusk_/status/2037581526146167054",
+      "previous_rank": null,
+      "author": {
+        "handle": "PeonMusk_",
+        "name": "Himothy",
+        "bio": "Building",
+        "followers": 33,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1824497915483574272/dU4IV3YO_normal.jpg"
+      },
+      "project": {
+        "name": "Dished.io + FocusFriends",
+        "summary": "Dished.io is a live marketplace platform connecting users with local caterers, personal chefs, home bakers, and food businesses. The site is functional with registration, search, business listings, and ordering features. A second app, FocusFriends, is listed on the App Store.",
+        "links": [
+          "http://Dished.io",
+          "https://dished.io/home",
+          "https://dished.io/register",
+          "https://dished.io/create-shop"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 62,
+        "quirkiness": 35,
+        "composite": 59
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 106,
+      "reply_id": "2037593853226627169",
+      "reply_url": "https://x.com/AkpapunamEkenej/status/2037593853226627169",
+      "previous_rank": null,
+      "author": {
+        "handle": "AkpapunamEkenej",
+        "name": "Akpapunam Ekene Joshua",
+        "bio": "Committed to making this world a better place",
+        "followers": 46,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/665483591128915968/oV2o01wB_normal.jpg"
+      },
+      "project": {
+        "name": "Naya \u2014 Port Harcourt Property Platform",
+        "summary": "A deployed real estate platform (naya-fawn.vercel.app) focused on Port Harcourt, Nigeria, featuring verified property listings for rent, sale, and short-let, RSSPC-verified agents, AI valuations, 360\u00b0 virtual tours, and multi-currency display for international viewers. The site shows detailed neighborhood data, property listings, and search functionality, indicating a real built product.",
+        "links": [
+          "https://naya-fawn.vercel.app",
+          "https://naya-fawn.vercel.app/markets",
+          "https://naya-fawn.vercel.app/search",
+          "https://naya-fawn.vercel.app/neighborhoods",
+          "https://naya-fawn.vercel.app/about"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 65,
+        "quirkiness": 45,
+        "composite": 59
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 107,
+      "reply_id": "2037674373138518507",
+      "reply_url": "https://x.com/bizgeneralz/status/2037674373138518507",
+      "previous_rank": null,
+      "author": {
+        "handle": "bizgeneralz",
+        "name": "Matthew Feather",
+        "bio": "",
+        "followers": 3,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1979738900303077376/_uMHsYIi_normal.jpg"
+      },
+      "project": {
+        "name": "10x \u2013 Mac Focus Tracker with On-Device AI",
+        "summary": "A Mac app (M1+) that silently tracks app usage, runs on-device AI to identify focus patterns, and provides detailed coaching insights including deep work streaks, context switch analysis, and weekly heatmaps. The app is downloadable, Apple-notarized, requires no account, and keeps all data local. The landing page shows a polished, feature-complete product with a functioning download link.",
+        "links": [
+          "https://tenexaitbd.com/",
+          "https://tenexaitbd.com/download.html"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 62,
+        "quirkiness": 35,
+        "composite": 59
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 108,
       "reply_id": "2037611230874206226",
       "reply_url": "https://x.com/samhayek_/status/2037611230874206226",
+      "previous_rank": 57,
       "author": {
         "handle": "samhayek_",
         "name": "Sam",
@@ -1623,9 +3154,10 @@
       "enrichment": null
     },
     {
-      "rank": 58,
+      "rank": 109,
       "reply_id": "2037608447051538629",
       "reply_url": "https://x.com/odincode/status/2037608447051538629",
+      "previous_rank": 58,
       "author": {
         "handle": "odincode",
         "name": "Mikey",
@@ -1649,9 +3181,10 @@
       "enrichment": null
     },
     {
-      "rank": 59,
+      "rank": 110,
       "reply_id": "2037607242959061097",
       "reply_url": "https://x.com/devbyslavi/status/2037607242959061097",
+      "previous_rank": 59,
       "author": {
         "handle": "devbyslavi",
         "name": "Slavi",
@@ -1675,9 +3208,67 @@
       "enrichment": null
     },
     {
-      "rank": 60,
+      "rank": 111,
+      "reply_id": "2037601000396394623",
+      "reply_url": "https://x.com/lamuriam/status/2037601000396394623",
+      "previous_rank": null,
+      "author": {
+        "handle": "lamuriam",
+        "name": "\u2500 0xfefcd7",
+        "bio": "question mark defines me well",
+        "followers": 164,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/478555642429308928/FpveYWSP_normal.jpeg"
+      },
+      "project": {
+        "name": "Konsulin - Open-Source Digital Mental Health Platform",
+        "summary": "Konsulin is an open-source digital mental health platform built on FHIR standards, featuring a TypeScript frontend (konsulin-app) and a Go-based API Gateway (konsulin-api) for authentication, authorization, and healthcare data routing. The platform provides psychological assessments, digital interventions, journaling, and appointment management. The GitHub org has 11 repositories with active recent commits, stars, forks, and open issues \u2014 evidence of real ongoing development.",
+        "links": [
+          "https://github.com/konsulin-care",
+          "https://github.com/konsulin-care/konsulin-app",
+          "https://github.com/konsulin-care/konsulin-api"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 65,
+        "quirkiness": 40,
+        "composite": 58
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 112,
+      "reply_id": "2037591142233973116",
+      "reply_url": "https://x.com/MeOsipov/status/2037591142233973116",
+      "previous_rank": null,
+      "author": {
+        "handle": "MeOsipov",
+        "name": "Anton",
+        "bio": "Built a $3M ARR local EdTech startup by 25.  Now  starting from scratch globally.  \n\nNow I am building  the best tool for slides - https://t.co/efOvl3oMfg",
+        "followers": 136,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2015147052259213312/wUZRnQfP_normal.jpg"
+      },
+      "project": {
+        "name": "Bobr AI \u2014 AI Presentation Generator",
+        "summary": "A live product at bobr.ai that generates professional presentations using AI, featuring real-time web research, PDF/image upload as source material, live photo search, and chat-based slide editing. It has a structured tiered pricing model ($12\u2013$208/month) and displays example generated slide decks (10-slide pitch decks) stored on DigitalOcean Spaces, indicating real infrastructure and usage.",
+        "links": [
+          "http://bobr.ai",
+          "https://bobr.ams3.digitaloceanspaces.com"
+        ]
+      },
+      "scores": {
+        "builder": 75,
+        "creativity": 42,
+        "quirkiness": 55,
+        "composite": 58
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 113,
       "reply_id": "2037568597233414242",
       "reply_url": "https://x.com/najahpokkiri/status/2037568597233414242",
+      "previous_rank": 60,
       "author": {
         "handle": "najahpokkiri",
         "name": "Najah",
@@ -1702,9 +3293,38 @@
       "enrichment": null
     },
     {
-      "rank": 61,
+      "rank": 114,
+      "reply_id": "2037656099537531027",
+      "reply_url": "https://x.com/PriymwadaPandey/status/2037656099537531027",
+      "previous_rank": null,
+      "author": {
+        "handle": "PriymwadaPandey",
+        "name": "Priyamwada",
+        "bio": "Product Designer | MS HCI/d @IUBloomington",
+        "followers": 19,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2034645101235032064/x9qLHniC_normal.jpg"
+      },
+      "project": {
+        "name": "Stellar Scan constellation web app + robot arms music project",
+        "summary": "The author built 'Stellar Scan', a deployed web app that allows users to look up constellation/star data by date, built from a single prompt using Google Stitch. They also collaborated on robot arms that play music (evidenced by a linked tweet). A personal portfolio page documents multiple side projects including an AI news reader and design experiments.",
+        "links": [
+          "https://stellar-scan-eta.vercel.app/",
+          "http://priyamwada.me/side-quests"
+        ]
+      },
+      "scores": {
+        "builder": 52,
+        "creativity": 58,
+        "quirkiness": 65,
+        "composite": 57
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 115,
       "reply_id": "2037587259327922186",
       "reply_url": "https://x.com/MeetAiqi/status/2037587259327922186",
+      "previous_rank": 61,
       "author": {
         "handle": "MeetAiqi",
         "name": "Aiqi Liu",
@@ -1728,9 +3348,121 @@
       "enrichment": null
     },
     {
-      "rank": 62,
+      "rank": 116,
+      "reply_id": "2037646709711614433",
+      "reply_url": "https://x.com/haseeebkh/status/2037646709711614433",
+      "previous_rank": null,
+      "author": {
+        "handle": "haseeebkh",
+        "name": "haseeb",
+        "bio": "",
+        "followers": 12,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1374111476525326337/8a2WZS7g_normal.jpg"
+      },
+      "project": {
+        "name": "Trippler (AI travel planner) + iOS Icon Sizer",
+        "summary": "Trippler is a live AI-powered travel itinerary builder at trippler.ca, offering day-by-day plans with Google Places restaurant integration, drag-and-drop editing, interactive maps, and packing lists. iOS Icon Sizer (iconsizer.app) is a monetized tool that takes a single 1024x1024 PNG and generates all 48 Apple platform icon sizes in an Xcode-ready ZIP, with client-side processing and a subscription model ($1/mo or $10.99/yr).",
+        "links": [
+          "http://trippler.ca",
+          "http://iconsizer.app"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 52,
+        "quirkiness": 35,
+        "composite": 56
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 117,
+      "reply_id": "2037575547392237617",
+      "reply_url": "https://x.com/PrettyNerdee/status/2037575547392237617",
+      "previous_rank": null,
+      "author": {
+        "handle": "PrettyNerdee",
+        "name": "Clay Forde",
+        "bio": "Builder & orchestrator | LLM-assisted refinement & red-team testing | Applied for xAI Software Engineer Tutor | Open University CS/AI",
+        "followers": 60,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2029365926173536256/pDs0MT_Q_normal.jpg"
+      },
+      "project": {
+        "name": "GiM Ghost Mode - Legacy POS/CCTV Operations Dashboard",
+        "summary": "GiM is a read-only universal adapter that connects legacy Windows 7+ POS systems and existing CCTV to a unified operational dashboard for hospitality venues, requiring no new hardware or cloud dependency. It operates in 'Ghost Mode,' extracting data without writing back to systems, and correlates sales anomalies with CCTV footage. The website is live at gimindex.com with a pilot application page and listed partnerships with Techscaler, Barclays Eagle Labs, and CodeBase.",
+        "links": [
+          "http://gimindex.com",
+          "https://gimindex.com/apply.html"
+        ]
+      },
+      "scores": {
+        "builder": 42,
+        "creativity": 72,
+        "quirkiness": 58,
+        "composite": 56
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 118,
+      "reply_id": "2037655217282400287",
+      "reply_url": "https://x.com/OddlyStoked/status/2037655217282400287",
+      "previous_rank": null,
+      "author": {
+        "handle": "OddlyStoked",
+        "name": "Andrew",
+        "bio": "currently building a suite of tools for the messy brained creative, like me. writer. father. doofus philosopher. everything sucks but I'm oddly stoked.",
+        "followers": 3,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2036522399038869504/4u98ocie_normal.jpg"
+      },
+      "project": {
+        "name": "Caranova Reader \u2013 one-click highlight copy tool",
+        "summary": "Caranova Reader is a browser extension or tool the author uses daily that lets readers highlight text on web articles and copy all highlights at once, with the article title and numbered highlights automatically formatted when pasted. A video demo is attached to the tweet showing it working on a Paul Graham essay page, and the browser toolbar shows 'Caranova Reader' as an installed extension.",
+        "links": [
+          "https://x.com/OddlyStoked/status/2037655217282400287/video/1"
+        ]
+      },
+      "scores": {
+        "builder": 55,
+        "creativity": 52,
+        "quirkiness": 65,
+        "composite": 56
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 119,
+      "reply_id": "2037566477180518726",
+      "reply_url": "https://x.com/julian_kheyr/status/2037566477180518726",
+      "previous_rank": null,
+      "author": {
+        "handle": "julian_kheyr",
+        "name": "Julian Kheyrbeyk",
+        "bio": "I\u2019m just Julian.",
+        "followers": 71,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2000208773747482629/Zix-yHbo_normal.jpg"
+      },
+      "project": {
+        "name": "Minerva: Daily Reads \u2014 iOS App",
+        "summary": "Minerva is a published iOS app by Koloko Labs that delivers one curated literary quote per day to help users build a reading habit. The App Store listing confirms it is live, has received ratings, offers in-app purchases (Minerva Premium), includes a home screen widget and iCloud sync, and has had multiple version updates (1.0.1 through 1.1.1) over recent months. The app emphasizes privacy with no data collection or ads.",
+        "links": [
+          "https://apple.co/3ZYIMHO",
+          "https://apps.apple.com/us/app/minerva-daily-reads/id6758223684"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 42,
+        "quirkiness": 45,
+        "composite": 55
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 120,
       "reply_id": "2037585414811463689",
       "reply_url": "https://x.com/biggucci303/status/2037585414811463689",
+      "previous_rank": 62,
       "author": {
         "handle": "biggucci303",
         "name": "Andrew R",
@@ -1754,9 +3486,145 @@
       "enrichment": null
     },
     {
-      "rank": 63,
+      "rank": 121,
+      "reply_id": "2037596253538897983",
+      "reply_url": "https://x.com/vctotrn/status/2037596253538897983",
+      "previous_rank": null,
+      "author": {
+        "handle": "vctotrn",
+        "name": "victor",
+        "bio": "here for design twitter",
+        "followers": 189,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1909381845940420608/da1vGEjb_normal.jpg"
+      },
+      "project": {
+        "name": "Victor Tran UX Design Portfolio with AI Assistant",
+        "summary": "Victor Tran's design portfolio at victortran.dev features UX case studies (Hypnos sleep app, What We Do group coordination app, Trailmix travel planner) with an interactive AI chat assistant and a 'circle to ask questions' feature. The site is live with detailed project showcases including mockups, videos, and design work from companies like Northrop Grumman and Farmers Insurance.",
+        "links": [
+          "https://victortran.dev"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 55,
+        "quirkiness": 40,
+        "composite": 54
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 122,
+      "reply_id": "2037570585224450328",
+      "reply_url": "https://x.com/nodcodes/status/2037570585224450328",
+      "previous_rank": null,
+      "author": {
+        "handle": "nodcodes",
+        "name": "Nod Codes",
+        "bio": "building:https://t.co/d0TsxHanIY, https://t.co/MDz6p7WYKf,",
+        "followers": 23,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2007958909491830784/2OKgyP1P_normal.jpg"
+      },
+      "project": {
+        "name": "AllStreamTools \u2014 OBS Overlay Toolkit",
+        "summary": "AllStreamTools is a live, browser-based OBS overlay toolkit for streamers on Twitch, Kick, and YouTube, offering 10+ tools (viewer count, chat overlay, now playing, polls, predictions, hype train) with no downloads required. The product is deployed at allstreamstools.com with a sign-up flow, Pro tier, and multi-platform support. The landing page confirms it is functional and actively updated.",
+        "links": [
+          "https://allstreamstools.com"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 48,
+        "quirkiness": 35,
+        "composite": 54
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 123,
+      "reply_id": "2037643947355283880",
+      "reply_url": "https://x.com/YuriiSolwees/status/2037643947355283880",
+      "previous_rank": null,
+      "author": {
+        "handle": "YuriiSolwees",
+        "name": "Yurii",
+        "bio": "Building the deterministic logic layer for the AI era. \ud83c\udfd7\ufe0f | 9 months of surgical focus vs. AI slop. \ud83d\udee1\ufe0f | Leading the reliability revolution at Solwees. \ud83d\udd0b\ud83d\udd0c",
+        "followers": 75,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2035135816935100416/4RBejzU8_normal.jpg"
+      },
+      "project": {
+        "name": "Solwees AI \u2014 Autonomous AI Employee for Restaurants & Salons",
+        "summary": "Solwees AI is a deployed product providing AI-powered phone call handling, WhatsApp booking, and CRM automation for restaurants and beauty salons. The site shows a live dashboard product with real branding, cookie policy, and customer-facing features, though it currently shows an error page on one route. Evidence of a real, shipped product with a live domain and infrastructure.",
+        "links": [
+          "http://Solwees.ai",
+          "https://solwees.ai/en"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 55,
+        "quirkiness": 40,
+        "composite": 54
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 124,
+      "reply_id": "2037671864445644843",
+      "reply_url": "https://x.com/Ydj79/status/2037671864445644843",
+      "previous_rank": null,
+      "author": {
+        "handle": "Ydj79",
+        "name": "Yash Joshi",
+        "bio": "Co-Founder & CTO @Arrow_Payments \u2014 Revolutionizing healthcare payments",
+        "followers": 362,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1805034205983703040/Y2dgm_FY_normal.jpg"
+      },
+      "project": {
+        "name": "Auto Coder",
+        "summary": "An AI-powered coding automation system that picks up Linear tickets and automatically pushes PRs through a 7-step pipeline: research, code, test against live APIs, expert review, fix loop, finalize, and Slack notification. The screenshot shows a visual workflow diagram with distinct agent nodes (planner, coder, tester, reviewer, finalizer, notifier) connected in a DAG. Built by the CTO of Arrow Payments, suggesting production-level context.",
+        "links": [
+          "https://x.com/Ydj79/status/2037671864445644843/photo/1",
+          "https://pbs.twimg.com/media/HEdDwyLaIAAvc01.jpg"
+        ]
+      },
+      "scores": {
+        "builder": 55,
+        "creativity": 65,
+        "quirkiness": 35,
+        "composite": 54
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 125,
+      "reply_id": "2037596967983861957",
+      "reply_url": "https://x.com/A1116743535373/status/2037596967983861957",
+      "previous_rank": null,
+      "author": {
+        "handle": "A1116743535373",
+        "name": "A",
+        "bio": "Creator of MTCP, a black box evaluation framework for LLM behavioral durability | Al assurance research",
+        "followers": 19,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2032824221492219904/23tcoqbB_normal.jpg"
+      },
+      "project": {
+        "name": "MTCP (Multi-Turn Constraint Persistence framework)",
+        "summary": "MTCP is a black-box evaluation framework for measuring how reliably AI agents maintain behavioral corrections across multi-turn conversations. The author claims to have run 27,000 deterministic three-turn probes across 25 production models from 11 providers, with SHA-256 tamper-evident audit records. No external links or repository are provided, but the technical specificity (probe count, model count, providers, methodology) suggests real research work.",
+        "links": []
+      },
+      "scores": {
+        "builder": 35,
+        "creativity": 72,
+        "quirkiness": 55,
+        "composite": 53
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 126,
       "reply_id": "2037604208447311986",
       "reply_url": "https://x.com/dimovdaniel/status/2037604208447311986",
+      "previous_rank": 63,
       "author": {
         "handle": "dimovdaniel",
         "name": "Daniel",
@@ -1780,9 +3648,10 @@
       "enrichment": null
     },
     {
-      "rank": 64,
+      "rank": 127,
       "reply_id": "2037575463954952445",
       "reply_url": "https://x.com/MaksymSherman/status/2037575463954952445",
+      "previous_rank": 64,
       "author": {
         "handle": "MaksymSherman",
         "name": "Maksym Sherman",
@@ -1806,9 +3675,71 @@
       "enrichment": null
     },
     {
-      "rank": 65,
+      "rank": 128,
+      "reply_id": "2037600481728667657",
+      "reply_url": "https://x.com/vishalg47/status/2037600481728667657",
+      "previous_rank": null,
+      "author": {
+        "handle": "vishalg47",
+        "name": "Vishal R Gadiya",
+        "bio": "Founder at Nexum\nSoftware Developer\nMobile developer\n\nhttps://t.co/sRlWEaYu5O\u2026  linkdin",
+        "followers": 54,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2025686921767485440/eXB8yfd9_normal.jpg"
+      },
+      "project": {
+        "name": "Nexum - AI-Powered Event Discovery & Ticketing Platform",
+        "summary": "Nexum is a live event platform at nexumevents.com that supports event creation, RSVP management, guest list browsing, text blast notifications, date polling, and AI-powered attendee matching. The site features numerous customizable invite templates, card sending, and functional create/explore flows. It appears to be a real deployed product with working links and substantial feature depth, though the press quotes on the homepage appear fabricated/placeholder.",
+        "links": [
+          "http://nexumevents.com",
+          "https://www.nexumevents.com/create-event",
+          "https://www.nexumevents.com/explore"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 55,
+        "quirkiness": 30,
+        "composite": 52
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 129,
+      "reply_id": "2037598486091182189",
+      "reply_url": "https://x.com/lombardinelson/status/2037598486091182189",
+      "previous_rank": null,
+      "author": {
+        "handle": "lombardinelson",
+        "name": "Mark Lombardi",
+        "bio": "https://t.co/n1ZN3ivRDf | @sendbluehq | For The Love Of The Game",
+        "followers": 671,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2006811520919838722/j86cscVP_normal.jpg"
+      },
+      "project": {
+        "name": "GLP-1.com \u2014 GLP-1 Medication Comparison & Savings Platform",
+        "summary": "A live website at GLP-1.com that aggregates telehealth providers, coupons, and medication information for GLP-1 drugs like Ozempic, Wegovy, and Mounjaro. The site includes provider comparisons, coupon listings, and educational content, and appears to be a real, deployed web property with affiliate/referral integrations. The author's bio links to sendbluehq suggesting a broader marketing/media background.",
+        "links": [
+          "https://glp-1.com",
+          "https://glp-1.com/collections/best-weight-loss-medications",
+          "https://glp-1.com/collections/best-glp-1-coupons",
+          "https://glp-1.com/medications/mounjaro",
+          "https://glp-1.com/medications/ozempic",
+          "https://glpone.com/microdose-intake?code=MICRO80OFF"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 55,
+        "quirkiness": 30,
+        "composite": 52
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 130,
       "reply_id": "2037579176019218473",
       "reply_url": "https://x.com/kairon007/status/2037579176019218473",
+      "previous_rank": 65,
       "author": {
         "handle": "kairon007",
         "name": "Amit Kairon",
@@ -1834,9 +3765,64 @@
       "enrichment": null
     },
     {
-      "rank": 66,
+      "rank": 131,
+      "reply_id": "2037579627477270540",
+      "reply_url": "https://x.com/Kenbuildsthings/status/2037579627477270540",
+      "previous_rank": null,
+      "author": {
+        "handle": "Kenbuildsthings",
+        "name": "Kenneth Johnson",
+        "bio": "product guy",
+        "followers": 187,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1435472375877885954/ShaCmBIr_normal.jpg"
+      },
+      "project": {
+        "name": "LeadQuest \u2014 B2B Lead Search Tool",
+        "summary": "LeadQuest is a live web app (app.leadquest.ai) offering search across millions of B2B leads and local businesses with instant contact data export. It uses a novel 'choose your own price' monetization model and claims 2,397+ paying customers. The site is functional with auth, pricing, and onboarding flows visible.",
+        "links": [
+          "http://app.leadquest.ai"
+        ]
+      },
+      "scores": {
+        "builder": 72,
+        "creativity": 42,
+        "quirkiness": 30,
+        "composite": 51
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 132,
+      "reply_id": "2037597436252762252",
+      "reply_url": "https://x.com/kavir777/status/2037597436252762252",
+      "previous_rank": null,
+      "author": {
+        "handle": "kavir777",
+        "name": "Kavir",
+        "bio": "Software Engineering @UWaterloo | Building https://t.co/Zf7TpVBAkh | Prev. Intern @trexorobotics",
+        "followers": 575,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2028901060140777472/lmH1xdvH_normal.jpg"
+      },
+      "project": {
+        "name": "Zentro \u2014 AI Real Estate Agent",
+        "summary": "Zentro (joinzentro.com) is a live product positioning itself as a 24/7 AI real estate agent that finds listings, books tours, and negotiates on behalf of users. The site has a functioning waitlist and a separate landlord-facing flow, indicating some product development beyond a blank landing page.",
+        "links": [
+          "https://joinzentro.com"
+        ]
+      },
+      "scores": {
+        "builder": 55,
+        "creativity": 58,
+        "quirkiness": 30,
+        "composite": 50
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 133,
       "reply_id": "2037600319849320796",
       "reply_url": "https://x.com/JackEvka09125/status/2037600319849320796",
+      "previous_rank": 66,
       "author": {
         "handle": "JackEvka09125",
         "name": "Jack Evans",
@@ -1861,9 +3847,10 @@
       "enrichment": null
     },
     {
-      "rank": 67,
+      "rank": 134,
       "reply_id": "2037616348956672368",
       "reply_url": "https://x.com/troyassoignon/status/2037616348956672368",
+      "previous_rank": 67,
       "author": {
         "handle": "troyassoignon",
         "name": "Troy Assoignon",
@@ -1888,9 +3875,10 @@
       "enrichment": null
     },
     {
-      "rank": 68,
+      "rank": 135,
       "reply_id": "2037562565338001905",
       "reply_url": "https://x.com/_twochanz/status/2037562565338001905",
+      "previous_rank": 68,
       "author": {
         "handle": "_twochanz",
         "name": "twochanz",
@@ -1914,9 +3902,95 @@
       "enrichment": null
     },
     {
-      "rank": 69,
+      "rank": 136,
+      "reply_id": "2037633556701131214",
+      "reply_url": "https://x.com/veronicahylak/status/2037633556701131214",
+      "previous_rank": null,
+      "author": {
+        "handle": "veronicahylak",
+        "name": "veronica hylak",
+        "bio": "I talk about AI and stuff on Youtube.",
+        "followers": 206,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1963535592811094016/DvmEayGB_normal.jpg"
+      },
+      "project": {
+        "name": "AI-powered International Market Expansion & Localization Tool",
+        "summary": "Built a tool using GenAI + ML that compresses months of international market expansion and localization strategy into minutes. The project was award-winning and published in MultiLingual Magazine (December 2023 issue, page 28), a respected industry publication. The PDF link confirms the magazine is real, though the specific article content wasn't directly visible in the extracted text.",
+        "links": [
+          "https://multilingual.com/wp-content/uploads/2023/12/222_December.pdf"
+        ]
+      },
+      "scores": {
+        "builder": 45,
+        "creativity": 62,
+        "quirkiness": 35,
+        "composite": 48
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 137,
+      "reply_id": "2037619994557648920",
+      "reply_url": "https://x.com/tamba_io/status/2037619994557648920",
+      "previous_rank": null,
+      "author": {
+        "handle": "tamba_io",
+        "name": "tamba",
+        "bio": "building",
+        "followers": 359,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1719522778930360320/5XnH_scg_normal.jpg"
+      },
+      "project": {
+        "name": "Ramp Merch Designs",
+        "summary": "The author created Ramp-branded merchandise concept designs, including a Jaws-parody t-shirt featuring receipts as shark teeth and a Social Network movie poster parody referencing Ramp's $10B saved milestone. The images show polished, print-ready mockups with creative brand-relevant humor.",
+        "links": [
+          "https://pbs.twimg.com/media/HEcUZcMagAA0eAR.jpg",
+          "https://pbs.twimg.com/media/HEcUZceXoAAATu8.jpg",
+          "https://pbs.twimg.com/media/HEcUZcPaEAAI_dI.jpg"
+        ]
+      },
+      "scores": {
+        "builder": 25,
+        "creativity": 62,
+        "quirkiness": 65,
+        "composite": 48
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 138,
+      "reply_id": "2037573788318187829",
+      "reply_url": "https://x.com/gouravbht/status/2037573788318187829",
+      "previous_rank": null,
+      "author": {
+        "handle": "gouravbht",
+        "name": "Gourav Bhati",
+        "bio": "Building a startup for developers @_velocitytools  \ud83d\ude80 | Frontend developer \ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb | Freelancer \u26a1",
+        "followers": 281,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1639251529784803328/0r9BtCOi_normal.jpg"
+      },
+      "project": {
+        "name": "Velocity Tools \u2013 Builder's Copilot",
+        "summary": "A platform curating AI utilities and developer tools into a single interface, with a Chrome Extension offering Command+K quick access to the tool repository. The site is live on Vercel with authentication (sign-up/sign-in), categorized tool sections (AI/ML, DevOps, Assets, Data), and a Chrome Extension UI. Evidence of a real deployed product with multiple features described.",
+        "links": [
+          "https://velocitytool.vercel.app",
+          "https://velocitytool.vercel.app/auth/sign-up",
+          "https://velocitytool.vercel.app/auth/sign-in"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 42,
+        "quirkiness": 35,
+        "composite": 48
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 139,
       "reply_id": "2037562268011925944",
       "reply_url": "https://x.com/zinnMK_/status/2037562268011925944",
+      "previous_rank": 69,
       "author": {
         "handle": "zinnMK_",
         "name": "zin",
@@ -1940,9 +4014,176 @@
       "enrichment": null
     },
     {
-      "rank": 70,
+      "rank": 140,
+      "reply_id": "2037632003437158702",
+      "reply_url": "https://x.com/captainscorch/status/2037632003437158702",
+      "previous_rank": null,
+      "author": {
+        "handle": "captainscorch",
+        "name": "daniel",
+        "bio": "\u2716\ufe0f design, development & photography \u2796 co-founder @nolimitsforus \u2716\ufe0f building @lyftdapp \u2716\ufe0f \u03b1\u2113\u03c9\u03b1\u04afs s\u0442\u044f\u03b9v\u03b5 \u03b1\u03b7\u2202 \u03c1\u044f\u03c3s\u03c1\u03b5\u044f",
+        "followers": 1147,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1966402728835321856/rLR-Cks8_normal.jpg"
+      },
+      "project": {
+        "name": "unlimited.studio \u2013 Web & Design Studio",
+        "summary": "A German design and development studio co-founded and run for 8 years, serving over 120 companies with services spanning web development, e-commerce, branding, and marketing. The live website at unlimited.studio shows real client work including H\u00fcbner Group, Tamplen Plastic Surgery, and others, with a full team of 6+ members.",
+        "links": [
+          "http://unlimited.studio"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 35,
+        "quirkiness": 40,
+        "composite": 47
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 141,
+      "reply_id": "2037588820175274008",
+      "reply_url": "https://x.com/jnveryser/status/2037588820175274008",
+      "previous_rank": null,
+      "author": {
+        "handle": "jnveryser",
+        "name": "Josh Veryser",
+        "bio": "Master AI or AI will master you // Vibe coder, expat, failing entrepreneur",
+        "followers": 105,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2017340070509088769/5LzxgKQW_normal.jpg"
+      },
+      "project": {
+        "name": "ResumeAgent AI \u2014 ATS Resume Optimizer",
+        "summary": "A live, paid web app that uses Gemini AI to rewrite resumes tailored to specific job descriptions to beat ATS filters. The product has a functioning Stripe payment flow ($5 one-time), outputs in 8 formats, and includes a cover letter add-on. Built on Lovable with a clear product story and real pricing.",
+        "links": [
+          "https://resumeagentai.lovable.app/",
+          "https://resumeagentai.com"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 35,
+        "quirkiness": 40,
+        "composite": 47
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 142,
+      "reply_id": "2037585850590998812",
+      "reply_url": "https://x.com/_joeln_/status/2037585850590998812",
+      "previous_rank": null,
+      "author": {
+        "handle": "_joeln_",
+        "name": "Joel N \ud83c\udde8\ud83c\udde9",
+        "bio": "\ud83c\udde8\ud83c\udde9\ud83d\udeeb\ud83c\uddff\ud83c\udde6\ud83d\udeeb\ud83c\uddfa\ud83c\uddf8",
+        "followers": 489,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1402641761680474112/HEMLwsf2_normal.jpg"
+      },
+      "project": {
+        "name": "ApplySphere",
+        "summary": "ApplySphere is an AI-powered job search and application assistant that lets users upload a resume, build a profile, get AI-generated outreach messages to hiring leaders, and auto-generate cover letters. The app is live at app.applysphere.club with Google sign-in, published terms of service (US and EU), and a clear three-step onboarding flow.",
+        "links": [
+          "http://Applysphere.club",
+          "https://app.applysphere.club",
+          "https://app.applysphere.club/terms-us.pdf",
+          "https://app.applysphere.club/terms-eu.pdf"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 38,
+        "quirkiness": 30,
+        "composite": 46
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 143,
+      "reply_id": "2037569356406956267",
+      "reply_url": "https://x.com/Web3zy/status/2037569356406956267",
+      "previous_rank": null,
+      "author": {
+        "handle": "Web3zy",
+        "name": "Jean-Paul Faraj",
+        "bio": "Head of BD at @Bankless | Mostly internal thoughts shared publicly.",
+        "followers": 2731,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1955768567468806144/aqsymVlR_normal.jpg"
+      },
+      "project": {
+        "name": "Hang Time",
+        "summary": "Hang Time (hangtime.co) is a web app that helps friend groups coordinate plans by creating a 'hang', selecting venue options via Google Maps integration, sharing a link, and letting everyone vote anonymously. Features include live vote results, saved lists of favorite spots, and automatic winner announcement. The site is live and functional with a polished landing page.",
+        "links": [
+          "http://Hangtime.co"
+        ]
+      },
+      "scores": {
+        "builder": 55,
+        "creativity": 45,
+        "quirkiness": 35,
+        "composite": 46
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 144,
+      "reply_id": "2037601400335790467",
+      "reply_url": "https://x.com/Anubhav_Mishra_/status/2037601400335790467",
+      "previous_rank": null,
+      "author": {
+        "handle": "Anubhav_Mishra_",
+        "name": "Anubhav Mishra",
+        "bio": "SWE/AI Engineer | MS CS - University of California Davis @ucdavis | Ex-Software Engineer @EPAMSystems | Artificial Intelligence | AgenticAI | EDM | Peace",
+        "followers": 115,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2036887429823815680/iuLUSmBT_normal.jpg"
+      },
+      "project": {
+        "name": "FixMeet",
+        "summary": "FixMeet (fixmeet.app) is an AI-powered scheduling platform built end-to-end by the author, an MS CS student at UC Davis with prior EPAM engineering experience. The live site has a functioning login/registration flow, indicating a deployed product beyond a landing page.",
+        "links": [
+          "https://www.fixmeet.app"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 38,
+        "quirkiness": 30,
+        "composite": 46
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 145,
+      "reply_id": "2037593272671928441",
+      "reply_url": "https://x.com/Shnay_2/status/2037593272671928441",
+      "previous_rank": null,
+      "author": {
+        "handle": "Shnay_2",
+        "name": "Shnay",
+        "bio": "Product @Monzo, Builder, Charity Trustee @CarneysCommunity, Rescue Diver, Traveler, Investor, 4X Hackathon winner",
+        "followers": 563,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1332712822065799170/-N8VPLGl_normal.jpg"
+      },
+      "project": {
+        "name": "Ghostflow \u2014 Screen Recording to Workflow Automation",
+        "summary": "Ghostflow is a live landing page (ghostflow.lovable.app) for a product that converts screen recordings into automated workflows: users record their process, an AI agent asks clarifying questions, and then the flow runs autonomously. The landing page is polished with a detailed UX walkthrough showing the three-step record/refine/automate pipeline, and includes an early-access waitlist. The author's bio notes 4x hackathon winner and product experience at Monzo.",
+        "links": [
+          "https://ghostflow.lovable.app"
+        ]
+      },
+      "scores": {
+        "builder": 32,
+        "creativity": 62,
+        "quirkiness": 45,
+        "composite": 46
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 146,
       "reply_id": "2037593958604566625",
       "reply_url": "https://x.com/gala_paarth/status/2037593958604566625",
+      "previous_rank": 70,
       "author": {
         "handle": "gala_paarth",
         "name": "Paarth Gala",
@@ -1966,9 +4207,10 @@
       "enrichment": null
     },
     {
-      "rank": 71,
+      "rank": 147,
       "reply_id": "2037593940870733910",
       "reply_url": "https://x.com/jonniefive/status/2037593940870733910",
+      "previous_rank": 71,
       "author": {
         "handle": "jonniefive",
         "name": "Jonathan",
@@ -1993,9 +4235,10 @@
       "enrichment": null
     },
     {
-      "rank": 72,
+      "rank": 148,
       "reply_id": "2037581304078663911",
       "reply_url": "https://x.com/yawbtng_/status/2037581304078663911",
+      "previous_rank": 72,
       "author": {
         "handle": "yawbtng_",
         "name": "Yaw Boateng",
@@ -2019,9 +4262,37 @@
       "enrichment": null
     },
     {
-      "rank": 73,
+      "rank": 149,
+      "reply_id": "2037598745739587906",
+      "reply_url": "https://x.com/amfonte/status/2037598745739587906",
+      "previous_rank": null,
+      "author": {
+        "handle": "amfonte",
+        "name": "Anthony",
+        "bio": "Design leader working across web, brand, and product. Always experimenting, always building, always growing.",
+        "followers": 1610,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1938665982072934400/ytpeAG5P_normal.jpg"
+      },
+      "project": {
+        "name": "Curator - Design Inspiration Board App",
+        "summary": "Curator is a personal workspace web app for collecting and organizing design inspiration, built in one month by a design leader. It supports saving URLs, uploading images, and organizing into collections. The demo videos show a polished grid-based UI with working authentication, search, and collection management features at curator-grid.app.",
+        "links": [
+          "http://curator-grid.app"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 35,
+        "quirkiness": 30,
+        "composite": 45
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 150,
       "reply_id": "2037624920424018220",
       "reply_url": "https://x.com/kalizzle_studio/status/2037624920424018220",
+      "previous_rank": 73,
       "author": {
         "handle": "kalizzle_studio",
         "name": "Kalizzle Studio",
@@ -2045,9 +4316,91 @@
       "enrichment": null
     },
     {
-      "rank": 74,
+      "rank": 151,
+      "reply_id": "2037640807482540386",
+      "reply_url": "https://x.com/Tharun1/status/2037640807482540386",
+      "previous_rank": null,
+      "author": {
+        "handle": "Tharun1",
+        "name": "Tharun Josh",
+        "bio": "Designer, Engineer, Futurist, AI Advocate. @Telus. 13+ years experience in designing digital products / Problem Solving",
+        "followers": 24,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2003667235710361600/rWfI9TrJ_normal.jpg"
+      },
+      "project": {
+        "name": "Casandra \u2014 Usability Testing App",
+        "summary": "A user testing application deployed at app.casandra.cloud. The site is live with a working authentication system (email/password and Google OAuth) and sign-up flow. Limited public-facing content is visible due to the login wall, but the app is deployed and operational as a usability testing platform.",
+        "links": [
+          "https://app.casandra.cloud"
+        ]
+      },
+      "scores": {
+        "builder": 52,
+        "creativity": 45,
+        "quirkiness": 30,
+        "composite": 44
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 152,
+      "reply_id": "2037655755005071859",
+      "reply_url": "https://x.com/_Anil_Murty_/status/2037655755005071859",
+      "previous_rank": null,
+      "author": {
+        "handle": "_Anil_Murty_",
+        "name": "Anil Murty \u27c1",
+        "bio": "founder at Metabuilder Labs - building 4x",
+        "followers": 1042,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2031810754584985602/dlY7yVoY_normal.jpg"
+      },
+      "project": {
+        "name": "Metabuilder Labs \u2013 4 parallel AI-native products",
+        "summary": "Metabuilder Labs is building four products in parallel (TwinkleBot, TryCrib, ClawWatch, PartnerPay) using agentic AI as a meta-experiment to learn how to operate AI-native companies. The website describes the mission, products, and philosophy in detail. While individual products aren't deeply demoed, the lab structure and strategy are clearly articulated with real contact info and social presence.",
+        "links": [
+          "https://metabldr.com/"
+        ]
+      },
+      "scores": {
+        "builder": 35,
+        "creativity": 55,
+        "quirkiness": 45,
+        "composite": 44
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 153,
+      "reply_id": "2037602921421103470",
+      "reply_url": "https://x.com/jasham_a/status/2037602921421103470",
+      "previous_rank": null,
+      "author": {
+        "handle": "jasham_a",
+        "name": "Jasham",
+        "bio": "FullStack Developer | MERN",
+        "followers": 11,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1746256275804164096/4F2umLHJ_normal.jpg"
+      },
+      "project": {
+        "name": "DocAI - AI Document Reader",
+        "summary": "A multi-agent RAG application that allows users to upload PDF or Word documents and chat with them using AI. Built and deployed in 48 hours, the live app at dev.aireader.webmentis.com supports files up to 400MB and offers AI-powered chat, instant summaries, and encrypted document storage. The claim of multi-agent architecture for retrieval and synthesis is stated but not independently verifiable from the content.",
+        "links": [
+          "https://dev.aireader.webmentis.com/"
+        ]
+      },
+      "scores": {
+        "builder": 62,
+        "creativity": 35,
+        "quirkiness": 25,
+        "composite": 43
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 154,
       "reply_id": "2037620389090640002",
       "reply_url": "https://x.com/iam_krisjoe/status/2037620389090640002",
+      "previous_rank": 74,
       "author": {
         "handle": "iam_krisjoe",
         "name": "Christian",
@@ -2071,9 +4424,65 @@
       "enrichment": null
     },
     {
-      "rank": 75,
+      "rank": 155,
+      "reply_id": "2037634249205887328",
+      "reply_url": "https://x.com/BuildWithDani/status/2037634249205887328",
+      "previous_rank": null,
+      "author": {
+        "handle": "BuildWithDani",
+        "name": "BuildWithDani",
+        "bio": "Building BWD from zero. AI \u00d7 SaaS \u00d7 Systems. Systems over hype.",
+        "followers": 0,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1976184877482405888/YGwCr0tT_normal.jpg"
+      },
+      "project": {
+        "name": "BuildWithDani - Independent Product Studio (Flotix, Arrivio, AutoIQ)",
+        "summary": "An independent product studio with three products in development: AutoIQ (OBD2 desktop software with AI diagnostics), Arrivio (AI helpdesk and returns automation for Shopify), and Flotix (privacy-first floating browser). The studio has a real website at buildwithdani.com with a Next.js-based portfolio, though Arrivio's app URL currently shows a default Hostinger page indicating it's not yet fully deployed. All three products are marked 'In Development.'",
+        "links": [
+          "https://www.arrivio.app",
+          "https://buildwithdani.com"
+        ]
+      },
+      "scores": {
+        "builder": 32,
+        "creativity": 55,
+        "quirkiness": 35,
+        "composite": 41
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 156,
+      "reply_id": "2037573492481073508",
+      "reply_url": "https://x.com/aiden_gilmore0/status/2037573492481073508",
+      "previous_rank": null,
+      "author": {
+        "handle": "aiden_gilmore0",
+        "name": "Aiden Gilmore",
+        "bio": "just my thoughts\u2026",
+        "followers": 3,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/2007955588962029568/-ss-B5Ln_normal.jpg"
+      },
+      "project": {
+        "name": "Teton \u2014 Visual Canvas AI Builder",
+        "summary": "Teton is a visual canvas-based AI app builder that replaces chat interfaces with a drag-and-drop component system where each block (auth, database, payments, UI) runs its own parallel AI agent. The landing page at tryteton.app is live and detailed, describing a system with no context limits, parallel agent building, and a shared project graph for agent coordination. Currently in early access/development stage with email signup.",
+        "links": [
+          "http://tryteton.app"
+        ]
+      },
+      "scores": {
+        "builder": 32,
+        "creativity": 62,
+        "quirkiness": 25,
+        "composite": 41
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 157,
       "reply_id": "2037615145589854444",
       "reply_url": "https://x.com/andrewstaci_/status/2037615145589854444",
+      "previous_rank": 75,
       "author": {
         "handle": "andrewstaci_",
         "name": "Staci",
@@ -2095,9 +4504,10 @@
       "enrichment": null
     },
     {
-      "rank": 76,
+      "rank": 158,
       "reply_id": "2037598833979396608",
       "reply_url": "https://x.com/amfonte/status/2037598833979396608",
+      "previous_rank": 76,
       "author": {
         "handle": "amfonte",
         "name": "Anthony",
@@ -2121,9 +4531,10 @@
       "enrichment": null
     },
     {
-      "rank": 77,
+      "rank": 159,
       "reply_id": "2037584542241038833",
       "reply_url": "https://x.com/bluequbit/status/2037584542241038833",
+      "previous_rank": 77,
       "author": {
         "handle": "bluequbit",
         "name": "shubham",
@@ -2148,9 +4559,10 @@
       "enrichment": null
     },
     {
-      "rank": 78,
+      "rank": 160,
       "reply_id": "2037569989524480032",
       "reply_url": "https://x.com/thestudioalpine/status/2037569989524480032",
+      "previous_rank": 78,
       "author": {
         "handle": "thestudioalpine",
         "name": "studio alpine",
@@ -2175,9 +4587,37 @@
       "enrichment": null
     },
     {
-      "rank": 79,
+      "rank": 161,
+      "reply_id": "2037560223490249053",
+      "reply_url": "https://x.com/Rajdeep__ds/status/2037560223490249053",
+      "previous_rank": null,
+      "author": {
+        "handle": "Rajdeep__ds",
+        "name": "Rajdeep",
+        "bio": "Building OneLens ~ https://t.co/lewGHn1YPx \u2022 Obsessed with product craft",
+        "followers": 47,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1999859325142261761/7z0hJdxl_normal.jpg"
+      },
+      "project": {
+        "name": "OneLens \u2013 AI intelligence layer for pull requests",
+        "summary": "OneLens is a product that aims to automate the PR workflow for engineering teams \u2014 eliminating manual standups, review bottlenecks, and CI output interpretation by using existing context from commits, tickets, and test history. The landing page is live on Vercel with a waitlist, and the founder is clearly identified. It's pre-launch but has a coherent product thesis and a functional web presence.",
+        "links": [
+          "http://onelens.vercel.app"
+        ]
+      },
+      "scores": {
+        "builder": 32,
+        "creativity": 52,
+        "quirkiness": 30,
+        "composite": 38
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 162,
       "reply_id": "2037627128506638649",
       "reply_url": "https://x.com/hark0nnen_/status/2037627128506638649",
+      "previous_rank": 79,
       "author": {
         "handle": "hark0nnen_",
         "name": "Hark0nnen",
@@ -2197,6 +4637,60 @@
         "creativity": 30,
         "quirkiness": 20,
         "composite": 34
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 163,
+      "reply_id": "2037603961474105430",
+      "reply_url": "https://x.com/BhadKingArmani/status/2037603961474105430",
+      "previous_rank": null,
+      "author": {
+        "handle": "BhadKingArmani",
+        "name": "IAmArmani",
+        "bio": "Advocate for Safe AI use and Digital Compliance. Digital Creator and Writer.\n\nFORTIS. We're your Brand and Product Design Agency that actually delivers.",
+        "followers": 604,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1968000510071291906/KruXGwtV_normal.jpg"
+      },
+      "project": {
+        "name": "FORTIS \u2014 AI-Powered Brand & Design Agency",
+        "summary": "FORTIS is a brand and design agency website built with Lovable, showcasing AI-powered creative services including brand identity, print, video, and podcast production. The site has a live portfolio with real client work (beauty, fashion brands) stored in Supabase, and a functioning multi-page structure. It appears to be an operational agency with 6+ active brands.",
+        "links": [
+          "https://fortistech.lovable.app"
+        ]
+      },
+      "scores": {
+        "builder": 35,
+        "creativity": 35,
+        "quirkiness": 30,
+        "composite": 34
+      },
+      "enrichment": null
+    },
+    {
+      "rank": 164,
+      "reply_id": "2037636460195492122",
+      "reply_url": "https://x.com/MuktarRazaq/status/2037636460195492122",
+      "previous_rank": null,
+      "author": {
+        "handle": "MuktarRazaq",
+        "name": "Muktar Abdul-Razaq",
+        "bio": "Optimist | AI Transformation Strategist | Helping organizations become AI ready | https://t.co/Yj5JxYgugD",
+        "followers": 123,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1370462186909339654/2pP1mf1q_normal.jpg"
+      },
+      "project": {
+        "name": "SWF Capital Intelligence Dashboard",
+        "summary": "A Claude artifact-based dashboard that provides sovereign wealth funds with pre-due-diligence investment intelligence on countries and sectors. The demo shows a Poland analysis for ADIA (Abu Dhabi Investment Authority) with economic health scores, FDI screening requirements, tax treaty details, sector liquidity signals, and regulatory scrutiny levels sourced from WSE/GPW, PwC, White & Case, and A&O Shearman. It's a working interactive artifact with real structured data.",
+        "links": [
+          "https://claude.ai/public/artifacts/933ece6c-436a-4e32-9ce7-b78ddc321a05"
+        ]
+      },
+      "scores": {
+        "builder": 25,
+        "creativity": 45,
+        "quirkiness": 30,
+        "composite": 33
       },
       "enrichment": null
     }

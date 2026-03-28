@@ -44,35 +44,50 @@ Return a JSON array.
 Submissions:
 {submissions_json}"""
 
-SCORE_SYSTEM = """You are scoring project submissions to a hiring tweet by Eric Glyman (CEO of Ramp).
+SCORE_SYSTEM = """You are scoring a SINGLE project submission to a hiring tweet by Eric Glyman (CEO of Ramp).
 Eric said he's looking for people who:
 - Work best without permission
 - Default to "how could I automate this"
 - Had weird teenage hobbies
 
-Score each project on 3 dimensions (0-100):
+Score this project on 3 dimensions using ABSOLUTE criteria (0-100).
+Do NOT compare to other projects. Score purely on the project's own merits against the rubric below.
 
-BUILDER (40% weight): Did they ship something real? Do they work without permission?
-Evidence of actually building and deploying, not just talking about it.
-High scores: live in production, real users, solo-built, evidence of velocity.
-Low scores: vague claims, "working on" without shipping, team projects where their role is unclear.
+BUILDER (40% weight):
+  90-100: Live in production with real users, solo-built, clear evidence of shipping velocity
+  70-89: Shipped and working, but team project or limited evidence of solo ownership
+  50-69: Built something functional but not deployed, or early stage with limited evidence
+  30-49: Claims to have built something but weak evidence, mostly ideas or plans
+  0-29: No real evidence of building anything
 
-CREATIVITY (35% weight): Is this novel or unexpected? Not another todo app or ChatGPT wrapper.
-Something that shows original thinking or an unusual approach to a real problem.
-High scores: solves a problem nobody else noticed, unexpected tech choice, creative application.
-Low scores: yet another AI wrapper, portfolio clone, well-trodden tutorial project.
+CREATIVITY (35% weight):
+  90-100: Genuinely novel — solves a problem nobody else noticed, or a completely unexpected approach
+  70-89: Creative application of existing tech, shows original thinking
+  50-69: Solid execution but well-trodden territory (another SaaS tool, another dashboard)
+  30-49: Very common project type (todo app, portfolio site, ChatGPT wrapper)
+  0-29: Direct clone or tutorial project
 
-QUIRKINESS (25% weight): Does the person have personality? "Weird teenage hobbies" energy.
-Something memorable or distinctive about them or their project.
-High scores: unusual backstory, project born from a weird obsession, personality shines through.
-Low scores: generic professional tone, could be anyone, nothing memorable.
-Be generous — the bar is "is there ANY personality here?"
+QUIRKINESS (25% weight):
+  90-100: Unforgettable — project born from an obsession, wild backstory, impossible to confuse with anyone else
+  70-89: Clear personality, memorable angle or unusual motivation
+  50-69: Some personality shows through, mildly interesting backstory
+  30-49: Generic professional tone, could be anyone
+  0-29: Pure corporate speak, zero personality
 
 Return scores as integers 0-100. Include a brief justification for each score."""
 
-SCORE_USER = """Score these verified projects. For each, return:
+SCORE_USER = """Score this project:
+
+ID: {project_id}
+Author: @{author_handle}
+Author bio: {author_bio}
+Project: {project_name}
+Summary: {project_summary}
+Links: {project_links}
+
+Return a JSON object:
 {{
-  "id": "<tweet_id>",
+  "id": "{project_id}",
   "scores": {{
     "builder": <0-100>,
     "creativity": <0-100>,
@@ -83,12 +98,7 @@ SCORE_USER = """Score these verified projects. For each, return:
     "creativity": "<brief reason>",
     "quirkiness": "<brief reason>"
   }}
-}}
-
-Return a JSON array.
-
-Projects to score:
-{projects_json}"""
+}}"""
 
 ENRICH_SYSTEM = """You are writing a brief dossier for a top-scoring candidate who replied to
 Eric Glyman's hiring tweet at Ramp. Given their X profile data and project information,
