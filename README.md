@@ -4,22 +4,24 @@ AI-powered scorecard for [@eglyman's hiring tweet](https://x.com/eglyman/status/
 
 Fetches all replies, runs them through a 5-stage AI pipeline, and presents a ranked leaderboard of the top builders.
 
-**Live:** [ahad.nyc/reply-arena](https://www.ahad.nyc/reply-arena)
+**Live:** [reply-arena.ahad.nyc](https://reply-arena.ahad.nyc)
 
 ## Pipeline
 
 ```
-311 replies → FETCH → FILTER → EXTRACT → SYNTHESIZE → SCORE → ENRICH → Top 10
+Replies → FETCH → FILTER → EXTRACT → SYNTHESIZE → SCORE → ENRICH → Ranked leaderboard
 ```
 
-| Stage | What it does | I/O |
-|-------|-------------|-----|
-| **Fetch** | X API v2, paginated with media expansion | 0 → 311 |
-| **Filter** | LLM classifies junk vs real project submissions | 311 → 163 |
-| **Extract** | Recursive content resolution (GitHub API, X API, Firecrawl) | 163 → 163 |
-| **Synthesize** | LLM reads all evidence, produces structured project summaries | 163 → 79 |
-| **Score** | 3-dimension scoring: Builder (.40), Creativity (.35), Quirkiness (.25) | 79 ranked |
-| **Enrich** | Dossier write-ups for top 20 | 20 enriched |
+| Stage | What it does |
+|-------|-------------|
+| **Fetch** | X API v2, paginated with media expansion |
+| **Filter** | LLM classifies junk vs real project submissions |
+| **Extract** | Recursive content resolution (GitHub API, X API, Firecrawl, multimodal) |
+| **Synthesize** | LLM reads all evidence + images, produces structured project summaries |
+| **Score** | One-at-a-time absolute scoring: Builder (.40), Creativity (.35), Quirkiness (.25) |
+| **Enrich** | Dossier write-ups for top candidates |
+
+Scores are **immutable** — once an entry is scored, it is never re-scored. The pipeline runs incrementally by default, only processing new replies.
 
 ## Scoring Criteria
 
@@ -48,8 +50,11 @@ cp .env.example .env
 cd pipeline
 pip install anthropic requests python-dotenv firecrawl-py
 
-# Full run
+# Incremental run (default — only processes new replies)
 python pipeline.py
+
+# Full re-run (re-fetches and re-processes everything, but never re-scores)
+python pipeline.py --full
 
 # Resume from a specific stage
 python pipeline.py --from-stage 3
